@@ -1,0 +1,30 @@
+# General
+.DS_Store
+/node_modules/
+dist/
+build/
+.idea/
+.vite/
+.idea_modules/
+*.log
+
+# Svelte
+.svelte/
+__sapper__/
+
+# Go
+bin/
+vendor/
+
+# Environment-specific
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+go.sum

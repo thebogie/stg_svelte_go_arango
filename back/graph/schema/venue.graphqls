@@ -1,0 +1,11 @@
+type Venue {
+    _key:String!
+    _id:String!
+    rev:String!
+    address: String!
+    lat: String!
+    lng: String!
+}
+
+
+

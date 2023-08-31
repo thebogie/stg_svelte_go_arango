@@ -1,0 +1,18 @@
+type Contest {
+    _key:String!
+    _id:String!
+    rev:String!
+    start:String!
+    startoffset:String!
+    stop:String!
+    stopoffset: String!
+    outcomes: [Outcome]!
+    games: [Game]!
+    venue: Venue
+}
+
+extend type Query {
+    contests: [Contest!]!
+}
+
+

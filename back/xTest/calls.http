@@ -1,0 +1,59 @@
+GRAPHQL http://localhost:50002/graphql
+Set-Cookie: auth-cookie=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTY4NTU1OTg5OSwidXNlcl9pZCI6InBsYXllci8yMDIzMDMyOTE1MjY0MzgwNjM2OTkwNTAwIn0.JcYPziDkMUtnhbWPTAvb63nx3uzy2q0DzdaUaLXELyg;
+
+####
+
+GRAPHQL http://localhost:50002/query
+
+query IntrospectionQuery {
+    __schema {
+    types {
+      name
+      description
+      fields {
+        name
+        description
+      }
+    }
+  }
+}
+####
+GRAPHQL http://localhost:50002/query
+Cookie: auth-cookie=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTY5MjM4OTk1MX0.0bYBWGMCbIs4N6xpekjWMr7OJk7mWCSKDikr-v7yn5g
+
+mutation LoginUser($logininput : Login!){
+  loginUser(input :$logininput) {
+    _id
+
+  }
+}
+{
+  "logininput": {
+    "username": "mitch@gmail.com",
+    "password": "letmein"
+  }
+}
+
+####
+GRAPHQL http://localhost:50002/graphql
+//Cookie: auth-cookie=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTY5MjMwMDY5NiwidXNlcl9pZCI6InBsYXllci8yMDIzMDcwODE0Mjk0NzUxMjU0MTQwNTAwIn0.rlHBNdUph3iWv1ggrt53KsjEYqJNZEUb56XlZIBZVt0;
+
+mutation  loginUser{
+  findAllGamesPlayedByPlayerID(playerid: "player/2023070814294755957550500") {
+    _id
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

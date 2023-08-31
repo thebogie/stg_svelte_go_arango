@@ -1,0 +1,12 @@
+type Game {
+    _key:String!
+    _id:String!
+    rev:String!
+    name:String!
+
+}
+
+
+extend type Query {
+    games: [Game!]!
+}
