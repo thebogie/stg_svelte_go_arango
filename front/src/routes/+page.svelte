@@ -13,7 +13,7 @@
 		<div class="welcome">
 			<picture>
 				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img alt="Welcome" src="svelte-welcome.png" />
+
 			</picture>
 		</div>
 		{#if $userData.username}

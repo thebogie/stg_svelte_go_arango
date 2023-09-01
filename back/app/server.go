@@ -35,9 +35,9 @@ func main() {
 	router.Use(middleware.Recoverer)
 
 	cors := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:50003", "http://192.68.86.45:50003", "http://192.68.86.101:50003"},
-		AllowedMethods:   []string{"OPTIONS", "POST", "GET", "PUT", "PATCH", "DELETE"},
-		AllowedHeaders:   []string{"*"},
+		AllowedOrigins:   []string{"http://localhost:50003", "http://192.168.86.45:50003", "http://192.168.86.101:50003"},
+		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 		ExposedHeaders:   []string{"Link", "Set-Cookie"},
 		AllowCredentials: true,
 		MaxAge:           300,
@@ -52,7 +52,7 @@ func main() {
 	router.Handle("/graphql", srv)
 
 	log.Printf("connect to http://localhost:%s/ for GraphQL playground", port)
-	log.Fatal(http.ListenAndServe(":"+port, router))
+	log.Fatal(http.ListenAndServe("192.168.86.45:"+port, router))
 }
 
 func newController(db driver.Database) controller.Controller {

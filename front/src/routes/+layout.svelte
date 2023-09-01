@@ -9,7 +9,7 @@
 	import Header from '$lib/components/Header/Header.svelte';
 	import Loader from '$lib/components/Loader/Loader.svelte';
 
-	//import '$lib/dist/css/style.min.css';
+	import '$lib/dist/css/style.min.css';
 
 	$: loading.setNavigate(!!$navigating);
 	$: loading.setLoading(!!$navigating, 'Loading, please wait...');

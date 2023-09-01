@@ -17,10 +17,12 @@
         console.log("FISH");
         const jsonData = await loginUser();
         console.log("jsonData" + JSON.stringify(jsonData));
-        /*
+
         if (browserGet('refreshToken')) {
             localStorage.removeItem('refreshToken');
         }
+
+        /*
         const [jsonRes, err] = await post(fetch, `${variables.BASE_API_URI}/login/`, {
             user: {
                 email: email,
