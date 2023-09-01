@@ -1,4 +1,4 @@
-export  interface IPlayer {
+export interface IPlayer {
     _key?: string;
     _id?: string;
     rev?: string;
@@ -9,7 +9,13 @@ export  interface IPlayer {
     roles?: Array<string>;
 }
 
-export  interface IPlayerPayload {
+export interface IPlayerPayload {
     username: string;
     password: string;
+}
+
+export interface IPlayerLogin {
+    token: string;
+    userdata: IPlayer;
+
 }

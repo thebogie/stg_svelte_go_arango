@@ -1,12 +1,14 @@
 <script lang="ts">
     // import { notificationData } from '$lib/store/notificationStore';
-    // import { post, browserSet, browserGet } from '$lib/gql/requestGraphql';
+    import {browserGet} from '$lib/utils/requestUtils';
     // import { goto } from '$app/navigation';
     // import { variables } from '$lib/utils/constants';
     import {fly} from 'svelte/transition';
     // import  { CustomError } from '$lib/interfaces/error.interface';
     import {changeText} from '$lib/helpers/buttonText';
     import {loginUser} from "$lib/gql/requestGraphql";
+    import type {IPlayerLogin} from "$lib/interfaces/player.interface";
+    //import type {IPlayer} from "$lib/interfaces/player.interface";
 
     let email = '';
     let password = '';
@@ -14,35 +16,32 @@
     // errors: Array<CustomError>;
 
     const handleLogin = async () => {
-        console.log("FISH");
-        const jsonData = await loginUser();
-        console.log("jsonData" + JSON.stringify(jsonData));
+
 
         if (browserGet('refreshToken')) {
             localStorage.removeItem('refreshToken');
         }
 
+
+        const jsonData = await loginUser(email, password);
+        console.log("jsonData" + JSON.stringify(jsonData));
+        const response: IPlayerLogin = jsonData;
+
+        console.log("HERE");
         /*
-        const [jsonRes, err] = await post(fetch, `${variables.BASE_API_URI}/login/`, {
-            user: {
-                email: email,
-                password: password
-            }
-        });
-        const response: UserResponse = jsonRes;
 
-        if (err.length > 0) {
-            errors = err;
-        } else if (response.user) {
-            if (response.user.tokens && response.user.tokens.refresh) {
-                browserSet('refreshToken', response.user.tokens.refresh);
-            }
-            notificationData.update(() => 'Login successful...');
-            await goto('/');
-        }
 
-         */
+          if (err.length > 0) {
+              errors = err;
+          } else if (response.user) {
+              if (response.user.tokens && response.user.tokens.refresh) {
+                  browserSet('refreshToken', response.user.tokens.refresh);
+              }
+              notificationData.update(() => 'Login successful...');
+              await goto('/');
+          }
 
+  */
 
     };
 </script>

@@ -1,7 +1,7 @@
-import { writable } from 'svelte/store';
+import {writable} from 'svelte/store';
 
 const newLoading = () => {
-    const { subscribe, update, set } = writable({
+    const {subscribe, update, set} = writable({
         status: 'IDLE', // IDLE, LOADING, NAVIGATING
         message: ''
     });
@@ -24,7 +24,7 @@ const newLoading = () => {
         });
     }
 
-    return { subscribe, update, set, setNavigate, setLoading };
+    return {subscribe, update, set, setNavigate, setLoading};
 };
 
 export const loading = newLoading();

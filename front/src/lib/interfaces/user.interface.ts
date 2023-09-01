@@ -1,8 +1,8 @@
-
 export interface Token {
     refresh?: string;
     access?: string;
 }
+
 export interface User {
     id?: string;
     email?: string;

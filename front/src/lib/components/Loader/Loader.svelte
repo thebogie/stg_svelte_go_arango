@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { loading } from '$lib/store/loadingStore';
+    import {loading} from '$lib/store/loadingStore';
 
     $: if ($loading.status === 'NAVIGATING') {
         setTimeout(() => {
@@ -12,7 +12,7 @@
 
 {#if $loading.status === 'LOADING'}
     <div class="loader-container">
-        <div class="loader" />
+        <div class="loader"/>
         {#if $loading.message}
             <p>{$loading.message}</p>
         {/if}
@@ -23,6 +23,7 @@
     :root {
         --size: 80px;
     }
+
     .loader-container {
         position: fixed;
         top: 3rem;
@@ -37,6 +38,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .loader {
         --b: 20px; /* border thickness */
         --n: 15; /* number of dashes*/
@@ -64,11 +66,13 @@
         mask-composite: intersect;
         animation: load 1s infinite steps(var(--n));
     }
+
     p {
         line-height: 1.5;
         font-weight: 700;
         color: rgba(0, 0, 0, 0.7);
     }
+
     @keyframes load {
         to {
             transform: rotate(1turn);

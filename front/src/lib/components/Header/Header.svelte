@@ -1,19 +1,19 @@
 <script lang="ts">
-    import { page } from '$app/stores';
-    import { userData } from '$lib/store/userStore';
-    import { logOutUser } from '$lib/gql/requestGraphql';
+    import {page} from '$app/stores';
+    import {userData} from '$lib/store/userStore';
+    import {logOutUser} from '$lib/gql/requestGraphql';
 </script>
 
 <header>
     <div class="corner">
         <a href="https://kit.svelte.dev">
-          <!--  <img alt="SvelteKit" src={logo} /> -->
+            <!--  <img alt="SvelteKit" src={logo} /> -->
         </a>
     </div>
 
     <nav>
         <svg aria-hidden="true" viewBox="0 0 2 3">
-            <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
+            <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z"/>
         </svg>
         <ul>
             <li class:active={$page.url.pathname === '/'}>
@@ -38,13 +38,13 @@
             {/if}
         </ul>
         <svg aria-hidden="true" viewBox="0 0 2 3">
-            <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+            <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z"/>
         </svg>
     </nav>
 
     <div class="corner">
         <a href="https://github.com/Sirneij/">
-           <!-- <img alt="John O. Idogun" src={john} /> -->
+            <!-- <img alt="John O. Idogun" src={john} /> -->
         </a>
     </div>
 </header>

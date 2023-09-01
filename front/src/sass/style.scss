@@ -6,17 +6,20 @@
 @import 'form';
 
 #svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .center {
-	text-align: center;
+  text-align: center;
 }
+
 .error {
-	color: red;
-	text-transform: capitalize;
+  color: red;
+  text-transform: capitalize;
 }
+
 .center.error:not(:first-of-type) {
-	margin-top: 0.1rem;
+  margin-top: 0.1rem;
 }

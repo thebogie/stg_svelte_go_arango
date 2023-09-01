@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/back.iml" filepath="$PROJECT_DIR$/back.iml" />
-      <module fileurl="file://$PROJECT_DIR$/config.iml" filepath="$PROJECT_DIR$/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/front.iml" filepath="$PROJECT_DIR$/front.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stg_react_go_arango.iml" filepath="$PROJECT_DIR$/stg_react_go_arango.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back/back.iml" filepath="$PROJECT_DIR$/back/back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
     </modules>
   </component>
 </project>
