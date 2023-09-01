@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BACK_" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="back" />
+    <working_directory value="$PROJECT_DIR$/back" />
+    <kind value="FILE" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/back/app/server.go" />
+    <method v="2" />
+  </configuration>
+</component>
