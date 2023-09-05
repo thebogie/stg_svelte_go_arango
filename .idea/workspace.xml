@@ -4,70 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/BACK_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/FRONT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stg_svelte_go_arango.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back/back.iml" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="new intellj setup+typescript cleanup+login errors">
+      <change afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/auth/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/auth/middleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/pkg/usecase/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.eslintrc.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/jsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/jsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/playwright.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/playwright.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/components/Loader/Loader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/components/Loader/Loader.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/formats/formatString.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/formats/formatString.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/helpers/whitespacesHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/helpers/whitespacesHelper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/images/github.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/svelte-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/images/svelte-logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/error.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/error.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/user.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/loadingStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/store/loadingStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/notificationStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/store/notificationStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/userStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/store/userStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/about/+page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/+page.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/game.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/reduced-motion.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/reduced-motion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/words.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/sverdle/words.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/sass/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/sass/_globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/sass/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/sass/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tests/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/tests/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +44,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2UoId0Xcz3Rim3n0sRykg0fU99M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -114,14 +75,16 @@
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/work/stg_svelte_go_arango/back",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -163,14 +126,65 @@
       <option name="presentableId" value="Default" />
       <updated>1693599593774</updated>
       <workItem from="1693599602480" duration="106000" />
-      <workItem from="1693599750988" duration="2116000" />
+      <workItem from="1693599750988" duration="14738000" />
     </task>
+    <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
+      <option name="closed" value="true" />
+      <created>1693602039623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693602039623</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new intellj setup+typescript cleanup+login errors">
+      <option name="closed" value="true" />
+      <created>1693602057867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693602057867</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new intellj setup+typescript cleanup+login errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="new intellj setup+typescript cleanup+login errors" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte</url>
+          <line>36</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="response2" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

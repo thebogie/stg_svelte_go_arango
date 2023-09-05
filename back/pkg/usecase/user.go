@@ -36,7 +36,7 @@ func (uu userUsecase) Login(ctx context.Context, input model.Login) (string, err
 
 func (uu userUsecase) LoginUser(ctx context.Context, input model.Login) (*model.LoginData, error) {
 
-	founduser, _ := uu.userRepository.Login(ctx, input)
+	founduser, err := uu.userRepository.Login(ctx, input)
 
 	loggedindata := &model.LoginData{
 		Token:    "",
@@ -55,11 +55,11 @@ func (uu userUsecase) LoginUser(ctx context.Context, input model.Login) (*model.
 		//TODO: what if cookie fails?
 		cookieaccess.GenerateAuthCookie(tokenString)
 		loggedindata.Token = tokenString
-		return loggedindata, nil
-	} else {
 
-		return nil, nil
 	}
+
+	return loggedindata, err
+
 }
 
 func (uu userUsecase) RefreshToken(ctx context.Context, input model.RefreshTokenInput) (string, error) {

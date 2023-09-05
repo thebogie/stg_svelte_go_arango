@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"context"
-
 	"back/graph/model"
 	"back/pkg/usecase"
+	"context"
+	"net/http"
 )
 
 type UserController interface {
@@ -33,9 +33,18 @@ func (uc userController) Login(ctx context.Context, input model.Login) (string, 
 }
 
 func (uc userController) LoginUser(ctx context.Context, input model.Login) (*model.LoginData, error) {
-	return uc.userUsecase.LoginUser(ctx, input)
+	data, err := uc.userUsecase.LoginUser(ctx, input)
+
+	if err != nil || data.Token == "" {
+		ctxw := ctx.Value("ResponseWriter").(http.ResponseWriter)
+		data.Userdata.Password = ""
+		http.Error(ctxw, "Forbidden", http.StatusForbidden)
+	}
+
+	return data, err
 }
 
 func (uc userController) RefreshToken(ctx context.Context, input model.RefreshTokenInput) (string, error) {
+
 	return uc.userUsecase.RefreshToken(ctx, input)
 }

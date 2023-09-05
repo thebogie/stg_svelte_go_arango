@@ -30,7 +30,7 @@
     });
 
     afterUpdate(async () => {
-        /*
+
     const notifyEl = document.getElementById('notification') as HTMLElement;
     // const notifyEl = document.getElementsByClassName('notification');
     if (notifyEl && $notificationData !== '') {
@@ -39,7 +39,7 @@
             notificationData.set('');
         }, 3000);
     }
-
+/*
     if (browserGet('refreshToken')) {
         const [response, _] = await getCurrentUser(
                 fetch,

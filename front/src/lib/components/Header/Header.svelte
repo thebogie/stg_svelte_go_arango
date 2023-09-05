@@ -17,18 +17,18 @@
         </svg>
         <ul>
             <li class:active={$page.url.pathname === '/'}>
-                <a href="/" sveltekit:prefetch>Home</a>
+                <a href="/">Home</a>
             </li>
             {#if !$userData.username}
                 <li class:active={$page.url.pathname === '/accounts/login'}>
-                    <a sveltekit:prefetch href="/accounts/login">Login</a>
+                    <a href="/accounts/login">Login</a>
                 </li>
                 <li class:active={$page.url.pathname === '/accounts/register'}>
-                    <a sveltekit:prefetch href="/accounts/register">Register</a>
+                    <a href="/accounts/register">Register</a>
                 </li>
             {:else}
                 <li>
-                    Hi, <a sveltekit:prefetch href="/accounts/user/{$userData.username}-{$userData.id}"
+                    Hi, <a href="/accounts/user/{$userData.username}-{$userData.id}"
                 >{$userData.username}</a
                 >
                 </li>

@@ -1,18 +1,21 @@
 <script lang="ts">
     // import { notificationData } from '$lib/store/notificationStore';
-    import {browserGet} from '$lib/utils/requestUtils';
+    import {browserGet, browserSet} from '$lib/utils/requestUtils';
     // import { goto } from '$app/navigation';
     // import { variables } from '$lib/utils/constants';
     import {fly} from 'svelte/transition';
     // import  { CustomError } from '$lib/interfaces/error.interface';
     import {changeText} from '$lib/helpers/buttonText';
     import {loginUser} from "$lib/gql/requestGraphql";
-    import type {IPlayerLogin} from "$lib/interfaces/player.interface";
+    //import type IPlayerLogin from "$lib/interfaces/player.interface";
+    import type {CustomError} from "$lib/interfaces/error.interface";
+    import {notificationData} from "$lib/store/notificationStore";
+    import {goto} from "$app/navigation";
     //import type {IPlayer} from "$lib/interfaces/player.interface";
 
     let email = '';
     let password = '';
-    let errors;
+    let errors: CustomError[] = [];
     // errors: Array<CustomError>;
 
     const handleLogin = async () => {
@@ -24,24 +27,24 @@
 
 
         const jsonData = await loginUser(email, password);
-        console.log("jsonData" + JSON.stringify(jsonData));
-        const response: IPlayerLogin = jsonData;
+       // console.log("jsonData" + JSON.stringify(jsonData));
+        const [response , err] = jsonData;
 
-        console.log("HERE");
-        /*
+        console.log("HERE" + JSON.stringify(response));
+
 
 
           if (err.length > 0) {
               errors = err;
-          } else if (response.user) {
-              if (response.user.tokens && response.user.tokens.refresh) {
-                  browserSet('refreshToken', response.user.tokens.refresh);
+          } else if (response.userdata) {
+              if ( response.token) {
+                  browserSet('refreshToken', response.token);
               }
               notificationData.update(() => 'Login successful...');
               await goto('/');
           }
 
-  */
+
 
     };
 </script>

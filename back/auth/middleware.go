@@ -24,6 +24,9 @@ func Middleware() func(http.Handler) http.Handler {
 			}
 
 			ctx := context.WithValue(r.Context(), "cookiemaker", &cookieaccess)
+			ctx = context.WithValue(ctx, "ResponseWriter", w)
+			ctx = context.WithValue(ctx, "Request", r)
+
 			// and call the next with our new context
 			r = r.WithContext(ctx)
 
@@ -43,6 +46,8 @@ func Middleware() func(http.Handler) http.Handler {
 			//TODO: check for expired too
 			if email == "INVALID" {
 				log.Printf("Incorrect JWT token.")
+				http.Error(w, "Wrong user", http.StatusBadRequest)
+				return
 			}
 
 			next.ServeHTTP(w, r)
