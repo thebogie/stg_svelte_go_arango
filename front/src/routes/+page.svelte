@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {userData} from '$lib/store/userStore';
+    import {playerData} from '$lib/store/playerStore';
 
     import {fly} from 'svelte/transition';
 </script>
@@ -16,8 +16,8 @@
 
             </picture>
         </div>
-        {#if $userData.username}
-            <span style="text-transform: capitalize;">{$userData.username},</span>
+        {#if $playerData.email}
+            <span style="text-transform: capitalize;">{$playerData.email},</span>
         {/if}
 
         to our new<br/>SvelteKit app

@@ -11,6 +11,8 @@
     import type {CustomError} from "$lib/interfaces/error.interface";
     import {notificationData} from "$lib/store/notificationStore";
     import {goto} from "$app/navigation";
+    import type {IPlayer, IPlayerLogin} from "$lib/interfaces/player.interface";
+    import {playerData} from "$lib/store/playerStore";
     //import type {IPlayer} from "$lib/interfaces/player.interface";
 
     let email = '';
@@ -25,25 +27,29 @@
             localStorage.removeItem('refreshToken');
         }
 
-
+        let responseuserdata: IPlayer = {};
+        let response: IPlayerLogin = {
+            token: "",
+            userdata: responseuserdata,
+        };
+        let err: CustomError[] = [];
         const jsonData = await loginUser(email, password);
-       // console.log("jsonData" + JSON.stringify(jsonData));
-        const [response , err] = jsonData;
+        // console.log("jsonData" + JSON.stringify(jsonData));
+        [response, err] = jsonData;
 
         console.log("HERE" + JSON.stringify(response));
 
 
-
-          if (err.length > 0) {
-              errors = err;
-          } else if (response.userdata) {
-              if ( response.token) {
-                  browserSet('refreshToken', response.token);
-              }
-              notificationData.update(() => 'Login successful...');
-              await goto('/');
-          }
-
+        if (err.length > 0) {
+            errors = err;
+        } else if (response.userdata) {
+            if (response.token) {
+                browserSet('refreshToken', response.token);
+            }
+            notificationData.update(() => 'Login successful...');
+            playerData.update(() => response.userdata)
+            await goto('/');
+        }
 
 
     };

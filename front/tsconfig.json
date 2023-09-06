@@ -1,6 +1,6 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
-	//"include": ["src/**/*"],
+	"include": ["src/lib/interfaces/*.*","src/**/*", "./.svelte-kit/types/**/$types.d.ts",".svelte-kit/ambient.d.ts"],
 	"exclude": ["node_modules/*", "__sapper__/*", "build/*"],
 	"compilerOptions": {
 		"allowJs": true,

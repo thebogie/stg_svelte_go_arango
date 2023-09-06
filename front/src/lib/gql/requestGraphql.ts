@@ -8,14 +8,14 @@ export const loginUser = async (email: string, password: string): Promise<[objec
 
     var responseplayer : IPlayer = {
         email: email,
+        password: "",
+        accessToken: "",
     }
    var response :IPlayerLogin = {
         token: "",
        userdata: responseplayer,
    };
-    var errors : CustomError[] = [{
-        error: ""
-    }];
+    var errors : CustomError[] = [];
 
     const graphQLClient = new GraphQLClient(PUBLIC_API_BASE_URL, {
         credentials: 'include',
@@ -30,8 +30,14 @@ export const loginUser = async (email: string, password: string): Promise<[objec
         }
 
     try {
-        const res : object = await graphQLClient.request(gql_loginuser, {input}) as object;
+
+        interface keyable {
+            [key: string]: any
+        }
+
+        const res : keyable = await graphQLClient.request(gql_loginuser, {input}) as object;
         // Handle the successful response here
+
         response.userdata = res.loginUser.userdata
         response.token = res.loginUser.token
 
@@ -41,7 +47,7 @@ export const loginUser = async (email: string, password: string): Promise<[objec
 
         if (err.response.status == 403) {
             console.error("GraphQL request error:", err);
-            errors[0].error = responseplayer.email + " was unable to login. Forbidden. Wrong password? Isnt registered?";
+            errors.push({error: responseplayer.email + " was unable to login. Forbidden. Wrong password? Isnt registered?"});
         }
 
 
