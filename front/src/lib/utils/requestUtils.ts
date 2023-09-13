@@ -5,6 +5,9 @@ import {notificationData} from '$lib/store/notificationStore';
 
 //import { variables } from '$lib/utils/constants';
 import {formatText} from '$lib/formats/formatString';
+import type {IPlayer} from "$lib/interfaces/player.interface";
+import {playerData} from "$lib/store/playerStore";
+import type {Writable} from "svelte/store";
 
 export const browserGet = (key: string): string | undefined => {
     if (browser) {
@@ -21,7 +24,16 @@ export const browserSet = (key: string, value: string): void => {
         localStorage.setItem(key, value);
     }
 };
+export const getCurrentPlayer = ():  Writable<IPlayer> | undefined => {
 
+
+        const player = playerData;
+            return player;
+
+
+
+
+}
 
 export const getCurrentUser = async (
     fetch: any,

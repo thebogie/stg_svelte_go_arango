@@ -1,10 +1,14 @@
 import { redirect } from '@sveltejs/kit';
-import { variables } from '$lib/utils/constants';
-import { getCurrentUser } from '$lib/utils/requestUtils';
-import type { PageLoad } from '.svelte-kit/types/src/routes/$types';
+//import { variables } from '$lib/utils/constants';
+import {getCurrentPlayer, getCurrentUser} from '$lib/utils/requestUtils';
+//import type { PageLoad } from '.svelte-kit/types/src/routes/$types';
 import type { User } from '$lib/interfaces/user.interface';
-
-export const load: PageLoad = async ({ fetch }) => {
+import type {PageLoad} from "../../../../.svelte-kit/types/src/routes/about/$types";
+import type {IPlayer} from "$lib/interfaces/player.interface";
+export const load: PageLoad= () => {
+	return getCurrentPlayer();
+}
+/*export const load: PageLoad = async ({ fetch }) => {
 	const [userRes, errs] = await getCurrentUser(
 		fetch,
 		`${variables.BASE_API_URI}/token/refresh/`,
@@ -18,4 +22,4 @@ export const load: PageLoad = async ({ fetch }) => {
 	}
 
 	return { userResponse };
-};
+};*/

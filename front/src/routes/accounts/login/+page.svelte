@@ -47,7 +47,7 @@
                 browserSet('refreshToken', response.token);
             }
             notificationData.update(() => 'Login successful...');
-            playerData.update(() => response.userdata)
+            playerData.set(() => response.userdata)
             await goto('/');
         }
 

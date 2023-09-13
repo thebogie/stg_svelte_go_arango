@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="error fixin">
-      <change afterPath="$PROJECT_DIR$/front/src/lib/store/playerStore.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="login works to front page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/reduced-motion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/words.server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +126,7 @@
       <updated>1693599593774</updated>
       <workItem from="1693599602480" duration="106000" />
       <workItem from="1693599750988" duration="20848000" />
-      <workItem from="1694011513538" duration="583000" />
+      <workItem from="1694011513538" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -147,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693953278844</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="login works to front page">
+      <option name="closed" value="true" />
+      <created>1694012264630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694012264630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +170,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new intellj setup+typescript cleanup+login errors" />
     <MESSAGE value="error fixin" />
-    <option name="LAST_COMMIT_MESSAGE" value="error fixin" />
+    <MESSAGE value="login works to front page" />
+    <option name="LAST_COMMIT_MESSAGE" value="login works to front page" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -165,11 +179,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte</url>
-          <line>42</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts</url>
           <line>47</line>
@@ -181,10 +190,17 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
+        <watch expression="playerData" language="SvelteHTML" />
         <watch expression="response2" />
       </configuration>
     </watches-manager>

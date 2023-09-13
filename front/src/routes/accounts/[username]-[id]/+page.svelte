@@ -1,14 +1,21 @@
 <script lang="ts">
 	import { scale } from 'svelte/transition';
-	import { UpdateField } from '$lib/utils/requestUtils';
-
-	import { nodeBefore } from '$lib/helpers/whitespacesHelper';
-	import { variables } from '$lib/utils/constants';
+	//import {getCurrentPlayer, UpdateField} from '$lib/utils/requestUtils';
+	import {getCurrentPlayer} from '$lib/utils/requestUtils';
+	//import { nodeBefore } from '$lib/helpers/whitespacesHelper';
+	//import { variables } from '$lib/utils/constants';
 	import type { User, UserResponse } from '$lib/interfaces/user.interface';
+	import type {IPlayer} from "$lib/interfaces/player.interface";
+	import type {Writable} from "svelte/store";
+	import {playerData} from "$lib/store/playerStore";
 	export let data: any;
 
-	const url = `${variables.BASE_API_URI}/user/`;
+	//const url = `${variables.BASE_API_URI}/user/`;
+	let triggerUpdate = async (e: Event) => {
 
+
+	};
+	/*
 	let updateResponse: UserResponse; // updated response from the update
 	let triggerUpdate = async (e: Event) => {
 		const sibling = nodeBefore(<HTMLElement>e.target);
@@ -19,7 +26,11 @@
 			}
 		}
 	};
-	let currentUserData: User;
+	*
+
+
+
+	/*
 	$: data.userResponse,
 		(() => {
 			currentUserData = data.userResponse;
@@ -27,12 +38,14 @@
 				currentUserData = updateResponse.user; // if updated data is available, update the currentUserData too...
 			}
 		})();
+
+	 */
 </script>
 
 <div class="container" transition:scale|local={{ start: 0.7, delay: 500 }}>
-	{#if currentUserData.id}
+	{#if $playerData._id}
 		<h1>
-			{currentUserData.full_name ? currentUserData.full_name : currentUserData.username} profile
+			{$playerData.firstname ? $playerData.firstname : $playerData.email} profile
 		</h1>
 	{/if}
 
@@ -43,7 +56,7 @@
 				type="text"
 				placeholder="User's full name"
 				name="full_name"
-				value={currentUserData.full_name}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's full name" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -55,7 +68,7 @@
 				type="text"
 				placeholder="User's username"
 				name="username"
-				value={currentUserData.username}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's username" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -67,7 +80,7 @@
 				placeholder="User's email"
 				type="email"
 				name="email"
-				value={currentUserData.email}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's email" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -79,7 +92,7 @@
 				placeholder="User's bio"
 				type="text"
 				name="bio"
-				value={currentUserData.bio}
+				value={$playerData.roles}
 			/>
 			<button class="save" aria-label="Save user's bio" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -91,7 +104,7 @@
 				type="date"
 				name="birth_date"
 				placeholder="User's date of birth"
-				value={currentUserData.birth_date}
+				value={$playerData.rev}
 			/>
 			<button
 				class="save"
