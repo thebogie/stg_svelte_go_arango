@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="refresh modules">
-      <change afterPath="$PROJECT_DIR$/back/.env.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="adding env for prod">
+      <change afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/back/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/db/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/db/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/player.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +22,20 @@
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "thebogie"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="220a69cc-458b-49c5-b46c-1bbd431926ad" />
+        <option name="url" value="https://github.com/thebogie/stg_svelte_go_arango.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +70,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/back",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,6 +88,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front" />
       <recent name="C:\work\stg_svelte_go_arango\back" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\store" />
     </key>
@@ -132,7 +136,7 @@
       <workItem from="1694706709260" duration="246000" />
       <workItem from="1694707023185" duration="160000" />
       <workItem from="1694707198764" duration="6766000" />
-      <workItem from="1694717973869" duration="465000" />
+      <workItem from="1694717973869" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -174,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694566788879</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding env for prod">
+      <option name="closed" value="true" />
+      <created>1694718729494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694718729494</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +198,8 @@
     <MESSAGE value="error fixin" />
     <MESSAGE value="login works to front page" />
     <MESSAGE value="refresh modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh modules" />
+    <MESSAGE value="adding env for prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding env for prod" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
