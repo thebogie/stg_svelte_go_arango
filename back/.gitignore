@@ -1,3 +1,4 @@
 .env
+.env.prod
 todos.yml
 docker-compose.yml

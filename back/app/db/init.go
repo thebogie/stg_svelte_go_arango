@@ -11,7 +11,12 @@ import (
 
 func InitDB() godriver.Database {
 	var err error
-	databaseURI := "http://localhost:50001"
+
+	databaseURI := os.Getenv("DATABASE_URI")
+	if databaseURI == "" {
+		databaseURI = "http://localhost:50001"
+	}
+
 	var conn godriver.Connection
 
 	log.Printf("DB CONNECTION ENVTORUN SETTING:%v:::DB URI:%v", os.Getenv("ENVTORUN"), databaseURI)
@@ -50,7 +55,7 @@ func InitDB() godriver.Database {
 			log.Printf("Try again. Smacktalk DB isnt found:   ", err.Error())
 
 			if i == uptime {
-				log.Fatal("Smacktalk DB isnt found after x times", err.Error())
+				log.Fatal("smacktalk DB isnt found after x times", err.Error())
 			}
 		} else {
 			log.Printf("Found smacktalk:", what)

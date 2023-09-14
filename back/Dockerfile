@@ -1,15 +1,15 @@
 # builder image
-FROM golang:alpine3.15 as builder
-RUN mkdir /build
-ADD . /build/
-WORKDIR /build
+FROM golang:1.21
+
+WORKDIR /stg
+
+COPY go.mod go.sum ./
 RUN go mod download
-RUN CGO_ENABLED=0 GOOS=linux go build -a -o main server.go
 
+COPY . .
 
-# generate clean, final image for end users
-FROM alpine:3.15
-COPY --from=builder /build/main .
+RUN  CGO_ENABLED=0 GOOS=linux go build -a -o runbackend.go  ./app/server.go
 
-# executable
-ENTRYPOINT [ "./main" ]
+EXPOSE 50002
+
+CMD ["./runbackend.go"]

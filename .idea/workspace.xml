@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="login works to front page">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="refresh modules">
+      <change afterPath="$PROJECT_DIR$/back/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/back/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/db/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/db/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/player.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/game.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/how-to-play/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/reduced-motion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/sverdle/words.server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,42 +52,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/work/stg_svelte_go_arango/front/src/lib/store&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\back" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\store" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.DEBUGFRONT">
+  <component name="RunManager" selected="Go Build.BACK_">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -126,7 +128,11 @@
       <updated>1693599593774</updated>
       <workItem from="1693599602480" duration="106000" />
       <workItem from="1693599750988" duration="20848000" />
-      <workItem from="1694011513538" duration="7710000" />
+      <workItem from="1694011513538" duration="9258000" />
+      <workItem from="1694706709260" duration="246000" />
+      <workItem from="1694707023185" duration="160000" />
+      <workItem from="1694707198764" duration="6766000" />
+      <workItem from="1694717973869" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -160,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694012264630</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refresh modules">
+      <option name="closed" value="true" />
+      <created>1694566788879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694566788879</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +185,8 @@
     <MESSAGE value="new intellj setup+typescript cleanup+login errors" />
     <MESSAGE value="error fixin" />
     <MESSAGE value="login works to front page" />
-    <option name="LAST_COMMIT_MESSAGE" value="login works to front page" />
+    <MESSAGE value="refresh modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="refresh modules" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -187,13 +202,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte</url>
           <line>49</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte</url>
           <line>47</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>

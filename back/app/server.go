@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/arangodb/go-driver"
 	"github.com/go-chi/chi/middleware"
+	"github.com/joho/godotenv"
 	"io"
 	"log"
 	"net/http"
@@ -24,6 +25,11 @@ import (
 const defaultPort = "50002"
 
 func main() {
+
+	if err := godotenv.Load(); err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = defaultPort
@@ -48,7 +54,7 @@ func main() {
 	ctrl := newController(initdb)
 	srv := handler.NewDefaultServer(resolver.NewSchema(ctrl))
 
-	router.Handle("/", playground.Handler("GraphQL playground", "/graphql"))
+	router.Handle("/graphql/playground", playground.Handler("GraphQL playground", "/graphql"))
 	router.Handle("/graphql", srv)
 
 	log.Printf("connect to http://localhost:%s/ for GraphQL playground", port)
