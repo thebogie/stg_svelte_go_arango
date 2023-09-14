@@ -23,6 +23,7 @@ vendor/
 .env.development
 .env.test
 .env.production
+.env.prod
 
 # Dependency lock files
 yarn.lock
