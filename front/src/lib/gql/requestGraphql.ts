@@ -1,8 +1,8 @@
 import {GraphQLClient} from "graphql-request"
-import {PUBLIC_API_BASE_URL} from '$env/static/public'
 import type {IPlayer, IPlayerLogin, IPlayerPayload} from "$lib/interfaces/player.interface";
 import {gql_loginuser} from "$lib/gql/player.js";
 import type {CustomError} from '$lib/interfaces/error.interface';
+import { variables } from "$lib/utils/constrants";
 
 export const loginUser = async (email: string, password: string): Promise<[object, Array<CustomError>]> => {
 
@@ -17,7 +17,7 @@ export const loginUser = async (email: string, password: string): Promise<[objec
    };
     var errors : CustomError[] = [];
 
-    const graphQLClient = new GraphQLClient(PUBLIC_API_BASE_URL, {
+    const graphQLClient = new GraphQLClient(`${variables.BASE_API_URI}`, {
         credentials: 'include',
         mode: 'cors',
 

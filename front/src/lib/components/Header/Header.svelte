@@ -23,9 +23,10 @@
                 <li class:active={$page.url.pathname === '/accounts/login'}>
                     <a href="/accounts/login">Login</a>
                 </li>
-                <li class:active={$page.url.pathname === '/accounts/register'}>
+               <!--  <li class:active={$page.url.pathname === '/accounts/register'}>
                     <a href="/accounts/register">Register</a>
                 </li>
+                -->
             {:else}
                 <li>
                     Hi, <a href="/accounts/user/{$userData.username}-{$userData.id}"
