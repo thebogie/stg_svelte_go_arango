@@ -2,6 +2,7 @@ version: "3.5"
 services:
   arangodb:
     image: arangodb:latest
+    container_name: stg-arangodb
     restart: always
     ports:
       - 50001:8529
@@ -15,6 +16,7 @@ services:
     #command: arangod --server.authentication=false
 
   backend:
+    container_name: stg-backend
     # Configuration for building the docker image for the service
     build:
       context: ./back # Use an image built from the specified dockerfile in the current directory.
@@ -37,6 +39,7 @@ services:
 
 
   frontend:
+    container_name: stg-frontend
     # Configuration for building the docker image for the service
     build:
       context: ./front # Use an image built from the specified dockerfile in the current directory.
@@ -45,7 +48,7 @@ services:
       - "50003:50003" # Forward the exposed port 8080 on the container to port 8080 on the host machine
     
     environment:
-      DEV: false
+      DEV: "false"
 
     depends_on:
       - backend

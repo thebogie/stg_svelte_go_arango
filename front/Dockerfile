@@ -20,4 +20,5 @@ RUN npm ci --omit dev
 EXPOSE 50003
 
 # Start the application
-CMD ["HOST=127.0.0.1 PORT=50003", "node", "build"]
+ENV PORT 50003
+ENTRYPOINT ["node", "build"]

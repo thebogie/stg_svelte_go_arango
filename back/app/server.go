@@ -41,7 +41,7 @@ func main() {
 	router.Use(middleware.Recoverer)
 
 	cors := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:50003", "http://192.168.86.45:50003", "http://192.168.86.101:50003"},
+		AllowedOrigins:   []string{"https://smacktalkgaming.com", "http://localhost:50003", "http://192.168.86.45:50003", "http://192.168.86.101:50003"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 		ExposedHeaders:   []string{"Link", "Set-Cookie"},
