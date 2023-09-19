@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="setting up frontend for prod">
-      <change afterPath="$PROJECT_DIR$/front/src/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/lib/utils/constrants.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="fixing vite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/back/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +95,7 @@
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.BACK_">
+  <component name="RunManager" selected="npm.FRONT">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -149,7 +141,8 @@
       <workItem from="1694717973869" duration="9992000" />
       <workItem from="1694747125555" duration="1174000" />
       <workItem from="1694748376175" duration="7000" />
-      <workItem from="1694748514675" duration="282000" />
+      <workItem from="1694748514675" duration="3395000" />
+      <workItem from="1695144423521" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -215,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694721019893</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixing vite">
+      <option name="closed" value="true" />
+      <created>1694748915500</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694748915500</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +230,8 @@
     <MESSAGE value="refresh modules" />
     <MESSAGE value="adding env for prod" />
     <MESSAGE value="setting up frontend for prod" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up frontend for prod" />
+    <MESSAGE value="fixing vite" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing vite" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

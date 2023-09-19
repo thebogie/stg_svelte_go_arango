@@ -15,9 +15,9 @@ COPY . .
 
 # Build the Svelte application
 RUN npm run build
-
+RUN npm ci --omit dev
 # Expose the port that the application will run on (change if necessary)
 EXPOSE 50003
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["HOST=127.0.0.1 PORT=50003", "node", "build"]
