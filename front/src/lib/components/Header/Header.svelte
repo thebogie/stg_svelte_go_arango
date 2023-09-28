@@ -2,6 +2,12 @@
     import {page} from '$app/stores';
     import {userData} from '$lib/store/userStore';
     import {logOutUser} from '$lib/gql/requestGraphql';
+    import {playerData} from "$lib/store/playerStore";
+    import type {IPlayer} from "$lib/interfaces/player.interface";
+
+
+ console.log("HEADER: Playerdata?" + JSON.stringify({$playerData}));
+
 </script>
 
 <header>

@@ -9,12 +9,15 @@
     import Header from '$lib/components/Header/Header.svelte';
 
     import '$lib/dist/css/style.min.css';
+    import {playerData} from "$lib/store/playerStore";
+    import type {IPlayer} from "$lib/interfaces/player.interface";
 
     $: loading.setNavigate(!!$navigating);
     $: loading.setLoading(!!$navigating, 'Loading, please wait...');
 
 
     onMount(async () => {
+
 
         /*
         if (browserGet('refreshToken')) {
@@ -31,23 +34,23 @@
 
     afterUpdate(async () => {
 
-    const notifyEl = document.getElementById('notification') as HTMLElement;
-    // const notifyEl = document.getElementsByClassName('notification');
-    if (notifyEl && $notificationData !== '') {
-        setTimeout(() => {
-            notifyEl.classList.add('disappear');
-            notificationData.set('');
-        }, 3000);
-    }
-/*
-    if (browserGet('refreshToken')) {
-        const [response, _] = await getCurrentUser(
-                fetch,
-                `${variables.BASE_API_URI}/token/refresh/`,
-                `${variables.BASE_API_URI}/user/`
-        );
-        userData.update(() => response);
-    }*/
+        const notifyEl = document.getElementById('notification') as HTMLElement;
+        // const notifyEl = document.getElementsByClassName('notification');
+        if (notifyEl && $notificationData !== '') {
+            setTimeout(() => {
+                notifyEl.classList.add('disappear');
+                notificationData.set('');
+            }, 3000);
+        }
+        /*
+            if (browserGet('refreshToken')) {
+                const [response, _] = await getCurrentUser(
+                        fetch,
+                        `${variables.BASE_API_URI}/token/refresh/`,
+                        `${variables.BASE_API_URI}/user/`
+                );
+                userData.update(() => response);
+            }*/
     });
 </script>
 
@@ -71,7 +74,6 @@
 
 <footer in:fly={{ y: -50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
     <p>
-        Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit. Coded by
-        <a href="https://github.com/Sirneij/">John O. Idogun</a>.
+        smacktalkgaming.com 2023
     </p>
 </footer>

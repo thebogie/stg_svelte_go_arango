@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="creating build for node vs vercial">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="fixing prod connections">
+      <change afterPath="$PROJECT_DIR$/front/src/routes/+page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/store/playerStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/store/playerStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/front/package.json" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -71,7 +82,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/work/stg_svelte_go_arango/front&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/stg_svelte_go_arango/front/src/routes&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -82,19 +93,20 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
       <recent name="C:\work\stg_svelte_go_arango\front" />
       <recent name="C:\work\stg_svelte_go_arango\back" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\store" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.FRONT">
+  <component name="RunManager" selected="JavaScript Debug.DEBUGFRONT">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -141,7 +153,10 @@
       <workItem from="1694747125555" duration="1174000" />
       <workItem from="1694748376175" duration="7000" />
       <workItem from="1694748514675" duration="3395000" />
-      <workItem from="1695144423521" duration="5285000" />
+      <workItem from="1695144423521" duration="16074000" />
+      <workItem from="1695652339589" duration="3238000" />
+      <workItem from="1695827963978" duration="1164000" />
+      <workItem from="1695861229411" duration="3378000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -223,11 +238,30 @@
       <option name="project" value="LOCAL" />
       <updated>1695146992595</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixing prod connections">
+      <option name="closed" value="true" />
+      <created>1695151270072</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695151270072</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -239,40 +273,22 @@
     <MESSAGE value="setting up frontend for prod" />
     <MESSAGE value="fixing vite" />
     <MESSAGE value="creating build for node vs vercial" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating build for node vs vercial" />
+    <MESSAGE value="fixing prod connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing prod connections" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts</url>
-          <line>47</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte</url>
-          <line>49</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte</url>
-          <line>47</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/svelte.config.js</url>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
         <watch expression="playerData" language="SvelteHTML" />
         <watch expression="response2" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

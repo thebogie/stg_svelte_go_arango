@@ -5,9 +5,10 @@ import {getCurrentPlayer, getCurrentUser} from '$lib/utils/requestUtils';
 import type { User } from '$lib/interfaces/user.interface';
 import type {PageLoad} from "../../../../.svelte-kit/types/src/routes/about/$types";
 import type {IPlayer} from "$lib/interfaces/player.interface";
-export const load: PageLoad= () => {
-	return getCurrentPlayer();
-}
+//export const load: PageLoad= () => {
+//	return
+	//getCurrentPlayer();
+//}
 /*export const load: PageLoad = async ({ fetch }) => {
 	const [userRes, errs] = await getCurrentUser(
 		fetch,

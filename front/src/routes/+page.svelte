@@ -1,7 +1,7 @@
 <script lang="ts">
     import {playerData} from '$lib/store/playerStore';
-
     import {fly} from 'svelte/transition';
+    console.log("FRONTPAGE Playerdata?" + JSON.stringify($playerData));
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
 
             </picture>
         </div>
-        {#if $playerData.email}
+       {#if $playerData.email}
             <span style="text-transform: capitalize;">{$playerData.email},</span>
         {/if}
 

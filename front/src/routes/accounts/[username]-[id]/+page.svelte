@@ -1,5 +1,10 @@
 <script lang="ts">
 	import { scale } from 'svelte/transition';
+	import {playerData} from '$lib/store/playerStore'
+	$: {
+		console.log("ACCOUNTS: Playerdata?" + JSON.stringify({$playerData}));
+	}
+
 	//import {getCurrentPlayer, UpdateField} from '$lib/utils/requestUtils';
 	import {getCurrentPlayer} from '$lib/utils/requestUtils';
 	//import { nodeBefore } from '$lib/helpers/whitespacesHelper';
@@ -7,9 +12,8 @@
 	import type { User, UserResponse } from '$lib/interfaces/user.interface';
 	import type {IPlayer} from "$lib/interfaces/player.interface";
 	import type {Writable} from "svelte/store";
-	import {playerData} from "$lib/store/playerStore";
-	export let data: any;
-	$: data = $playerData;
+	//export let data: any;
+	//$: data = $playerData;
 	//const url = `${variables.BASE_API_URI}/user/`;
 	let triggerUpdate = async (e: Event) => {
 
@@ -43,9 +47,11 @@
 </script>
 
 <div class="container" transition:scale|local={{ start: 0.7, delay: 500 }}>
-	{#if $data._id}
+
+	<h1>playerData = {JSON.stringify($playerData)}</h1>
+	{#if $playerData._id}
 		<h1>
-			{$data.firstname ? $data.firstname : $data.email} profile
+			{$playerData.firstname ? $playerData.firstname : $playerData.email} profile
 		</h1>
 	{/if}
 
@@ -56,7 +62,7 @@
 				type="text"
 				placeholder="User's full name"
 				name="full_name"
-				value={$data.email}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's full name" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -68,7 +74,7 @@
 				type="text"
 				placeholder="User's username"
 				name="username"
-				value={$data.email}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's username" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -80,7 +86,7 @@
 				placeholder="User's email"
 				type="email"
 				name="email"
-				value={$data.email}
+				value={$playerData.email}
 			/>
 			<button class="save" aria-label="Save user's email" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -92,7 +98,7 @@
 				placeholder="User's bio"
 				type="text"
 				name="bio"
-				value={$data.roles}
+				value={$playerData.roles}
 			/>
 			<button class="save" aria-label="Save user's bio" on:click={(e) => triggerUpdate(e)} />
 		</div>
@@ -104,7 +110,7 @@
 				type="date"
 				name="birth_date"
 				placeholder="User's date of birth"
-				value={$data.rev}
+				value={$playerData.rev}
 			/>
 			<button
 				class="save"

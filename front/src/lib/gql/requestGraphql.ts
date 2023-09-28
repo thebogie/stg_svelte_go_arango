@@ -4,7 +4,7 @@ import {gql_loginuser} from "$lib/gql/player.js";
 import type {CustomError} from '$lib/interfaces/error.interface';
 import { variables } from "$lib/utils/constrants";
 
-export const loginUser = async (email: string, password: string): Promise<[object, Array<CustomError>]> => {
+export const loginUser = async (email: string, password: string): Promise<[object : IPlayerLogin, Array<CustomError>]> => {
 
     var responseplayer : IPlayer = {
         email: email,

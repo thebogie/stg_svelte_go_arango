@@ -27,17 +27,16 @@
             localStorage.removeItem('refreshToken');
         }
 
-        let responseuserdata: IPlayer = {};
+        let responsePlayerData: IPlayer = {accessToken: undefined, email: "", password: ""};
         let response: IPlayerLogin = {
             token: "",
-            userdata: responseuserdata,
+            userdata: responsePlayerData,
         };
         let err: CustomError[] = [];
-        const jsonData = await loginUser(email, password);
         // console.log("jsonData" + JSON.stringify(jsonData));
-        [response, err] = jsonData;
+        [response, err] = await loginUser(email, password);
 
-        console.log("HERE" + JSON.stringify(response));
+        console.log("LOGIN RESPONSE" + JSON.stringify(response));
 
 
         if (err.length > 0) {
@@ -45,10 +44,24 @@
         } else if (response.userdata) {
             if (response.token) {
                 browserSet('refreshToken', response.token);
+                let passThis: IPlayer = {
+                    accessToken: response.token,
+                    password: "",
+                    _key: response.userdata._key,
+                    _id: response.userdata._id,
+                    rev: response.userdata.rev,
+                    firstname: response.userdata.firstname,
+                    email: response.userdata.email
+
+
+                }
+                playerData.set(passThis);
+
             }
             notificationData.update(() => 'Login successful...');
-            playerData.set(response.userdata)
             await goto('/');
+
+
         }
 
 
