@@ -20,6 +20,6 @@
             <span style="text-transform: capitalize;">{$playerData.email},</span>
         {/if}
 
-        to our new<br/>SvelteKit app
+        Smacktalk: 5 years in the making
     </h1>
 </section>
