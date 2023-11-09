@@ -1,79 +1,26 @@
 <script lang="ts">
+	import '../app.postcss';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
-    import {navigating} from '$app/stores';
-    import {loading} from '$lib/store/loadingStore';
-    import {notificationData} from '$lib/store/notificationStore';
-    import {fly} from 'svelte/transition';
-    import {afterUpdate, onMount} from 'svelte';
-
-    import Header from '$lib/components/Header/Header.svelte';
-
-    import '$lib/dist/css/style.min.css';
-    import {playerData} from "$lib/store/playerStore";
-    import type {IPlayer} from "$lib/interfaces/player.interface";
-
-    $: loading.setNavigate(!!$navigating);
-    $: loading.setLoading(!!$navigating, 'Loading, please wait...');
-
-
-    onMount(async () => {
-
-
-        /*
-        if (browserGet('refreshToken')) {
-            const [response, errs] = await getCurrentUser(
-                    fetch,
-                    `${variables.BASE_API_URI}/token/refresh/`,
-                    `${variables.BASE_API_URI}/user/`
-            );
-            if (errs.length <= 0) {
-                userData.set(response);
-            }
-        } */
-    });
-
-    afterUpdate(async () => {
-
-        const notifyEl = document.getElementById('notification') as HTMLElement;
-        // const notifyEl = document.getElementsByClassName('notification');
-        if (notifyEl && $notificationData !== '') {
-            setTimeout(() => {
-                notifyEl.classList.add('disappear');
-                notificationData.set('');
-            }, 3000);
-        }
-        /*
-            if (browserGet('refreshToken')) {
-                const [response, _] = await getCurrentUser(
-                        fetch,
-                        `${variables.BASE_API_URI}/token/refresh/`,
-                        `${variables.BASE_API_URI}/user/`
-                );
-                userData.update(() => response);
-            }*/
-    });
+	// Floating UI for Popups
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<Header/>
+<!-- App Shell -->
+<AppShell>
+	<svelte:fragment slot="header">
+		<!-- App Bar -->
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<strong class="text-xl uppercase">Smacktalk Gaming</strong>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
 
-{#if $notificationData}
-    <p
-            class="notification"
-            id="notification"
-            in:fly={{ x: 200, duration: 500, delay: 500 }}
-            out:fly={{ x: 200, duration: 500 }}
-    >
-        {$notificationData}
-    </p>
-{/if}
-
-<main>
-    <!-- <Loader /> -->
-    <slot/>
-</main>
-
-<footer in:fly={{ y: -50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
-    <p>
-        smacktalkgaming.com 2023
-    </p>
-</footer>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
+	<!-- Page Route Content -->
+	<slot />
+</AppShell>

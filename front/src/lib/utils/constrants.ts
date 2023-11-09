@@ -1,4 +1,4 @@
-import type { Variables } from '$lib/interfaces/variables.interface';
+import type { Variables } from '$lib/interfaces/variables.interface.ts';
 
 const BASE_API_URI: string = import.meta.env.DEV
     ? import.meta.env.VITE_BASE_API_URI_DEV
