@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="server api call setup" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="docker cleaning 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/front/DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +113,7 @@
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\login" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.FRONT">
+  <component name="RunManager" selected="Docker.front/DockerFile">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -131,11 +136,25 @@
     <configuration name="DEBUGFRONT" type="JavascriptDebugType" focusToolWindowBeforeRun="true" uri="http://localhost:50003" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
+    <configuration name="front/DockerFile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="front/DockerFile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.front/DockerFile" />
       <item itemvalue="Go Build.BACK_" />
       <item itemvalue="JavaScript Debug.DEBUGFRONT" />
       <item itemvalue="npm.FRONT" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.front/DockerFile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,7 +187,7 @@
       <workItem from="1698439651381" duration="2393000" />
       <workItem from="1699409852377" duration="87000" />
       <workItem from="1699409982910" duration="5297000" />
-      <workItem from="1699452105229" duration="5577000" />
+      <workItem from="1699452105229" duration="8017000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -290,7 +309,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699494494466</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="docker cleaning">
+      <option name="closed" value="true" />
+      <created>1699494710812</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699494710812</updated>
+    </task>
+    <task id="LOCAL-00017" summary="docker cleaning">
+      <option name="closed" value="true" />
+      <created>1699494722943</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699494722943</updated>
+    </task>
+    <task id="LOCAL-00018" summary="docker cleaning 2">
+      <option name="closed" value="true" />
+      <created>1699494869051</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699494869051</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +364,9 @@
     <MESSAGE value="store work" />
     <MESSAGE value="frontpage update" />
     <MESSAGE value="server api call setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="server api call setup" />
+    <MESSAGE value="docker cleaning" />
+    <MESSAGE value="docker cleaning 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker cleaning 2" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

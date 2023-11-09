@@ -22,3 +22,5 @@ EXPOSE 50003
 # Start the application
 ENV PORT 50003
 ENTRYPOINT ["node", "build"]
+
+#CMD ["tail", "-f", "/dev/null"]
