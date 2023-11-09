@@ -4,80 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="frontpage update">
-      <change afterPath="$PROJECT_DIR$/front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/postcss.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/app.postcss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/svelte.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/index.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/lib/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/lib/services/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/types/player.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/types/user.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/static/fonts/Quicksand.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/tailwind.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/tsconfig.node.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.npmrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/playwright.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/global.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/components/Header/Header.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/components/Loader/Loader.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/dist/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/dist/css/style.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/formats/formatString.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/player.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/gql/requestGraphql.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/helpers/buttonText.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/helpers/whitespacesHelper.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/svelte-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/svelte-welcome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/images/svelte-welcome.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/loadingStore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/notificationStore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/playerStore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/store/userStore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/constrants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/constrants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/requestUtils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/about/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/[username]-[id]/+page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/accounts/login/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_about.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_globals.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/sass/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/static/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tests/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="server api call setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +168,7 @@
       <workItem from="1698439651381" duration="2393000" />
       <workItem from="1699409852377" duration="87000" />
       <workItem from="1699409982910" duration="5297000" />
-      <workItem from="1699452105229" duration="5221000" />
+      <workItem from="1699452105229" duration="5577000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -347,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696369102847</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="server api call setup">
+      <option name="closed" value="true" />
+      <created>1699494469147</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699494469147</updated>
+    </task>
+    <task id="LOCAL-00015" summary="server api call setup">
+      <option name="closed" value="true" />
+      <created>1699494494466</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699494494466</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +320,8 @@
     <MESSAGE value="fixing prod connections" />
     <MESSAGE value="store work" />
     <MESSAGE value="frontpage update" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontpage update" />
+    <MESSAGE value="server api call setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="server api call setup" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -385,28 +329,28 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
           <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
           <line>28</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/services/user.service.ts</url>
           <line>23</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/services/+server.ts</url>
           <line>18</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/services/user.service.ts</url>
           <line>27</line>
           <properties lambdaOrdinal="-1" />
