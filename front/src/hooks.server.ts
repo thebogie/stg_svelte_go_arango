@@ -6,6 +6,7 @@ import type { Handle } from '@sveltejs/kit';
 
 const handle: Handle = async ({ event, resolve }) => {
     const authCookie = event.cookies.get('AuthorizationToken');
+    console.log("cookie token" +event.cookies.get('token'));
 
     if (authCookie) {
         // Remove Bearer prefix

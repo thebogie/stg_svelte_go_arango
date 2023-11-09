@@ -1,10 +1,8 @@
-
-
 /** @type {import('./$types').Actions} */
 
-import type { PageServerLoad, Actions } from './$types';
-import { redirect, fail } from '@sveltejs/kit';
-import { loginUser } from '$lib/services/user.service';
+import type {PageServerLoad, Actions} from './$types';
+import {redirect, fail} from '@sveltejs/kit';
+import {loginUser} from '$lib/services/user.service';
 
 export const load: PageServerLoad = (event) => {
     const user = event.locals.user;
@@ -24,15 +22,18 @@ export const actions: Actions = {
             });
         }
 
-        const { email, password } = formData as { email: string; password: string };
+        const {email, password} = formData as { email: string; password: string };
 
-        const { error, token } = await loginUser(email, password);
-
-        if (error) {
+        try {
+            const token = await loginUser(email, password);
+        } catch (err: any) {
+            console.log("login error: " + err.message);
             return fail(401, {
-                error
+                error: err.message
             });
         }
+
+
         /*
                 // Set the cookie
                 event.cookies.set('AuthorizationToken', `Bearer ${token}`, {

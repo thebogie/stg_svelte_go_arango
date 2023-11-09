@@ -1,47 +1,46 @@
 import {gql, GraphQLClient} from "graphql-request"
 import type {CustomError} from '$lib/interfaces/error.interface';
-import { variables } from "$lib/utils/constrants";
+import {envvars} from "$lib/utils/constrants";
 
 /** @type {import('./$types').RequestHandler} */
-export async function graphql(query: gql ) {
+export async function graphql(query: string, variables: any) {
+    interface keyable {
+        [key: string]: any
+    }
 
-    var errors : CustomError[] = [];
 
-    const graphQLClient = new GraphQLClient(`${variables.BASE_API_URI}`, {
+    let result = {};
+
+    const graphQLClient = new GraphQLClient(`${envvars.BASE_API_URI}`, {
         credentials: 'include',
         mode: 'cors',
 
-    })
-
-    const input =
-        {
-            username: "mitch@gmail.com",
-            password: "letmein",
-        }
+    });
 
     try {
 
-        interface keyable {
-            [key: string]: any
-        }
+        result = await graphQLClient.request(query, variables) as object;
 
-        const res : keyable = await graphQLClient.request(query, {input}) as object;
-        // Handle the successful response here
-
-        //response.userdata = res.loginUser.userdata
-        //response.token = res.loginUser.token
+        console.log("RES" + JSON.stringify(result));
 
 
-    } catch (err : any) {
+    } catch (err: any) {
         // Handle the error here
 
         if (err.response.status == 403) {
-            console.error("GraphQL request error:", err);
-            errors.push({error: "fish" + " was unable to login. Forbidden. Wrong password? Isnt registered?"});
+
+            let username = "unknown";
+            if (variables?.input?.username) {
+                username = variables.input.username;
+            }
+            throw new Error("ERR:" + username + " was unable to login. Forbidden. Wrong password? Isnt registered?");
+        } else {
+
+            console.error("General GraphQL request error:", err);
         }
 
 
     }
 
-    return [{}, errors];
+    return result;
 }
