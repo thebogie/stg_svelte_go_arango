@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="docker cleaning 2">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="front docker file fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/front/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +185,7 @@
       <workItem from="1698439651381" duration="2393000" />
       <workItem from="1699409852377" duration="87000" />
       <workItem from="1699409982910" duration="5297000" />
-      <workItem from="1699452105229" duration="8017000" />
+      <workItem from="1699452105229" duration="9137000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -333,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699494869051</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="front docker file fix">
+      <option name="closed" value="true" />
+      <created>1699497223087</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699497223087</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +372,8 @@
     <MESSAGE value="server api call setup" />
     <MESSAGE value="docker cleaning" />
     <MESSAGE value="docker cleaning 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker cleaning 2" />
+    <MESSAGE value="front docker file fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="front docker file fix" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
