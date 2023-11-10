@@ -26,6 +26,16 @@ export const actions: Actions = {
 
         try {
             const token = await loginUser(email, password);
+
+            // Set the cookie
+            event.cookies.set('AuthorizationToken', `Bearer ${token}`, {
+                httpOnly: true,
+                path: '/',
+                secure: true,
+                sameSite: 'strict',
+                maxAge: 60 * 60 * 24 // 1 day
+            });
+
         } catch (err: any) {
             console.log("login error: " + err.message);
             return fail(401, {
@@ -34,16 +44,8 @@ export const actions: Actions = {
         }
 
 
-        /*
-                // Set the cookie
-                event.cookies.set('AuthorizationToken', `Bearer ${token}`, {
-                    httpOnly: true,
-                    path: '/',
-                    secure: true,
-                    sameSite: 'strict',
-                    maxAge: 60 * 60 * 24 // 1 day
-                });*/
 
-        throw redirect(302, '/guarded');
+
+        throw redirect(302, '/profile');
     }
 };

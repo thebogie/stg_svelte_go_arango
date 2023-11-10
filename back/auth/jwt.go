@@ -1,8 +1,8 @@
 package auth
 
 import (
+	"golang.org/x/crypto/bcrypt"
 	"log"
-	"net/http"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
@@ -13,16 +13,12 @@ var (
 	SecretKey = []byte("ThisIsASecretKeyThatOnlyIKnowAndWontTellAnybody")
 )
 
-var cookieName = "auth-cookie"
-
-type CookieAccess struct {
-	HttpReader *http.Request
-	Writer     http.ResponseWriter
-	Id         string
+type JwtHeader struct {
+	Token string
 }
 
 // GenerateToken generates a jwt token and assign a username to it's claims and return it
-func (c *CookieAccess) GenerateToken(username string) (string, error) {
+func (c *JwtHeader) GenerateToken(username string) (string, error) {
 	token := jwt.New(jwt.SigningMethodHS256)
 	/* Create a map to store our claims */
 	claims := token.Claims.(jwt.MapClaims)
@@ -37,16 +33,10 @@ func (c *CookieAccess) GenerateToken(username string) (string, error) {
 	return tokenString, nil
 }
 
-func (c *CookieAccess) GetAuthCookie() (*http.Cookie, error) {
-	return c.HttpReader.Cookie(cookieName)
-}
-
-func (c *CookieAccess) CheckAuthCookieForUserid() string {
+func (c *JwtHeader) CheckToken(checktoken string) string {
 	var email = "INVALID"
-	autocookie, _ := c.HttpReader.Cookie(cookieName)
-	log.Printf(autocookie.Name)
 
-	token, _ := jwt.Parse(autocookie.Value, func(token *jwt.Token) (interface{}, error) {
+	token, _ := jwt.Parse(checktoken, func(token *jwt.Token) (interface{}, error) {
 		return SecretKey, nil
 	})
 	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
@@ -56,20 +46,19 @@ func (c *CookieAccess) CheckAuthCookieForUserid() string {
 	return email
 }
 
-func (c *CookieAccess) GenerateAuthCookie(tokenString string) {
+func (c *JwtHeader) HashPassword(password string) (string, error) {
+	bytes, err := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
+	return string(bytes), err
+}
 
-	//passed save cookie
-	cookie := &http.Cookie{
-		Name:     "token",
-		Value:    tokenString,
-		Expires:  time.Now().Add(time.Hour * 24),
-		Secure:   true,
-		SameSite: http.SameSiteNoneMode,
-		HttpOnly: true,
-		Path:     "/",
-	}
+// CheckPassword hash compares raw password with it's hashed values
+func CheckPasswordHash(password, hash string) bool {
+	//fish, _ := HashPassword(password)
+	//log.Printf(fish)
+	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(password))
+	return err == nil
+}
 
-	// Set the cookie in the response
-	http.SetCookie(c.Writer, cookie)
-
+func (c *JwtHeader) Authenticate(input, found string) bool {
+	return CheckPasswordHash(input, found)
 }

@@ -3,7 +3,6 @@ package usecase
 import (
 	"back/auth"
 	"back/graph/model"
-	"back/helper"
 	"back/pkg/adapter/repository"
 	"context"
 )
@@ -43,17 +42,12 @@ func (uu userUsecase) LoginUser(ctx context.Context, input model.Login) (*model.
 		Userdata: founduser,
 	}
 
-	if helper.Authenticate(input.Password, founduser.Password) {
-		// legit create jwt cookie
-		cookieaccess := auth.CookieAccess{
-			HttpReader: ctx.Value("cookiemaker").(*auth.CookieAccess).HttpReader,
-			Writer:     ctx.Value("cookiemaker").(*auth.CookieAccess).Writer,
-		}
+	jwtheader := ctx.Value("jwtheader").(*auth.JwtHeader)
+	if jwtheader.Authenticate(input.Password, founduser.Password) {
 
-		tokenString, _ := cookieaccess.GenerateToken(founduser.Email)
+		// legit create jwt token
 
-		//TODO: what if cookie fails?
-		cookieaccess.GenerateAuthCookie(tokenString)
+		tokenString, _ := jwtheader.GenerateToken(founduser.Email)
 		loggedindata.Token = tokenString
 
 	}

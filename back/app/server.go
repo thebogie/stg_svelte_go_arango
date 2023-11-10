@@ -37,9 +37,8 @@ func main() {
 	initdb := db.InitDB()
 
 	router := chi.NewRouter()
-	router.Use(Logger)
-	router.Use(middleware.Recoverer)
 
+	router.Use(Logger)
 	cors := cors.New(cors.Options{
 		AllowedOrigins:   []string{"https://smacktalkgaming.com", "http://localhost:50003", "http://192.168.86.45:50003", "http://192.168.86.101:50003"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -50,6 +49,7 @@ func main() {
 	})
 	router.Use(cors.Handler)
 	router.Use(auth.Middleware())
+	router.Use(middleware.Recoverer)
 
 	ctrl := newController(initdb)
 	srv := handler.NewDefaultServer(resolver.NewSchema(ctrl))
