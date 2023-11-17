@@ -2,28 +2,29 @@ import { gql, GraphQLClient } from 'graphql-request';
 import { envvars } from '$lib/utils/constrants';
 import type { IPlayer } from '$lib/interfaces/player.interface';
 
-export async function graphql(query: string, variables: any) {
+export async function graphql(token: string, query: string, variables: any) {
 	interface keyable {
 		[key: string]: any;
 	}
 
-	let result: IPlayer = {};
-
+	let results: any = {};
 	const graphQLClient = new GraphQLClient(`${envvars.BASE_API_URI}`, {
 		credentials: 'include',
 		mode: 'cors',
 		headers: {
-			//Authorization: `Bearer fish`
+			Authorization: token
 		}
 	});
 
 	try {
-		let results = (await graphQLClient.request(query, variables)) as object;
-		result.accessToken = results.loginUser.token;
-		result.email = results.loginUser.userdata.email;
-		result._key = results.loginUser.userdata._key;
+		if (variables == "") {
+			results = (await graphQLClient.request(query)) as object;
+		} else {
+			results = (await graphQLClient.request(query, variables)) as object;
+		}
 
-		console.log('GRAPHQL:' + JSON.stringify(result));
+
+		console.log('GRAPHQL:' + JSON.stringify(results));
 	} catch (err: any) {
 		// Handle the error here
 
@@ -40,5 +41,5 @@ export async function graphql(query: string, variables: any) {
 		}
 	}
 
-	return result;
+	return results;
 }

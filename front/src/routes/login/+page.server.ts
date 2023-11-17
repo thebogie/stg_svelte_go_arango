@@ -3,7 +3,7 @@
 import type { PageServerLoad, Actions } from './$types';
 import { redirect, fail } from '@sveltejs/kit';
 import { loginPlayer } from '$lib/services/player.service';
-import type { IPlayer, IPlayerLogin, IPlayerPayload } from '$lib/interfaces/player.interface';
+import type { IPlayer } from '$lib/interfaces/player.interface';
 
 export const load: PageServerLoad = (event) => {
 	const user = event.locals.player;
@@ -34,7 +34,7 @@ export const actions: Actions = {
 			loggedinplayer = await loginPlayer(email, password);
 
 			// Set the cookie
-			event.cookies.set('AuthorizationToken', `Bearer ${loggedinplayer.accessToken}`, {
+			event.cookies.set('Authorization', `${loggedinplayer.accessToken}`, {
 				httpOnly: true,
 				path: '/',
 				secure: true,

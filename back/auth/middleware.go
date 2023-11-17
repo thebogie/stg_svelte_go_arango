@@ -44,7 +44,9 @@ func Middleware() func(http.Handler) http.Handler {
 					next.ServeHTTP(w, r)
 					return
 				} else {
-
+					//PASSTHROUGH
+					//next.ServeHTTP(w, r)
+					//return
 					http.Error(w, "Login or Authorization header is required", http.StatusUnauthorized)
 					return
 				}

@@ -1,0 +1,11 @@
+import { graphql } from '$lib/services/+server';
+import { gql } from 'graphql-request';
+import type {IPlayer} from '$lib/interfaces/player.interface';
+
+
+const getContestByPlayer = async (token: string) => {
+	// Check if user exists
+	console.log('getContestByPlayer Service');
+};
+//export { createUser, loginUser };
+export { getContestByPlayer };

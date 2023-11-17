@@ -1,13 +1,13 @@
 import type { Handle } from '@sveltejs/kit';
 
 const handle: Handle = async ({ event, resolve }) => {
-	const authCookie = event.cookies.get('AuthorizationToken');
+	const authCookie = event.cookies.get('Authorization');
 	console.log('Handling Event' + JSON.stringify(event));
 	const loggedinplayer = event.cookies.get('loggedinplayer');
 
 
 	if (loggedinplayer) {
-		// Remove Bearer prefix
+		// Remove prefix
 		//const token = authCookie.split(' ')[1];
 
 		event.locals.player = loggedinplayer;
