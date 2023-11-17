@@ -23,29 +23,32 @@ func Middleware() func(http.Handler) http.Handler {
 
 			jwtheader := JwtHeader{}
 
-			// Peek at the request body without consuming it entirely
-			peekBody, err := io.ReadAll(io.LimitReader(r.Body, 1024))
-			if err != nil {
-				return
-			}
-
-			// Restore the original request body after peeking
-			r.Body = io.NopCloser(io.MultiReader(bytes.NewReader(peekBody), r.Body))
-
-			// Check if this a login request. send through
-			if strings.Contains(string(peekBody), "LoginUser") {
-				ctx := context.WithValue(r.Context(), "jwtheader", &jwtheader)
-				// and call the next with our new context
-				r = r.WithContext(ctx)
-				next.ServeHTTP(w, r)
-				return
-			}
-
 			// Check if the authorization header is present and valid.
 			auth := r.Header.Get("Authorization")
 			if auth == "" {
-				http.Error(w, "Login or Authorization header is required", http.StatusUnauthorized)
-				return
+
+				// Peek at the request body without consuming it entirely
+				peekBody, err := io.ReadAll(io.LimitReader(r.Body, 1024))
+				if err != nil {
+					return
+				}
+
+				// Restore the original request body after peeking
+				r.Body = io.NopCloser(io.MultiReader(bytes.NewReader(peekBody), r.Body))
+
+				// Check if this a login request. send through
+				if strings.Contains(string(peekBody), "LoginUser") {
+					ctx := context.WithValue(r.Context(), "jwtheader", &jwtheader)
+					// and call the next with our new context
+					r = r.WithContext(ctx)
+					next.ServeHTTP(w, r)
+					return
+				} else {
+
+					http.Error(w, "Login or Authorization header is required", http.StatusUnauthorized)
+					return
+				}
+
 			}
 
 			//check auth header to ensure allowed to make calls

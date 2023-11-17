@@ -4,19 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="add error through graphql -&gt; service call -&gt; front login page.">
-      <change afterPath="$PROJECT_DIR$/back/auth/jwtCookie" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/types/global.d.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="back change: using header authentication vs cookie">
+      <change afterPath="$PROJECT_DIR$/front/src/lib/stores/use-shared-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/stores/userStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/login/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/auth/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/auth/jwt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/auth/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/auth/middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/helper/helper.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/app.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/types/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/global.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/types/player.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/types/user.d.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,56 +81,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.last.introduce.type": "LET",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/back/auth",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/stg_svelte_go_arango/front/src/routes/profile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\work\stg_svelte_go_arango\back\auth" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\login" />
+      <recent name="C:\work\stg_svelte_go_arango\back\auth" />
       <recent name="C:\work\stg_svelte_go_arango\config" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
-      <recent name="C:\work\stg_svelte_go_arango\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\interfaces" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\services" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\login" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.BACK_">
+  <component name="RunManager" selected="npm.FRONT">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -183,7 +191,11 @@
       <workItem from="1698439651381" duration="2393000" />
       <workItem from="1699409852377" duration="87000" />
       <workItem from="1699409982910" duration="5297000" />
-      <workItem from="1699452105229" duration="30491000" />
+      <workItem from="1699452105229" duration="30997000" />
+      <workItem from="1699986126203" duration="259000" />
+      <workItem from="1699987120886" duration="27000" />
+      <workItem from="1700051249798" duration="37559000" />
+      <workItem from="1700194074499" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -353,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699565321615</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="back change: using header authentication vs cookie">
+      <option name="closed" value="true" />
+      <created>1699653536470</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699653536470</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +409,8 @@
     <MESSAGE value="front docker file fix" />
     <MESSAGE value="front docker latest node" />
     <MESSAGE value="add error through graphql -&gt; service call -&gt; front login page." />
-    <option name="LAST_COMMIT_MESSAGE" value="add error through graphql -&gt; service call -&gt; front login page." />
+    <MESSAGE value="back change: using header authentication vs cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="back change: using header authentication vs cookie" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -399,31 +420,37 @@
       <breakpoints>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
-          <line>7</line>
+          <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/services/+server.ts</url>
-          <line>18</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/services/user.service.ts</url>
-          <line>38</line>
-          <properties lambdaOrdinal="-1" />
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>39</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/+server.ts</url>
+          <line>29</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
-          <line>30</line>
+          <line>36</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/auth/middleware.go</url>
-          <line>44</line>
-          <option name="timeStamp" value="28" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/user.go</url>
@@ -436,16 +463,11 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/auth/middleware.go</url>
-          <line>23</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
           <line>44</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+        <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
           <line>37</line>
           <option name="timeStamp" value="36" />

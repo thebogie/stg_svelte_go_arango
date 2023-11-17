@@ -1,7 +1,9 @@
 <script lang="ts">
-    import type { ActionData } from './$types';
-    import { enhance } from '$app/forms';
+    import type {ActionData} from './$types';
+    import {enhance} from '$app/forms';
 
+
+    console.log("login page.svelte");
     export let form: ActionData;
 </script>
 
@@ -15,12 +17,12 @@
     <form method="post" use:enhance>
         <div class="group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input id="email" name="email" required type="email"/>
         </div>
 
         <div class="group">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required />
+            <input id="password" name="password" required type="password"/>
         </div>
 
         <div class="submit-container">

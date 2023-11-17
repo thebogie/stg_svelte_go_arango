@@ -1,20 +1,23 @@
 import type { Handle } from '@sveltejs/kit';
-//import { JWT_ACCESS_SECRET } from '$env/static/private';
-//import jwt from 'jsonwebtoken';
-
-//import { db } from '$lib/db';
 
 const handle: Handle = async ({ event, resolve }) => {
-    const authCookie = event.cookies.get('AuthorizationToken');
-    console.log("cookie token" +event.cookies.get('token'));
+	const authCookie = event.cookies.get('AuthorizationToken');
+	console.log('Handling Event' + JSON.stringify(event));
+	const loggedinplayer = event.cookies.get('loggedinplayer');
 
-    if (authCookie) {
-        // Remove Bearer prefix
-        const token = authCookie.split(' ')[1];
 
-        try {
+	if (loggedinplayer) {
+		// Remove Bearer prefix
+		//const token = authCookie.split(' ')[1];
 
-            /*
+		event.locals.player = loggedinplayer;
+
+
+
+		try {
+
+
+			/*
             const jwtUser = jwt.verify(token, JWT_ACCESS_SECRET);
             if (typeof jwtUser === 'string') {
                 throw new Error('Something went wrong');
@@ -35,16 +38,16 @@ const handle: Handle = async ({ event, resolve }) => {
                 email: user.email
             };
 
-            event.locals.user = sessionUser;
+            event.locals.player = sessionUser;
 
 
              */
-        } catch (error) {
-            console.error(error);
-        }
-    }
+		} catch (error) {
+			console.error(error);
+		}
+	}
 
-    return await resolve(event);
+	return await resolve(event);
 };
 
-export { handle };
+export {handle};
