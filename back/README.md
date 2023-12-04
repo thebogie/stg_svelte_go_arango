@@ -1,3 +1,7 @@
+
+go mod tidy; go run github.com/99designs/gqlgen generate .
+
+
 # GoTodos: GraphQL API with JWT Authentication & Clean Code Architecture
 
 Welcome to GoTodos, a powerful GraphQL API for efficient task management, featuring JWT authentication and a clean code architecture in Golang.

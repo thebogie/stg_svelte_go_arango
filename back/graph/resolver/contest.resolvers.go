@@ -7,9 +7,20 @@ package resolver
 import (
 	"back/graph/model"
 	"context"
+	"fmt"
 )
 
 // Todos is the resolver for the todos field.
 func (r *queryResolver) Contests(ctx context.Context) ([]*model.Contest, error) {
 	return r.Contest.List(ctx)
+}
+
+// GetContestsPlayerTotalResults is the resolver for the GetContestsPlayerTotalResults field.
+func (r *queryResolver) GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error) {
+
+	fmt.Println("This is from contest resolver")
+	var test, err = r.Contest.GetContestsPlayerTotalResults(ctx, player)
+
+	fmt.Println("This is from contest rescolver return %+v\n", test)
+	return test, err
 }

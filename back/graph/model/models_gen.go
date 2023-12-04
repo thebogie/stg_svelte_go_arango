@@ -48,23 +48,12 @@ type NewUser struct {
 }
 
 type Outcome struct {
-	Key         string   `json:"_key"`
-	ID          string   `json:"_id"`
-	Rev         string   `json:"rev"`
-	Start       string   `json:"start"`
-	Startoffset string   `json:"startoffset"`
-	Stop        string   `json:"stop"`
-	Stopoffset  string   `json:"stopoffset"`
-	Results     []*Place `json:"results"`
-}
-
-type Place struct {
-	Key      string `json:"_key"`
-	ID       string `json:"_id"`
-	Rev      string `json:"rev"`
-	Playerid string `json:"playerid"`
-	Place    int    `json:"place"`
-	Result   string `json:"result"`
+	Key    string `json:"_key"`
+	ID     string `json:"_id"`
+	Rev    string `json:"rev"`
+	Player string `json:"player"`
+	Place  int    `json:"place"`
+	Result string `json:"result"`
 }
 
 type RefreshTokenInput struct {

@@ -2,19 +2,7 @@ type Outcome {
     _key:String!
     _id:String!
     rev:String!
-    start:String!
-    startoffset:String!
-    stop:String!
-    stopoffset: String!
-    results: [Place]!
-}
-
-type Place {
-    _key:String!
-    _id:String!
-    rev:String!
-    playerid: String!
+    player:String!
     place: Int!
     result: String!
 }
-

@@ -39,10 +39,26 @@ games { name }
 }
 {}
 
+####
+GRAPHQL http://localhost:50002/graphql
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMTcyMDI0Mn0.SeaJc-ypCclgRNtsJxz1EjIeV_qM6-fBOdC6wIgz6Cg
+
+query  GetContestsPlayerTotalResults($player: String! ) {
+GetContestsPlayerTotalResults(player : $player)
+ { _key
+_id
+outcomes {
+player place result
+
+}
 
 
+}
 
 
+}
+
+{"player": "player/2023110913124828447180600"}
 
 
 

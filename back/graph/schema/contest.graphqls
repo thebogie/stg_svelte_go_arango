@@ -13,6 +13,7 @@ type Contest {
 
 extend type Query {
     contests: [Contest!]!
+    GetContestsPlayerTotalResults(player: String!): [Contest!]!
 }
 
 

@@ -1,0 +1,7 @@
+
+		--count of results inside of AQL
+		"FOR x IN resulted_in " +
+		"FILTER x._to == '" + player + "' " +
+		"COLLECT player = x._to, result = x.result " +
+		"WITH COUNT INTO counter " +
+		"RETURN {result: result, resulted_in: counter} "

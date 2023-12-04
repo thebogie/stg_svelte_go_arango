@@ -80,29 +80,19 @@ type ComplexityRoot struct {
 	}
 
 	Outcome struct {
-		ID          func(childComplexity int) int
-		Key         func(childComplexity int) int
-		Results     func(childComplexity int) int
-		Rev         func(childComplexity int) int
-		Start       func(childComplexity int) int
-		Startoffset func(childComplexity int) int
-		Stop        func(childComplexity int) int
-		Stopoffset  func(childComplexity int) int
-	}
-
-	Place struct {
-		ID       func(childComplexity int) int
-		Key      func(childComplexity int) int
-		Place    func(childComplexity int) int
-		Playerid func(childComplexity int) int
-		Result   func(childComplexity int) int
-		Rev      func(childComplexity int) int
+		ID     func(childComplexity int) int
+		Key    func(childComplexity int) int
+		Place  func(childComplexity int) int
+		Player func(childComplexity int) int
+		Result func(childComplexity int) int
+		Rev    func(childComplexity int) int
 	}
 
 	Query struct {
-		Contests func(childComplexity int) int
-		Games    func(childComplexity int) int
-		Todos    func(childComplexity int) int
+		Contests                      func(childComplexity int) int
+		Games                         func(childComplexity int) int
+		GetContestsPlayerTotalResults func(childComplexity int, player string) int
+		Todos                         func(childComplexity int) int
 	}
 
 	Todo struct {
@@ -150,6 +140,7 @@ type MutationResolver interface {
 type QueryResolver interface {
 	Todos(ctx context.Context) ([]*model.Todo, error)
 	Contests(ctx context.Context) ([]*model.Contest, error)
+	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
 	Games(ctx context.Context) ([]*model.Game, error)
 }
 
@@ -378,12 +369,26 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 
 		return e.complexity.Outcome.Key(childComplexity), true
 
-	case "Outcome.results":
-		if e.complexity.Outcome.Results == nil {
+	case "Outcome.place":
+		if e.complexity.Outcome.Place == nil {
 			break
 		}
 
-		return e.complexity.Outcome.Results(childComplexity), true
+		return e.complexity.Outcome.Place(childComplexity), true
+
+	case "Outcome.player":
+		if e.complexity.Outcome.Player == nil {
+			break
+		}
+
+		return e.complexity.Outcome.Player(childComplexity), true
+
+	case "Outcome.result":
+		if e.complexity.Outcome.Result == nil {
+			break
+		}
+
+		return e.complexity.Outcome.Result(childComplexity), true
 
 	case "Outcome.rev":
 		if e.complexity.Outcome.Rev == nil {
@@ -391,76 +396,6 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Outcome.Rev(childComplexity), true
-
-	case "Outcome.start":
-		if e.complexity.Outcome.Start == nil {
-			break
-		}
-
-		return e.complexity.Outcome.Start(childComplexity), true
-
-	case "Outcome.startoffset":
-		if e.complexity.Outcome.Startoffset == nil {
-			break
-		}
-
-		return e.complexity.Outcome.Startoffset(childComplexity), true
-
-	case "Outcome.stop":
-		if e.complexity.Outcome.Stop == nil {
-			break
-		}
-
-		return e.complexity.Outcome.Stop(childComplexity), true
-
-	case "Outcome.stopoffset":
-		if e.complexity.Outcome.Stopoffset == nil {
-			break
-		}
-
-		return e.complexity.Outcome.Stopoffset(childComplexity), true
-
-	case "Place._id":
-		if e.complexity.Place.ID == nil {
-			break
-		}
-
-		return e.complexity.Place.ID(childComplexity), true
-
-	case "Place._key":
-		if e.complexity.Place.Key == nil {
-			break
-		}
-
-		return e.complexity.Place.Key(childComplexity), true
-
-	case "Place.place":
-		if e.complexity.Place.Place == nil {
-			break
-		}
-
-		return e.complexity.Place.Place(childComplexity), true
-
-	case "Place.playerid":
-		if e.complexity.Place.Playerid == nil {
-			break
-		}
-
-		return e.complexity.Place.Playerid(childComplexity), true
-
-	case "Place.result":
-		if e.complexity.Place.Result == nil {
-			break
-		}
-
-		return e.complexity.Place.Result(childComplexity), true
-
-	case "Place.rev":
-		if e.complexity.Place.Rev == nil {
-			break
-		}
-
-		return e.complexity.Place.Rev(childComplexity), true
 
 	case "Query.contests":
 		if e.complexity.Query.Contests == nil {
@@ -475,6 +410,18 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Query.Games(childComplexity), true
+
+	case "Query.GetContestsPlayerTotalResults":
+		if e.complexity.Query.GetContestsPlayerTotalResults == nil {
+			break
+		}
+
+		args, err := ec.field_Query_GetContestsPlayerTotalResults_args(context.TODO(), rawArgs)
+		if err != nil {
+			return 0, false
+		}
+
+		return e.complexity.Query.GetContestsPlayerTotalResults(childComplexity, args["player"].(string)), true
 
 	case "Query.todos":
 		if e.complexity.Query.Todos == nil {
@@ -748,6 +695,7 @@ var sources = []*ast.Source{
 
 extend type Query {
     contests: [Contest!]!
+    GetContestsPlayerTotalResults(player: String!): [Contest!]!
 }
 
 
@@ -769,22 +717,10 @@ extend type Query {
     _key:String!
     _id:String!
     rev:String!
-    start:String!
-    startoffset:String!
-    stop:String!
-    stopoffset: String!
-    results: [Place]!
-}
-
-type Place {
-    _key:String!
-    _id:String!
-    rev:String!
-    playerid: String!
+    player:String!
     place: Int!
     result: String!
 }
-
 `, BuiltIn: false},
 	{Name: "../schema/todo.graphqls", Input: `type Todo {
   id: ID!
@@ -976,6 +912,21 @@ func (ec *executionContext) field_Mutation_refreshToken_args(ctx context.Context
 		}
 	}
 	args["input"] = arg0
+	return args, nil
+}
+
+func (ec *executionContext) field_Query_GetContestsPlayerTotalResults_args(ctx context.Context, rawArgs map[string]interface{}) (map[string]interface{}, error) {
+	var err error
+	args := map[string]interface{}{}
+	var arg0 string
+	if tmp, ok := rawArgs["player"]; ok {
+		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("player"))
+		arg0, err = ec.unmarshalNString2string(ctx, tmp)
+		if err != nil {
+			return nil, err
+		}
+	}
+	args["player"] = arg0
 	return args, nil
 }
 
@@ -1385,16 +1336,12 @@ func (ec *executionContext) fieldContext_Contest_outcomes(ctx context.Context, f
 				return ec.fieldContext_Outcome__id(ctx, field)
 			case "rev":
 				return ec.fieldContext_Outcome_rev(ctx, field)
-			case "start":
-				return ec.fieldContext_Outcome_start(ctx, field)
-			case "startoffset":
-				return ec.fieldContext_Outcome_startoffset(ctx, field)
-			case "stop":
-				return ec.fieldContext_Outcome_stop(ctx, field)
-			case "stopoffset":
-				return ec.fieldContext_Outcome_stopoffset(ctx, field)
-			case "results":
-				return ec.fieldContext_Outcome_results(ctx, field)
+			case "player":
+				return ec.fieldContext_Outcome_player(ctx, field)
+			case "place":
+				return ec.fieldContext_Outcome_place(ctx, field)
+			case "result":
+				return ec.fieldContext_Outcome_result(ctx, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Outcome", field.Name)
 		},
@@ -2348,8 +2295,8 @@ func (ec *executionContext) fieldContext_Outcome_rev(ctx context.Context, field 
 	return fc, nil
 }
 
-func (ec *executionContext) _Outcome_start(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Outcome_start(ctx, field)
+func (ec *executionContext) _Outcome_player(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
+	fc, err := ec.fieldContext_Outcome_player(ctx, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -2362,7 +2309,7 @@ func (ec *executionContext) _Outcome_start(ctx context.Context, field graphql.Co
 	}()
 	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
-		return obj.Start, nil
+		return obj.Player, nil
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -2379,7 +2326,7 @@ func (ec *executionContext) _Outcome_start(ctx context.Context, field graphql.Co
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Outcome_start(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func (ec *executionContext) fieldContext_Outcome_player(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Outcome",
 		Field:      field,
@@ -2392,374 +2339,8 @@ func (ec *executionContext) fieldContext_Outcome_start(ctx context.Context, fiel
 	return fc, nil
 }
 
-func (ec *executionContext) _Outcome_startoffset(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Outcome_startoffset(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Startoffset, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Outcome_startoffset(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Outcome",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Outcome_stop(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Outcome_stop(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Stop, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Outcome_stop(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Outcome",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Outcome_stopoffset(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Outcome_stopoffset(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Stopoffset, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Outcome_stopoffset(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Outcome",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Outcome_results(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Outcome_results(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Results, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.([]*model.Place)
-	fc.Result = res
-	return ec.marshalNPlace2ᚕᚖbackᚋgraphᚋmodelᚐPlace(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Outcome_results(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Outcome",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			switch field.Name {
-			case "_key":
-				return ec.fieldContext_Place__key(ctx, field)
-			case "_id":
-				return ec.fieldContext_Place__id(ctx, field)
-			case "rev":
-				return ec.fieldContext_Place_rev(ctx, field)
-			case "playerid":
-				return ec.fieldContext_Place_playerid(ctx, field)
-			case "place":
-				return ec.fieldContext_Place_place(ctx, field)
-			case "result":
-				return ec.fieldContext_Place_result(ctx, field)
-			}
-			return nil, fmt.Errorf("no field named %q was found under type Place", field.Name)
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Place__key(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place__key(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Key, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Place__key(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Place",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Place__id(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place__id(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.ID, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Place__id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Place",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Place_rev(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place_rev(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Rev, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Place_rev(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Place",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Place_playerid(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place_playerid(ctx, field)
-	if err != nil {
-		return graphql.Null
-	}
-	ctx = graphql.WithFieldContext(ctx, fc)
-	defer func() {
-		if r := recover(); r != nil {
-			ec.Error(ctx, ec.Recover(ctx, r))
-			ret = graphql.Null
-		}
-	}()
-	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
-		ctx = rctx // use context from middleware stack in children
-		return obj.Playerid, nil
-	})
-	if err != nil {
-		ec.Error(ctx, err)
-		return graphql.Null
-	}
-	if resTmp == nil {
-		if !graphql.HasFieldError(ctx, fc) {
-			ec.Errorf(ctx, "must not be null")
-		}
-		return graphql.Null
-	}
-	res := resTmp.(string)
-	fc.Result = res
-	return ec.marshalNString2string(ctx, field.Selections, res)
-}
-
-func (ec *executionContext) fieldContext_Place_playerid(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
-	fc = &graphql.FieldContext{
-		Object:     "Place",
-		Field:      field,
-		IsMethod:   false,
-		IsResolver: false,
-		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
-			return nil, errors.New("field of type String does not have child fields")
-		},
-	}
-	return fc, nil
-}
-
-func (ec *executionContext) _Place_place(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place_place(ctx, field)
+func (ec *executionContext) _Outcome_place(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
+	fc, err := ec.fieldContext_Outcome_place(ctx, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -2789,9 +2370,9 @@ func (ec *executionContext) _Place_place(ctx context.Context, field graphql.Coll
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Place_place(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func (ec *executionContext) fieldContext_Outcome_place(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
-		Object:     "Place",
+		Object:     "Outcome",
 		Field:      field,
 		IsMethod:   false,
 		IsResolver: false,
@@ -2802,8 +2383,8 @@ func (ec *executionContext) fieldContext_Place_place(ctx context.Context, field 
 	return fc, nil
 }
 
-func (ec *executionContext) _Place_result(ctx context.Context, field graphql.CollectedField, obj *model.Place) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Place_result(ctx, field)
+func (ec *executionContext) _Outcome_result(ctx context.Context, field graphql.CollectedField, obj *model.Outcome) (ret graphql.Marshaler) {
+	fc, err := ec.fieldContext_Outcome_result(ctx, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -2833,9 +2414,9 @@ func (ec *executionContext) _Place_result(ctx context.Context, field graphql.Col
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Place_result(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func (ec *executionContext) fieldContext_Outcome_result(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
-		Object:     "Place",
+		Object:     "Outcome",
 		Field:      field,
 		IsMethod:   false,
 		IsResolver: false,
@@ -2964,6 +2545,83 @@ func (ec *executionContext) fieldContext_Query_contests(ctx context.Context, fie
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Contest", field.Name)
 		},
+	}
+	return fc, nil
+}
+
+func (ec *executionContext) _Query_GetContestsPlayerTotalResults(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
+	fc, err := ec.fieldContext_Query_GetContestsPlayerTotalResults(ctx, field)
+	if err != nil {
+		return graphql.Null
+	}
+	ctx = graphql.WithFieldContext(ctx, fc)
+	defer func() {
+		if r := recover(); r != nil {
+			ec.Error(ctx, ec.Recover(ctx, r))
+			ret = graphql.Null
+		}
+	}()
+	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return ec.resolvers.Query().GetContestsPlayerTotalResults(rctx, fc.Args["player"].(string))
+	})
+	if err != nil {
+		ec.Error(ctx, err)
+		return graphql.Null
+	}
+	if resTmp == nil {
+		if !graphql.HasFieldError(ctx, fc) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.([]*model.Contest)
+	fc.Result = res
+	return ec.marshalNContest2ᚕᚖbackᚋgraphᚋmodelᚐContestᚄ(ctx, field.Selections, res)
+}
+
+func (ec *executionContext) fieldContext_Query_GetContestsPlayerTotalResults(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+	fc = &graphql.FieldContext{
+		Object:     "Query",
+		Field:      field,
+		IsMethod:   true,
+		IsResolver: true,
+		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
+			switch field.Name {
+			case "_key":
+				return ec.fieldContext_Contest__key(ctx, field)
+			case "_id":
+				return ec.fieldContext_Contest__id(ctx, field)
+			case "rev":
+				return ec.fieldContext_Contest_rev(ctx, field)
+			case "start":
+				return ec.fieldContext_Contest_start(ctx, field)
+			case "startoffset":
+				return ec.fieldContext_Contest_startoffset(ctx, field)
+			case "stop":
+				return ec.fieldContext_Contest_stop(ctx, field)
+			case "stopoffset":
+				return ec.fieldContext_Contest_stopoffset(ctx, field)
+			case "outcomes":
+				return ec.fieldContext_Contest_outcomes(ctx, field)
+			case "games":
+				return ec.fieldContext_Contest_games(ctx, field)
+			case "venue":
+				return ec.fieldContext_Contest_venue(ctx, field)
+			}
+			return nil, fmt.Errorf("no field named %q was found under type Contest", field.Name)
+		},
+	}
+	defer func() {
+		if r := recover(); r != nil {
+			err = ec.Recover(ctx, r)
+			ec.Error(ctx, err)
+		}
+	}()
+	ctx = graphql.WithFieldContext(ctx, fc)
+	if fc.Args, err = ec.field_Query_GetContestsPlayerTotalResults_args(ctx, field.ArgumentMap(ec.Variables)); err != nil {
+		ec.Error(ctx, err)
+		return fc, err
 	}
 	return fc, nil
 }
@@ -6297,92 +5955,18 @@ func (ec *executionContext) _Outcome(ctx context.Context, sel ast.SelectionSet, 
 			if out.Values[i] == graphql.Null {
 				out.Invalids++
 			}
-		case "start":
-			out.Values[i] = ec._Outcome_start(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "startoffset":
-			out.Values[i] = ec._Outcome_startoffset(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "stop":
-			out.Values[i] = ec._Outcome_stop(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "stopoffset":
-			out.Values[i] = ec._Outcome_stopoffset(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "results":
-			out.Values[i] = ec._Outcome_results(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		default:
-			panic("unknown field " + strconv.Quote(field.Name))
-		}
-	}
-	out.Dispatch(ctx)
-	if out.Invalids > 0 {
-		return graphql.Null
-	}
-
-	atomic.AddInt32(&ec.deferred, int32(len(deferred)))
-
-	for label, dfs := range deferred {
-		ec.processDeferredGroup(graphql.DeferredGroup{
-			Label:    label,
-			Path:     graphql.GetPath(ctx),
-			FieldSet: dfs,
-			Context:  ctx,
-		})
-	}
-
-	return out
-}
-
-var placeImplementors = []string{"Place"}
-
-func (ec *executionContext) _Place(ctx context.Context, sel ast.SelectionSet, obj *model.Place) graphql.Marshaler {
-	fields := graphql.CollectFields(ec.OperationContext, sel, placeImplementors)
-
-	out := graphql.NewFieldSet(fields)
-	deferred := make(map[string]*graphql.FieldSet)
-	for i, field := range fields {
-		switch field.Name {
-		case "__typename":
-			out.Values[i] = graphql.MarshalString("Place")
-		case "_key":
-			out.Values[i] = ec._Place__key(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "_id":
-			out.Values[i] = ec._Place__id(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "rev":
-			out.Values[i] = ec._Place_rev(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				out.Invalids++
-			}
-		case "playerid":
-			out.Values[i] = ec._Place_playerid(ctx, field, obj)
+		case "player":
+			out.Values[i] = ec._Outcome_player(ctx, field, obj)
 			if out.Values[i] == graphql.Null {
 				out.Invalids++
 			}
 		case "place":
-			out.Values[i] = ec._Place_place(ctx, field, obj)
+			out.Values[i] = ec._Outcome_place(ctx, field, obj)
 			if out.Values[i] == graphql.Null {
 				out.Invalids++
 			}
 		case "result":
-			out.Values[i] = ec._Place_result(ctx, field, obj)
+			out.Values[i] = ec._Outcome_result(ctx, field, obj)
 			if out.Values[i] == graphql.Null {
 				out.Invalids++
 			}
@@ -6460,6 +6044,28 @@ func (ec *executionContext) _Query(ctx context.Context, sel ast.SelectionSet) gr
 					}
 				}()
 				res = ec._Query_contests(ctx, field)
+				if res == graphql.Null {
+					atomic.AddUint32(&fs.Invalids, 1)
+				}
+				return res
+			}
+
+			rrm := func(ctx context.Context) graphql.Marshaler {
+				return ec.OperationContext.RootResolverMiddleware(ctx,
+					func(ctx context.Context) graphql.Marshaler { return innerFunc(ctx, out) })
+			}
+
+			out.Concurrently(i, func(ctx context.Context) graphql.Marshaler { return rrm(innerCtx) })
+		case "GetContestsPlayerTotalResults":
+			field := field
+
+			innerFunc := func(ctx context.Context, fs *graphql.FieldSet) (res graphql.Marshaler) {
+				defer func() {
+					if r := recover(); r != nil {
+						ec.Error(ctx, ec.Recover(ctx, r))
+					}
+				}()
+				res = ec._Query_GetContestsPlayerTotalResults(ctx, field)
 				if res == graphql.Null {
 					atomic.AddUint32(&fs.Invalids, 1)
 				}
@@ -7350,44 +6956,6 @@ func (ec *executionContext) marshalNOutcome2ᚕᚖbackᚋgraphᚋmodelᚐOutcome
 	return ret
 }
 
-func (ec *executionContext) marshalNPlace2ᚕᚖbackᚋgraphᚋmodelᚐPlace(ctx context.Context, sel ast.SelectionSet, v []*model.Place) graphql.Marshaler {
-	ret := make(graphql.Array, len(v))
-	var wg sync.WaitGroup
-	isLen1 := len(v) == 1
-	if !isLen1 {
-		wg.Add(len(v))
-	}
-	for i := range v {
-		i := i
-		fc := &graphql.FieldContext{
-			Index:  &i,
-			Result: &v[i],
-		}
-		ctx := graphql.WithFieldContext(ctx, fc)
-		f := func(i int) {
-			defer func() {
-				if r := recover(); r != nil {
-					ec.Error(ctx, ec.Recover(ctx, r))
-					ret = nil
-				}
-			}()
-			if !isLen1 {
-				defer wg.Done()
-			}
-			ret[i] = ec.marshalOPlace2ᚖbackᚋgraphᚋmodelᚐPlace(ctx, sel, v[i])
-		}
-		if isLen1 {
-			f(i)
-		} else {
-			go f(i)
-		}
-
-	}
-	wg.Wait()
-
-	return ret
-}
-
 func (ec *executionContext) unmarshalNRefreshTokenInput2backᚋgraphᚋmodelᚐRefreshTokenInput(ctx context.Context, v interface{}) (model.RefreshTokenInput, error) {
 	res, err := ec.unmarshalInputRefreshTokenInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
@@ -7777,13 +7345,6 @@ func (ec *executionContext) marshalOOutcome2ᚖbackᚋgraphᚋmodelᚐOutcome(ct
 		return graphql.Null
 	}
 	return ec._Outcome(ctx, sel, v)
-}
-
-func (ec *executionContext) marshalOPlace2ᚖbackᚋgraphᚋmodelᚐPlace(ctx context.Context, sel ast.SelectionSet, v *model.Place) graphql.Marshaler {
-	if v == nil {
-		return graphql.Null
-	}
-	return ec._Place(ctx, sel, v)
 }
 
 func (ec *executionContext) unmarshalOString2ᚖstring(ctx context.Context, v interface{}) (*string, error) {
