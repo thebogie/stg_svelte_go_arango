@@ -1,5 +1,5 @@
 import {fail, redirect} from "@sveltejs/kit";
-import {getPlayerGamesPlayed} from "$lib/services/player.service";
+import {getPlayerTotalResults} from "$lib/services/player.service";
 
 /*
 export async function load({cookies}) {

@@ -51,19 +51,32 @@ const loginPlayer = async (email: string, password: string) => {
 	return response;
 };
 
-const getPlayerGamesPlayed = async (token: string) => {
+const getPlayerTotalResults = async (token: string, playerkey: string) => {
 	// Check if user exists
 	console.log('getPlayerGamesPlayed Service');
 	let response  = {};
 
+
+	const variables = {
+		player : "player/" + playerkey
+
+	};
 	const gql_query = gql`
-        query  Game {
-            games { name }
-        }
+		query  GetContestsPlayerTotalResults($player: String! ) {
+			GetContestsPlayerTotalResults(player : $player)
+            { _key
+                _id
+                outcomes {
+                    player 
+					place 
+					result
+                }
+            }
+		}
     `;
 
 	try {
-		response = await graphql(token, gql_query, "");
+		response = await graphql(token, gql_query, variables);
 
 	} catch (err: any) {
 		console.log('ERROR in getPlayerGamesPlayed:' + JSON.stringify(err.message));
@@ -74,4 +87,4 @@ const getPlayerGamesPlayed = async (token: string) => {
 	return response;
 };
 //export { createUser, loginUser };
-export { loginPlayer, getPlayerGamesPlayed };
+export { loginPlayer, getPlayerTotalResults };

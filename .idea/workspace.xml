@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="e2e authentication via header through games backend">
-      <change afterPath="$PROJECT_DIR$/back/_aql_queries.txt" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="api getallplayerresults">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/back/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/generated/generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/generated/generated.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/outcome.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/outcome.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +195,7 @@
       <workItem from="1700051249798" duration="37559000" />
       <workItem from="1700194074499" duration="10450000" />
       <workItem from="1700231501504" duration="12813000" />
-      <workItem from="1701633560200" duration="10202000" />
+      <workItem from="1701633560200" duration="12467000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -398,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700203551354</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="api getallplayerresults">
+      <option name="closed" value="true" />
+      <created>1701717497824</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701717497824</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +436,8 @@
     <MESSAGE value="back change: using header authentication vs cookie" />
     <MESSAGE value="e2e authentication via header update" />
     <MESSAGE value="e2e authentication via header through games backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="e2e authentication via header through games backend" />
+    <MESSAGE value="api getallplayerresults" />
+    <option name="LAST_COMMIT_MESSAGE" value="api getallplayerresults" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -459,6 +459,12 @@
           <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
           <line>36</line>
           <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/user.go</url>

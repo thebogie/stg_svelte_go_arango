@@ -1,6 +1,6 @@
 import type { PageServerLoad, Actions } from './$types';
 import { redirect, fail } from '@sveltejs/kit';
-import {getPlayerGamesPlayed} from '$lib/services/player.service';
+import {getPlayerTotalResults} from '$lib/services/player.service';
 
 
 export const load: PageServerLoad = async (event) => {
@@ -12,14 +12,14 @@ export const load: PageServerLoad = async (event) => {
 	}
 
 	let token = "";
-	let playerGamesPlayed = {};
+	let playerResults = {};
 	try {
-		playerGamesPlayed = await getPlayerGamesPlayed(user.accessToken) ;
+		playerResults = await getPlayerTotalResults(user.accessToken, user._key) ;
 	} catch (err: any) {
 		console.log('profile error: ' + err.message);
 		return fail(401, {
 			error: err.message
 		});
 	}
-	return playerGamesPlayed;
+	return playerResults;
 };
