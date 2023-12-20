@@ -17,7 +17,6 @@ func (r *queryResolver) Contests(ctx context.Context) ([]*model.Contest, error) 
 
 // GetContestsPlayerTotalResults is the resolver for the GetContestsPlayerTotalResults field.
 func (r *queryResolver) GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error) {
-
 	fmt.Println("This is from contest resolver")
 	var test, err = r.Contest.GetContestsPlayerTotalResults(ctx, player)
 

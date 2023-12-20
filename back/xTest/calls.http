@@ -41,7 +41,7 @@ games { name }
 
 ####
 GRAPHQL http://localhost:50002/graphql
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMTcyMDI0Mn0.SeaJc-ypCclgRNtsJxz1EjIeV_qM6-fBOdC6wIgz6Cg
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMTg5NTgxMn0.ojBp26ZJ_kj2X4u2w59abqZGHZDpo462BIWdNQMgtRE
 
 query  GetContestsPlayerTotalResults($player: String! ) {
 GetContestsPlayerTotalResults(player : $player)
@@ -60,7 +60,15 @@ player place result
 
 {"player": "player/2023110913124828447180600"}
 
+####
+GRAPHQL http://localhost:50002/graphql
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMzE5MTE4OX0.N6zl2skVrDYEM5vfNUBmKNqH_N8ExcEKo59AduXSwpk
 
+query  CheckLogin ($player: String!){
+    checklogin(player : $player)
+
+}
+{"player": "player/2023110913124828447180600"}
 
 
 

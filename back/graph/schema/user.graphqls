@@ -38,3 +38,7 @@ type Mutation {
   loginUser(input: Login!): LoginData!
   refreshToken(input: RefreshTokenInput!): String!
 }
+
+extend type Query {
+  checklogin(player: String!) : String!
+}

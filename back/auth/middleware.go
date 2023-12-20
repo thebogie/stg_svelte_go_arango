@@ -22,6 +22,8 @@ func Middleware() func(http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 			jwtheader := JwtHeader{}
+			ctx := context.WithValue(r.Context(), "jwtheader", &jwtheader)
+			r = r.WithContext(ctx)
 
 			// Check if the authorization header is present and valid.
 			auth := r.Header.Get("Authorization")
@@ -38,9 +40,7 @@ func Middleware() func(http.Handler) http.Handler {
 
 				// Check if this a login request. send through
 				if strings.Contains(string(peekBody), "LoginUser") {
-					ctx := context.WithValue(r.Context(), "jwtheader", &jwtheader)
-					// and call the next with our new context
-					r = r.WithContext(ctx)
+
 					next.ServeHTTP(w, r)
 					return
 				} else {
@@ -60,9 +60,11 @@ func Middleware() func(http.Handler) http.Handler {
 			//TODO: check for expired too
 			if email == "INVALID" {
 				log.Printf("Incorrect JWT token.")
-				http.Error(w, "Wrong user", http.StatusBadRequest)
+				http.Error(w, "Wrong user or not valid", http.StatusBadRequest)
 				return
 			}
+			ctx = context.WithValue(r.Context(), "authuser", email)
+			r = r.WithContext(ctx)
 
 			next.ServeHTTP(w, r)
 		})

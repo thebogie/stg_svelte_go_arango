@@ -38,7 +38,7 @@ func (cr *contestrepository) GetContestsPlayerTotalResults(ctx context.Context, 
 	query := "" +
 		"FOR doc IN resulted_in " + " " +
 		"FILTER doc._to == '" + player + "'" + " " +
-		"RETURN { contest: doc._from, results: {place: doc.place, result: doc.result }}"
+		"RETURN { contest: doc._from, results: {player: doc._to, place: doc.place, result: doc.result }}"
 	cursor, err := cr.db.Query(ctx, query, nil)
 	if err != nil {
 		log.Fatal("Error login Query to db")
@@ -62,6 +62,7 @@ func (cr *contestrepository) GetContestsPlayerTotalResults(ctx context.Context, 
 		outcomevalue, _ := transfer["results"].(map[string]interface{})
 
 		var i, _ = strconv.Atoi(outcomevalue["place"].(string))
+		outcome.Player = outcomevalue["player"].(string)
 		outcome.Place = i
 		outcome.Result = outcomevalue["result"].(string)
 		result.Outcomes = append(result.Outcomes, &outcome)
