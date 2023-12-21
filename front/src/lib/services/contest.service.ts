@@ -1,4 +1,4 @@
-import { graphql } from '$lib/services/+server';
+import { _graphql } from '$lib/services/graphql';
 import { gql } from 'graphql-request';
 import type {IPlayer} from '$lib/interfaces/player.interface';
 

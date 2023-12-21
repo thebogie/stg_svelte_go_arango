@@ -1,63 +1,50 @@
-/** @type {import('./$types').Actions} */
-
-import type { PageServerLoad, Actions } from './$types';
-import { redirect, fail } from '@sveltejs/kit';
+import { redirect } from '@sveltejs/kit';
 import { loginPlayer } from '$lib/services/player.service';
 import type { IPlayer } from '$lib/interfaces/player.interface';
 
-export const load: PageServerLoad = (event) => {
-	const user = event.locals.player;
+export const actions = {
+	default: async ({ cookies, request }) => {
+		console.log('LOGIN ACTIONS');
 
-	if (user) {
-		throw redirect(302, '/profile');
-	}
-};
+		let token = 'FISH';
+		let player: IPlayer = {};
 
-export const actions: Actions = {
-	default: async (event) => {
-		const formData = Object.fromEntries(await event.request.formData());
+		const data = await request.formData();
+		let emaildata = data.get('email');
+		let passworddata = data.get('password');
 
-		if (!formData.email || !formData.password) {
-			return fail(400, {
-				error: 'Missing email or password'
-			});
+		if (emaildata == null) {
+			return;
 		}
-
-		const { email, password } = formData as {
-			email: string;
-			password: string;
-		};
-
-		let loggedinplayer: IPlayer = {};
+		if (passworddata == null) {
+			return;
+		}
 
 		try {
-			loggedinplayer = await loginPlayer(email, password);
+			let player = await loginPlayer(emaildata.toString(), passworddata.toString());
+			console.log('logged_in_player' + JSON.stringify(player));
 
-			// Set the cookie
-			event.cookies.set('Authorization', `${loggedinplayer.accessToken}`, {
+			if (!player.accessToken) {
+				return;
+			}
+			token = player.accessToken;
+
+			cookies.set('token', token, {
 				httpOnly: true,
-				path: '/',
 				secure: true,
-				sameSite: 'strict',
-				maxAge: 60 * 60 * 24 // 1 day
+				path: '/'
 			});
-
-			event.cookies.set('loggedinplayer', JSON.stringify(loggedinplayer), {
+			cookies.set('player', JSON.stringify(player), {
 				httpOnly: true,
-				path: '/',
 				secure: true,
-				sameSite: 'strict',
-				maxAge: 60 * 60 * 24 // 1 day
+				path: '/'
 			});
-
-			event.locals.player = loggedinplayer;
-		} catch (err: any) {
-			console.log('login error: ' + err.message);
-			return fail(401, {
-				error: err.message
-			});
+		} catch (err) {
+			console.error(err); // Add your error handling here
 		}
 
-		throw redirect(302, '/profile');
+
+
+		throw redirect(303, '/profile');
 	}
 };

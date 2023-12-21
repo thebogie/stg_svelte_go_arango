@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="api getallplayerresults">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="added CheckLogin for auth calls">
+      <change afterPath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/game.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/outcome.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/interfaces/venue.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/utils/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/test/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements/req_jwt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/stores/userStore.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +68,12 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -72,6 +98,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Go Build.BACK_.executor": "Debug",
+    "HTTP Request.calls | #5.executor": "Run",
+    "JavaScript Debug.sveltekit.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -85,7 +114,8 @@
     "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "LET",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/back",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/routes/profile",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,6 +124,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "npm.FRONT.executor": "Debug",
     "prettierjs.PrettierConfiguration.Package": "",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -105,21 +136,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\work\stg_svelte_go_arango\back" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\services" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\login" />
-      <recent name="C:\work\stg_svelte_go_arango\back\auth" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\test" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\services" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\interfaces" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\interfaces" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\services" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\lib" />
+      <recent name="C:\work\stg_svelte_go_arango\requirements" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\login" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\+authenticated" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\api" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.BACK_">
+  <component name="RunManager" selected="JavaScript Debug.sveltekit">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -139,22 +170,26 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
-    <configuration name="calls | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="calls | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="calls | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="4" requestIdentifier="#4" runType="Run single request">
+    <configuration name="calls | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="sveltekit" type="JavascriptDebugType" activateToolWindowBeforeRun="false" uri="http://localhost:50003" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.BACK_" />
-      <item itemvalue="HTTP Request.calls | #3" />
+      <item itemvalue="HTTP Request.calls | #5" />
       <item itemvalue="HTTP Request.calls | #4" />
+      <item itemvalue="JavaScript Debug.sveltekit" />
       <item itemvalue="npm.FRONT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.calls | #5" />
         <item itemvalue="HTTP Request.calls | #4" />
-        <item itemvalue="HTTP Request.calls | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +230,11 @@
       <workItem from="1700051249798" duration="37559000" />
       <workItem from="1700194074499" duration="10450000" />
       <workItem from="1700231501504" duration="12813000" />
-      <workItem from="1701633560200" duration="12467000" />
+      <workItem from="1701633560200" duration="16653000" />
+      <workItem from="1701804488936" duration="9366000" />
+      <workItem from="1702062671133" duration="12808000" />
+      <workItem from="1702082394775" duration="25140000" />
+      <workItem from="1703110120326" duration="7040000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -397,7 +436,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701717497824</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="getPlayerTotalResults working">
+      <option name="closed" value="true" />
+      <created>1701722333488</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701722333488</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added CheckLogin for auth calls">
+      <option name="closed" value="true" />
+      <created>1703109564715</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1703109564715</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +492,10 @@
     <MESSAGE value="e2e authentication via header update" />
     <MESSAGE value="e2e authentication via header through games backend" />
     <MESSAGE value="api getallplayerresults" />
-    <option name="LAST_COMMIT_MESSAGE" value="api getallplayerresults" />
+    <MESSAGE value="getPlayerTotalResults working" />
+    <MESSAGE value="adding playerStore vs server cookies" />
+    <MESSAGE value="added CheckLogin for auth calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="added CheckLogin for auth calls" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -445,27 +503,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
-          <line>46</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
-          <line>36</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
-          <line>8</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/user.go</url>
           <line>31</line>
@@ -473,26 +510,93 @@
         </line-breakpoint>
         <line-breakpoint type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
-          <line>35</line>
+          <line>38</line>
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
-          <line>44</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
-          <line>37</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go</url>
-          <line>24</line>
+          <line>23</line>
           <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
+          <line>54</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/api/graphql.ts</url>
+          <line>4</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/+authenticated/ __layout.svelte</url>
+          <line>7</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/+authenticated/ __layout.svelte</url>
+          <line>6</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/stores/playerStore.ts</url>
+          <line>27</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/stores/playerStore.ts</url>
+          <line>28</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/hooks.server.ts</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/hooks.server.ts</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/hooks.server.ts</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
+        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

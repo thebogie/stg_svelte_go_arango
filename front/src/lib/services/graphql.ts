@@ -1,28 +1,35 @@
-import { gql, GraphQLClient } from 'graphql-request';
+import { GraphQLClient } from 'graphql-request';
 import { envvars } from '$lib/utils/constrants';
-import type { IPlayer } from '$lib/interfaces/player.interface';
+import Cookies from 'js-cookie';
 
-export async function graphql(token: string, query: string, variables: any) {
+export async function _graphql(query: string, variables: any) {
 	interface keyable {
 		[key: string]: any;
 	}
 
 	let results: any = {};
+
+	let authCookie = Cookies.get('token');
+	console.log("AUTH = " + authCookie);
+
+	if (!authCookie) {
+		authCookie = "";
+	}
+
 	const graphQLClient = new GraphQLClient(`${envvars.BASE_API_URI}`, {
 		credentials: 'include',
 		mode: 'cors',
 		headers: {
-			Authorization: token
+			Authorization: authCookie
 		}
 	});
 
 	try {
-		if (variables == "") {
+		if (variables == '') {
 			results = (await graphQLClient.request(query)) as object;
 		} else {
 			results = (await graphQLClient.request(query, variables)) as object;
 		}
-
 
 		console.log('GRAPHQL:' + JSON.stringify(results));
 	} catch (err: any) {
@@ -40,6 +47,6 @@ export async function graphql(token: string, query: string, variables: any) {
 			console.error('General GraphQL request error:', err);
 		}
 	}
-
+	//Max-Age=86400; Path=/; HttpOnly=true; sameSite=lax
 	return results;
 }

@@ -2,19 +2,14 @@ import {fail, redirect} from "@sveltejs/kit";
 import {getPlayerTotalResults} from "$lib/services/player.service";
 
 /*
-export async function load({cookies}) {
+export async function load({}) {
     console.log("profile page.ts");
 
-    const user  = cookies.get('loggedinplayer');
-    if (user) {
-    } else {
-        throw redirect(302, '/login');
-    }
 
-    let token = "";
+
     let playerGamesPlayed = {};
     try {
-        playerGamesPlayed = await getPlayerGamesPlayed(user.accessToken);
+        playerGamesPlayed = await getPlayerTotalResults();
     } catch (err: any) {
         console.log('profile error: ' + err.message);
         return fail(401, {
@@ -23,5 +18,4 @@ export async function load({cookies}) {
     }
     return {games: playerGamesPlayed};
 }
-
- */
+*/
