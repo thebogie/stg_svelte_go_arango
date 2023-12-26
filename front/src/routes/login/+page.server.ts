@@ -1,12 +1,12 @@
 import { redirect } from '@sveltejs/kit';
 import { loginPlayer } from '$lib/services/player.service';
-import type { IPlayer } from '$lib/interfaces/player.interface';
+import type { IPlayer } from '$lib/interfaces/player.d';
 
 export const actions = {
-	default: async ({ cookies, request }) => {
+	login: async ({ cookies, request }) => {
 		console.log('LOGIN ACTIONS');
 
-		let token = 'FISH';
+		let token = 'EMPTY';
 		let player: IPlayer = {};
 
 		const data = await request.formData();
@@ -29,11 +29,6 @@ export const actions = {
 			}
 			token = player.accessToken;
 
-			cookies.set('token', token, {
-				httpOnly: true,
-				secure: true,
-				path: '/'
-			});
 			cookies.set('player', JSON.stringify(player), {
 				httpOnly: true,
 				secure: true,
@@ -42,8 +37,6 @@ export const actions = {
 		} catch (err) {
 			console.error(err); // Add your error handling here
 		}
-
-
 
 		throw redirect(303, '/profile');
 	}

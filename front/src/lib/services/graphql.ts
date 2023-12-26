@@ -1,19 +1,20 @@
 import { GraphQLClient } from 'graphql-request';
 import { envvars } from '$lib/utils/constrants';
 import Cookies from 'js-cookie';
+import type { IPlayer } from '$lib/interfaces/player.d';
 
-export async function _graphql(query: string, variables: any) {
+export async function _graphql(playerdata: IPlayer, query: string, variables: any) {
 	interface keyable {
 		[key: string]: any;
 	}
 
 	let results: any = {};
 
-	let authCookie = Cookies.get('token');
-	console.log("AUTH = " + authCookie);
+	let authCookie = playerdata.accessToken;
+	console.log('AUTH = ' + authCookie);
 
 	if (!authCookie) {
-		authCookie = "";
+		authCookie = '';
 	}
 
 	const graphQLClient = new GraphQLClient(`${envvars.BASE_API_URI}`, {

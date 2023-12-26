@@ -1,11 +1,6 @@
 <script lang="ts">
     //import type {ActionData} from './$types';
     // import {enhance} from '$app/forms';
-    import {getCurrentPlayer, logged_in_player} from "$lib/stores/playerStore";
-    import Cookies from "js-cookie";
-    import {goto} from "$app/navigation";
-    import {loginPlayer} from "$lib/services/player.service";
-
 
     console.log("login page.svelte");
 
@@ -19,10 +14,10 @@
 
 <section>
 
-    <form method="POST">
+    <form action="?/login"  method="POST">
         <div role="group">
-            <input type="text" name="email" placeholder="email">
-            <input type="password" name="password" placeholder="Password">
+            <input name="email" placeholder="email" type="text">
+            <input name="password" placeholder="Password" type="password">
             <button type="submit">Submit</button>
         </div>
     </form>

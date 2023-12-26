@@ -1,25 +1,16 @@
-import { checkPlayer } from '$lib/services/player.service';
+
+import { redirect } from '@sveltejs/kit';
 
 export async function handle({ event, resolve }) {
-	const token = event.cookies.get('token');
+	console.log('HANDLE: ' + JSON.stringify(event));
+	let playerCookie = event.cookies.get('player');
 
-	console.log('EVENT: ' + JSON.stringify(event));
-	if (token == undefined) {
-		return await resolve(event);
-	}
-
-	try {
-		let playerCookie = event.cookies.get('player');
-		if (!playerCookie) {
-			return await resolve(event);
+	if (!playerCookie) {
+		if (event.route.id !== '/login') {
+			throw redirect(303, '/login');
 		}
-
-		const player = JSON.parse(playerCookie);
-
-		event.locals.player = player;
-		//event.locals.player = checkPlayer()
-	} catch (error) {
-		console.log(error);
+	} else {
+		event.locals.player = JSON.parse(playerCookie);
 	}
 
 	const response = await resolve(event);

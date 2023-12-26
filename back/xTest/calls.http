@@ -68,7 +68,7 @@ query  CheckLogin ($player: String!){
     checklogin(player : $player)
 
 }
-{"player": "player/2023110913124828447180600"}
+{"player": "mitch@gmail.com"}
 
 
 

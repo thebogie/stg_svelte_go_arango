@@ -2,7 +2,7 @@ import { getContext, hasContext, setContext } from "svelte";
 import { readable, writable } from "svelte/store";
 
 // context for any type of store
-export const useSharedStore = <T, A>(
+export const getSharedStore = <T, A>(
     name: string,
     fn: (value?: A) => T,
     defaultValue?: A,
@@ -16,9 +16,9 @@ export const useSharedStore = <T, A>(
 };
 
 // writable store context
-export const useWritable = <T>(name: string, value: T) =>
-    useSharedStore(name, writable, value);
+export const getWritable = <T>(name: string, value: T) =>
+    getSharedStore(name, writable, value);
 
 // readable store context
-export const useReadable = <T>(name: string, value: T) =>
-    useSharedStore(name, readable, value);
+export const getReadable = <T>(name: string, value: T) =>
+    getSharedStore(name, readable, value);

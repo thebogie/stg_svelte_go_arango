@@ -3,6 +3,7 @@
     <module name="back" />
     <working_directory value="$PROJECT_DIR$/back" />
     <kind value="FILE" />
+    <package value="back" />
     <directory value="$PROJECT_DIR$" />
     <filePath value="$PROJECT_DIR$/back/app/server.go" />
     <method v="2" />

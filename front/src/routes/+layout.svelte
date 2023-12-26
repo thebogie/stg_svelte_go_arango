@@ -1,28 +1,29 @@
 <script lang="ts">
-	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+    import '../app.postcss';
+    import {AppShell, AppBar} from '@skeletonlabs/skeleton';
 
 
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+    // Floating UI for Popups
+    import {computePosition, autoUpdate, flip, shift, offset, arrow} from '@floating-ui/dom';
+    import {storePopup} from '@skeletonlabs/skeleton';
 
+    storePopup.set({computePosition, autoUpdate, flip, shift, offset, arrow});
+    console.log("LAYOUT  SVELTE");
 </script>
 
 <!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<AppBar>
-			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Smacktalk Gaming</strong>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
+    <svelte:fragment slot="header">
+        <!-- App Bar -->
+        <AppBar>
+            <svelte:fragment slot="lead">
+                <strong class="text-xl uppercase">Smacktalk Gaming</strong>
+            </svelte:fragment>
+            <svelte:fragment slot="trail">
 
-			</svelte:fragment>
-		</AppBar>
-	</svelte:fragment>
-	<!-- Page Route Content -->
-	<slot />
+            </svelte:fragment>
+        </AppBar>
+    </svelte:fragment>
+    <!-- Page Route Content -->
+    <slot/>
 </AppShell>
