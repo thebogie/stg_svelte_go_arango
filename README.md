@@ -19,16 +19,18 @@ arangod  --server.authentication=false ;
 cd /stg/back ; ./main
 
 ## docker setup for back+db
-docker run -v /home/thebogie/work/arangodb/collection:/var/lib/arangodb3 -v /home/thebogie/work/arangodb/apps:/var/lib/arangodb3-apps  -p 50001:50001 -p 50002:50002 --name stggoarangoflutter stggoarangoflutter 
+docker run -v /home/thebogie/work/arangodb/collection:/var/lib/arangodb3 -v /home/thebogie/work/arangodb/apps:/var/lib/arangodb3-apps  -p 50001:50001 -p 50002:50002 --name   
 
 In Docker:
 arangod  --server.authentication=false &
 cd /stg/back ; ./main
 ## just database:
-docker run -v /home/thebogie/work/arangodb/collection:/var/lib/arangodb3 -v /home/thebogie/work/arangodb/apps:/var/lib/arangodb3-apps  -p 50001:50001  --name stggoarangoflutter stggoarangoflutter 
+docker run -v /home/thebogie/work/arangodb/collection:/var/lib/arangodb3 -v /home/thebogie/work/arangodb/apps:/var/lib/arangodb3-apps  -p 50001:50001  --name   
 windows: docker run -v C:/work/arangodbstorage:/var/lib/arangodb3  -p 50001:50001  --name stggoarangoflutter stggoarangoflutter
 
-arangod  --server.authentication=false ; 
+arangod  --server.authentication=false ;
+docker-compose -f .\docker-compose.dev.yml up -d arangodb
+
 
 
 ## Backend

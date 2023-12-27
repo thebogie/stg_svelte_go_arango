@@ -31,13 +31,16 @@ export const actions = {
 
 			cookies.set('player', JSON.stringify(player), {
 				httpOnly: true,
+				sameSite: 'strict',
 				secure: true,
-				path: '/'
+				path: '/',
+				//secure: process.env.NODE_ENV === 'production',
+				maxAge: 60*60*24,
 			});
 		} catch (err) {
 			console.error(err); // Add your error handling here
 		}
 
-		throw redirect(303, '/profile');
+		throw redirect(302, '/profile');
 	}
 };
