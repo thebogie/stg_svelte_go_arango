@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request';
 
 import Cookies from 'js-cookie';
-import type { IPlayer } from '@lib/interfaces/player'
+import type { IPlayer } from '$lib/interfaces/player'
 
 export async function _graphql(playerdata: IPlayer, query: string, variables: any) {
 	interface keyable {

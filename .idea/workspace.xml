@@ -9,24 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="production ready testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/envvars.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/front/DockerFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/constrants.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/test/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/test/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +271,7 @@
       <workItem from="1703438300222" duration="7725000" />
       <workItem from="1703542502575" duration="93000" />
       <workItem from="1703542609426" duration="845000" />
-      <workItem from="1703543540993" duration="10623000" />
+      <workItem from="1703543540993" duration="12126000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -516,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703571810398</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="production ready testing">
+      <option name="closed" value="true" />
+      <created>1703642385998</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1703642385998</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

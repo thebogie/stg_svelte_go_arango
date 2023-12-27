@@ -1,6 +1,4 @@
-import { _graphql } from '@lib/services/graphql';
-import { gql } from 'graphql-request';
-import type {IPlayer} from '@lib/interfaces/player.d';
+
 
 
 const getContestByPlayer = async (token: string) => {

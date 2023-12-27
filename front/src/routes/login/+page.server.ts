@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
-import { loginPlayer } from '@lib/services/player.service';
-import type { IPlayer } from '@lib/interfaces/player.d';
+import { loginPlayer } from '$lib/services/player.service';
+import type { IPlayer } from '$lib/interfaces/player.d';
 
 export const actions = {
 	login: async ({ cookies, request }) => {
