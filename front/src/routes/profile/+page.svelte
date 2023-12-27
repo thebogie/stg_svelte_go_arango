@@ -1,5 +1,5 @@
 <script lang="ts">
-  import BarChart from '$lib/d3/BarChart.svelte';
+  import BarChart from '@lib/d3/BarChart.svelte';
 
   export let data;
   // export let player;

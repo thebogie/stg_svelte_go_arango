@@ -1,4 +1,4 @@
-import type { IContest } from '$lib/interfaces/contest.interface';
+import type { IContest } from '@lib/interfaces/contest.d';
 
 function countResults(jsonArray: IContest[]): {} {
 	// Initialize counters for different result types

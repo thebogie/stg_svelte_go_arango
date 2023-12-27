@@ -7,35 +7,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="simplifing login with loads and events">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/BACK_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/BACK_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/FRONT.xml" beforeDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="production ready testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/envvars.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/envvars.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/error.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/error.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/game.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/game.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/global.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/outcome.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/outcome.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/player.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/player.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/user.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/venue.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/venue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/envvars.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/stores/use-shared-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/stores/use-shared-store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/constrants.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/test/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/test/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +79,7 @@
     <dismissed value="$PROJECT_DIR$/front/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -106,6 +97,9 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Go Build.BACK_.executor": "Debug",
+    "HTTP Request.calls | #1.executor": "Run",
+    "HTTP Request.calls | #2.executor": "Run",
+    "HTTP Request.calls | #4.executor": "Run",
     "HTTP Request.calls | #5.executor": "Run",
     "JavaScript Debug.Lit.executor": "Debug",
     "JavaScript Debug.Unnamed.executor": "Debug",
@@ -126,7 +120,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "LET",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/routes",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -160,11 +154,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front" />
+      <recent name="C:\work\stg_svelte_go_arango\back" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\utils" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\utils\services" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
@@ -194,6 +188,12 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="calls | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="calls | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="calls | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -205,6 +205,8 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.BACK_" />
+      <item itemvalue="HTTP Request.calls | #1" />
+      <item itemvalue="HTTP Request.calls | #2" />
       <item itemvalue="HTTP Request.calls | #5" />
       <item itemvalue="HTTP Request.calls | #4" />
       <item itemvalue="JavaScript Debug.attachdebug" />
@@ -213,8 +215,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.calls | #5" />
+        <item itemvalue="HTTP Request.calls | #1" />
         <item itemvalue="HTTP Request.calls | #4" />
+        <item itemvalue="HTTP Request.calls | #2" />
+        <item itemvalue="HTTP Request.calls | #5" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +282,7 @@
       <workItem from="1703438300222" duration="7725000" />
       <workItem from="1703542502575" duration="93000" />
       <workItem from="1703542609426" duration="845000" />
-      <workItem from="1703543540993" duration="6813000" />
+      <workItem from="1703543540993" duration="10623000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -504,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703131243310</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="figuring out prop transfer from server to client">
+      <option name="closed" value="true" />
+      <created>1703571810398</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1703571810398</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,8 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new intellj setup+typescript cleanup+login errors" />
-    <MESSAGE value="error fixin" />
     <MESSAGE value="login works to front page" />
     <MESSAGE value="refresh modules" />
     <MESSAGE value="adding env for prod" />
@@ -548,7 +558,9 @@
     <MESSAGE value="adding playerStore vs server cookies" />
     <MESSAGE value="added CheckLogin for auth calls" />
     <MESSAGE value="simplifing login with loads and events" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplifing login with loads and events" />
+    <MESSAGE value="figuring out prop transfer from server to client" />
+    <MESSAGE value="production ready testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="production ready testing" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

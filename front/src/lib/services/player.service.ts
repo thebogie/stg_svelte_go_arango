@@ -1,7 +1,7 @@
-import { _graphql } from '$lib/services/graphql';
+import { _graphql } from '@lib/services/graphql';
 import { gql } from 'graphql-request';
-import type { IPlayer } from '$lib/interfaces/player.d';
-import type { IContest } from '$lib/interfaces/contest.d';
+import type { IPlayer } from '@lib/interfaces/player.d';
+import type { IContest } from '@lib/interfaces/contest.d';
 import Cookies from 'js-cookie';
 
 interface responseObject {

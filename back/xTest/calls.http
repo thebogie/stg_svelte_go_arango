@@ -1,5 +1,37 @@
+GRAPHQL https://smacktalkgaming.com/graphql
+
+mutation LoginUser($input: Login!) {
+    loginUser(input: $input) {
+        token
+        userdata {
+            _key
+            _id
+            rev
+            firstname
+            email
+        }
+    }
+}
+{
+  "input": {
+    "username": "mitch@gmail.com",
+    "password": "letmein"
+  }
+}
 
 
+####
+GRAPHQL https://smacktalkgaming.com/graphql
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMDI4MzQyNn0.yGJ12K17ZMLck_TmsMRlhXyTqgZRkBTkmUGKfi42JQA
+
+query  Game {
+    games { name }
+}
+{}
+
+
+
+##################
 GRAPHQL http://localhost:50002/query
 
 query IntrospectionQuery {
@@ -15,16 +47,22 @@ query IntrospectionQuery {
   }
 }
 ####
-GRAPHQL http://localhost:50002/query
+GRAPHQL http://localhost:50002/graphql
 
-mutation LoginUser($logininput : Login!){
-  loginUser(input :$logininput) {
-    _id
-
-  }
+mutation LoginUser($input: Login!) {
+    loginUser(input: $input) {
+        token
+        userdata {
+            _key
+            _id
+            rev
+            firstname
+            email
+        }
+    }
 }
 {
-  "logininput": {
+  "input": {
     "username": "mitch@gmail.com",
     "password": "letmein"
   }

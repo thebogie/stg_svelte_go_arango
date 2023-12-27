@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request';
-import { envvars } from '$lib/utils/constrants';
+
 import Cookies from 'js-cookie';
-import type { IPlayer } from '$lib/interfaces/player.d';
+import type { IPlayer } from '@lib/interfaces/player'
 
 export async function _graphql(playerdata: IPlayer, query: string, variables: any) {
 	interface keyable {
@@ -16,8 +16,9 @@ export async function _graphql(playerdata: IPlayer, query: string, variables: an
 	if (!authCookie) {
 		authCookie = '';
 	}
-
-	const graphQLClient = new GraphQLClient(`${envvars.BASE_API_URI}`, {
+	const apiUrl = import.meta.env.VITE_BASE_API_URI;
+	console.log("apiURL" + apiUrl);
+	const graphQLClient = new GraphQLClient(apiUrl, {
 		credentials: 'include',
 		mode: 'cors',
 		headers: {
