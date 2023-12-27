@@ -8,7 +8,7 @@ WORKDIR /stg
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --omit dev
+RUN npm install
 
 # Copy the rest of the application files to the working directory
 COPY . .
@@ -20,6 +20,7 @@ RUN npm run build
 EXPOSE 50003
 
 # Start the application
-CMD ["npm", "run", "start"]
+ENV PORT 50003
+#CMD ["node", "build"]
 
-#CMD ["tail", "-f", "/dev/null"]
+CMD ["tail", "-f", "/dev/null"]

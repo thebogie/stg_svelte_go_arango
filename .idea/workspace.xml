@@ -7,15 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="production ready testing">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="production ready testing part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/front/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/contest.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/stores/playerStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/user.d.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,56 +79,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Go Build.BACK_.executor": "Debug",
-    "HTTP Request.calls | #1.executor": "Run",
-    "HTTP Request.calls | #2.executor": "Run",
-    "HTTP Request.calls | #4.executor": "Run",
-    "HTTP Request.calls | #5.executor": "Run",
-    "JavaScript Debug.Lit.executor": "Debug",
-    "JavaScript Debug.Unnamed.executor": "Debug",
-    "JavaScript Debug.attachdebug.executor": "Debug",
-    "JavaScript Debug.litdebug.executor": "Debug",
-    "JavaScript Debug.sveltekit.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.last.introduce.type": "LET",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.FRONT.executor": "Debug",
-    "npm.Lit:SERVE.executor": "Debug",
-    "npm.Lit:TS.executor": "Run",
-    "npm.dev.executor": "Debug",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.front/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.BACK_.executor&quot;: &quot;Debug&quot;,
+    &quot;HTTP Request.calls | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.calls | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.calls | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.calls | #5.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Lit.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.attachdebug.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.litdebug.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.sveltekit.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/stg_svelte_go_arango/front/src/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.FRONT.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.Lit:SERVE.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.Lit:TS.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -143,11 +141,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src" />
       <recent name="C:\work\stg_svelte_go_arango\front" />
       <recent name="C:\work\stg_svelte_go_arango\back" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
@@ -157,7 +155,7 @@
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\+authenticated" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.BACK_">
+  <component name="RunManager" selected="Docker.front/Dockerfile">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -192,7 +190,17 @@
     <configuration name="sveltekit" type="JavascriptDebugType" activateToolWindowBeforeRun="false" uri="http://localhost:50003" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
+    <configuration name="front/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="front/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.front/Dockerfile" />
       <item itemvalue="Go Build.BACK_" />
       <item itemvalue="HTTP Request.calls | #1" />
       <item itemvalue="HTTP Request.calls | #2" />
@@ -204,6 +212,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.front/Dockerfile" />
         <item itemvalue="HTTP Request.calls | #1" />
         <item itemvalue="HTTP Request.calls | #4" />
         <item itemvalue="HTTP Request.calls | #2" />
@@ -271,7 +280,10 @@
       <workItem from="1703438300222" duration="7725000" />
       <workItem from="1703542502575" duration="93000" />
       <workItem from="1703542609426" duration="845000" />
-      <workItem from="1703543540993" duration="12126000" />
+      <workItem from="1703543540993" duration="14456000" />
+      <workItem from="1703647408426" duration="57000" />
+      <workItem from="1703647497060" duration="6185000" />
+      <workItem from="1703653765938" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -513,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703642385998</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="production ready testing part 2">
+      <option name="closed" value="true" />
+      <created>1703644010996</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1703644010996</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="login works to front page" />
     <MESSAGE value="refresh modules" />
     <MESSAGE value="adding env for prod" />
     <MESSAGE value="setting up frontend for prod" />
@@ -557,7 +576,8 @@
     <MESSAGE value="simplifing login with loads and events" />
     <MESSAGE value="figuring out prop transfer from server to client" />
     <MESSAGE value="production ready testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="production ready testing" />
+    <MESSAGE value="production ready testing part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="production ready testing part 2" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
