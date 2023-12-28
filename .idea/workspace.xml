@@ -7,22 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="production ready testing part 3">
-      <change afterPath="$PROJECT_DIR$/front/src/routes/+layout.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/routes/logout/+page.server.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="login + logout work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_contests.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_contests.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_games.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_games.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_playedat.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_playedat.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_playedwith.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_playedwith.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_players.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_players.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_resultedin.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_resultedin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_venues.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_venues.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/login/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/utils/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +285,7 @@
       <workItem from="1703543540993" duration="14456000" />
       <workItem from="1703647408426" duration="57000" />
       <workItem from="1703647497060" duration="6185000" />
-      <workItem from="1703653765938" duration="10826000" />
+      <workItem from="1703653765938" duration="20317000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -551,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703653972513</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="login + logout work">
+      <option name="closed" value="true" />
+      <created>1703708854684</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1703708854684</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding env for prod" />
     <MESSAGE value="setting up frontend for prod" />
     <MESSAGE value="fixing vite" />
     <MESSAGE value="creating build for node vs vercial" />
@@ -595,7 +594,8 @@
     <MESSAGE value="production ready testing" />
     <MESSAGE value="production ready testing part 2" />
     <MESSAGE value="production ready testing part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="production ready testing part 3" />
+    <MESSAGE value="login + logout work" />
+    <option name="LAST_COMMIT_MESSAGE" value="login + logout work" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -614,11 +614,6 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go</url>
-          <line>23</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
           <line>54</line>
           <option name="timeStamp" value="119" />
@@ -627,6 +622,16 @@
           <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
           <line>35</line>
           <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/back/auth/middleware.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/contest.go</url>
+          <line>41</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/api/graphql.ts</url>

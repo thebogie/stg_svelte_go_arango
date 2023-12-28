@@ -62,16 +62,13 @@ const loginPlayer = async (email: string, password: string) => {
 	return playerfound;
 };
 
-const getPlayerTotalResults = async (
-	playerdata: IPlayer,
-	playerkey: string
-): Promise<IContest[]> => {
+const getPlayerTotalResults = async (playerdata: IPlayer): Promise<IContest[]> => {
 	// Check if user exists
 	console.log('getPlayerTotalResults Service');
 	var response: responseObject;
 
 	const variables = {
-		player: 'player/' + playerkey
+		player: 'player/' + playerdata._key
 	};
 	const gql_query = gql`
 		query GetContestsPlayerTotalResults($player: String!) {
@@ -103,7 +100,7 @@ const getPlayerTotalResults = async (
 		};
 	});
 
-	console.log('getPlayerTotalResults: ' + JSON.stringify(contests));
+	//console.log('getPlayerTotalResults: ' + JSON.stringify(contests));
 
 	return contests;
 };

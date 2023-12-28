@@ -1,10 +1,10 @@
 <script lang="ts">
   import BarChart from '@lib/d3/BarChart.svelte';
-
+  import {page} from '$app/stores';
   export let data;
   // export let player;
-  console.log('PLAYER' + JSON.stringify(data.props.signed_in));
-  console.log('COUNTRIES' + JSON.stringify(data.props.countries));
+  //console.log('PLAYER' + JSON.stringify($page.data.signed_in));
+  //console.log('COUNTRIES' + JSON.stringify($page.data.countries));
 
 
 </script>
@@ -13,14 +13,12 @@
 <svelte:head>
   <title>Profile</title>
 </svelte:head>
-<p>The passed data is: {data.props.countries}</p>
 
-<div class="card p-4">Games Played
+<div class="card p-4">Total Wins, Draws and Losses
 
- <!-- <BarChart {data} />  -->
+  <BarChart {$page} />
 
 </div>
-<h1>Profile</h1>
-<p></p>
+
 
 

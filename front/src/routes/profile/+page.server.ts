@@ -1,10 +1,21 @@
 import { redirect } from '@sveltejs/kit';
+import {getPlayerTotalResults, loginPlayer} from '$lib/services/player.service';
 
 export const load = async ({ locals }) => {
-	console.log('profile page.serfver.ts');
+	let total_results ;
+
+	console.log('profile page.server.ts');
 
 	if (locals?.player !== undefined) {
 		const signed_in = locals.player;
+
+		try {
+			total_results = await getPlayerTotalResults(locals.player);
+
+
+		} catch (err) {
+			console.error(err); // Add your error handling here
+		}
 
 		let countries = [
 			{ country: 'China', population: 1439324 },
@@ -19,6 +30,6 @@ export const load = async ({ locals }) => {
 			{ country: 'Mexico', population: 128933 }
 		];
 
-		return { props: { signed_in, countries } };
+		return {  signed_in, countries, total_results  };
 	}
 };
