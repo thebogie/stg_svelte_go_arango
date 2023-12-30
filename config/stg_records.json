@@ -14193,9 +14193,9 @@
   {
     "_key": "key",
     "start": "2018-10-06T22:00:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2018-10-06T23:30:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -14229,9 +14229,9 @@
   {
     "_key": "key",
     "start": "2018-10-06T23:45:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2018-10-07T01:30:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -14265,9 +14265,9 @@
   {
     "_key": "key",
     "start": "2018-10-07T12:00:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2018-10-07T13:47:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -14313,9 +14313,9 @@
   {
     "_key": "key",
     "start": "2018-10-07T14:00:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2018-10-07T15:38:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -15561,9 +15561,9 @@
     "stopoffset": "-05:00",
     "venue": {
       "_key": "key",
-      "address": "1 S Capitol Ave, Indianapolis, IN 46204",
-      "lat": "39.766540",
-      "lng": "-86.160976"
+      "address": "Hyatt Regency Indianapolis, 1 S Capitol Ave, Indianapolis, IN 46204",
+      "lat": "39.76631950000001",
+      "lng": "-86.16074151349305"
     },
     "games": [
       "Reavers of Midgard"
@@ -16156,9 +16156,9 @@
   {
     "_key": "key",
     "start": "2019-11-23T15:00:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2019-11-23T17:01:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -16198,9 +16198,9 @@
   {
     "_key": "key",
     "start": "2019-11-23T18:45:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2019-11-23T20:52:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -16246,9 +16246,9 @@
   {
     "_key": "key",
     "start": "2019-11-24T12:00:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2019-11-24T14:10:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -16288,9 +16288,9 @@
   {
     "_key": "key",
     "start": "2019-11-24T16:45:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2019-11-24T17:31:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -16326,9 +16326,9 @@
   {
     "_key": "key",
     "start": "2019-11-24T18:45:00",
-    "startoffset": "-05:00",
+    "startoffset": "-07:00",
     "stop": "2019-11-24T19:32:00",
-    "stopoffset": "-05:00",
+    "stopoffset": "-07:00",
     "venue": {
       "_key": "key",
       "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
@@ -17285,7 +17285,7 @@
     "outcome": [
       {
         "_key": "key",
-        "playerid": "ray",
+        "playerid": "raymond",
         "place": "1",
         "result": "won"
       },
@@ -18007,6 +18007,7254 @@
         "_key": "key",
         "playerid": "joanna",
         "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-10-03T10:15:00",
+    "startoffset": "-05:00",
+    "stop": "2020-10-02T10:34:43",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Tsuro"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-10-03T10:35:00",
+    "startoffset": "-05:00",
+    "stop": "2020-10-02T10:45:43",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Tsuro"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-12-12T20:35:00",
+    "startoffset": "-05:00",
+    "stop": "2020-12-13T01:43:43",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Dwellings of Eldervale"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-12-12T12:45:00",
+    "startoffset": "-05:00",
+    "stop": "2020-12-13T13:18:43",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Azul"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-12-19T12:00:00",
+    "startoffset": "-05:00",
+    "stop": "2020-12-19T12:54:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "The Downfall of Pompeii"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-12-19T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2020-12-19T17:54:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Targi"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2020-12-31T22:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-01-01T00:26:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "The Downfall of Pompeii"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "ava",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-02-01T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2021-02-01T20:45:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Paperback"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-03-28T19:12:00",
+    "startoffset": "-05:00",
+    "stop": "2021-03-28T21:42:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "It's a Wonderful World"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-04-03T20:50:00",
+    "startoffset": "-05:00",
+    "stop": "2021-04-03T22:52:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Camel Up"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "ava",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "rose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-05-22T10:02:00",
+    "startoffset": "-05:00",
+    "stop": "2021-05-22T11:14:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Lords of Vegas"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-06-26T19:12:00",
+    "startoffset": "-05:00",
+    "stop": "2021-06-26T20:02:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Hey, That's My Fish!"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-18T11:02:00",
+    "startoffset": "-05:00",
+    "stop": "2021-07-18T11:32:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Labyrinth"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-02T15:28:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-02T16:28:41",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "Welcome To..."
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-02T16:34:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-02T17:09:23",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "Welcome To..."
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-03T10:12:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-03T15:45:41",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "Dwellings of Eldervale (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-03T18:12:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-03T19:20:23",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "Arboretum"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-04T19:12:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-04T20:41:23",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "War Chest"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-05T19:12:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-05T23:24:23",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "The Estates"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-05T23:12:00",
+    "startoffset": "-06:00",
+    "stop": "2021-08-06T00:43:23",
+    "stopoffset": "-06:00",
+    "venue": {
+      "_key": "key",
+      "address": "Reiling Rd, Breckenridge, CO 80424, United States",
+      "lat": "39.49148148632784",
+      "lng": "-106.03565315938522"
+    },
+    "games": [
+      "Paperback"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-03-30T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-03-30T20:33:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "The Isle of Cats"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kendra",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-05-09T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-05-09T22:22:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "The Isle of Cats"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kendra",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-05-21T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-05-22T01:08:24",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Dwellings of Eldervale (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-04T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-07-04T17:32:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32527604220331",
+      "lng": "-97.71483107251676"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-04T17:33:00",
+    "startoffset": "-05:00",
+    "stop": "2021-07-04T17:42:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32527604220331",
+      "lng": "-97.71483107251676"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-04T17:43:00",
+    "startoffset": "-05:00",
+    "stop": "2021-07-04T17:52:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32527604220331",
+      "lng": "-97.71483107251676"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-04T17:53:00",
+    "startoffset": "-05:00",
+    "stop": "2021-07-04T17:59:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32527604220331",
+      "lng": "-97.71483107251676"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-07-09T18:53:00",
+    "startoffset": "-07:00",
+    "stop": "2021-07-09T19:59:23",
+    "stopoffset": "-07:00",
+    "venue": {
+      "_key": "key",
+      "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
+      "lat": "33.681502",
+      "lng": "-117.921892"
+    },
+    "games": [
+      "Ticket to Ride"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-08-21T15:40:00",
+    "startoffset": "-05:00",
+    "stop": "2021-08-21T16:41:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Pokémon Trading Card Game"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-09-18T15:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-09-18T18:28:34",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Viticulture"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-09-18T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-09-18T22:49:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Yokohama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-09-13T19:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-09-13T20:09:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Patchwork"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-06T18:30:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-08T20:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-17T20:30:00",
+    "startoffset": "-04:00",
+    "stop": "2021-11-17T21:36:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Oh My Goods!"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "shuyuan",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-18T20:00:00",
+    "startoffset": "-04:00",
+    "stop": "2021-11-18T20:36:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Azul"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "shuyuan",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-18T20:40:00",
+    "startoffset": "-04:00",
+    "stop": "2021-11-18T21:16:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Azul"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "shuyuan",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-24T15:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-11-24T15:32:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-28T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-11-28T21:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-11-28T21:0:00",
+    "startoffset": "-05:00",
+    "stop": "2021-11-28T22:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-04T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-04T19:45:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Anachrony"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-05T12:30:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-05T16:36:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "232 McAllister Rd, Bastrop, TX 78602",
+      "lat": "30.083230546149494",
+      "lng": "-97.26409024114575"
+    },
+    "games": [
+      "Viticulture"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "alex",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-05T19:30:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-05T20:36:23",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Oh My Goods!"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-07T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-07T19:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-07T19:01:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-07T20:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2021-12-07T20:01:00",
+    "startoffset": "-05:00",
+    "stop": "2021-12-07T21:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-01-15T20:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-01-15T22:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Rivals for Catan"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "charles",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-01-15T22:31:00",
+    "startoffset": "-05:00",
+    "stop": "2022-01-15T00:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Rivals for Catan"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "charles",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-02-04T21:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-02-04T23:11:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cosmic Encounter (2008)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "new o",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-02-05T12:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-02-05T14:11:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Medici Roasting, 1101 W Lynn St, Austin, TX 78703, United States",
+      "lat": "30.27957112580372",
+      "lng": "-97.7594112423287"
+    },
+    "games": [
+      "Topiary"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-02-25T20:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-02-26T00:08:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Gugong"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-02-26T16:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-02-26T18:55:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Imperial Steam"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-08T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-08T19:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Air, Land, & Sea"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-08T19:01:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-08T20:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Kingdomino"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-08T20:01:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-08T21:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-08T21:01:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-08T21:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-08T21:35:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-08T22:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-21T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-21T18:25:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Air, Land, & Sea"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-26T15:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-26T18:47:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "6112A Tyne st Houston TX 77007, United States",
+      "lat": "29.775179",
+      "lng": "-95.424241"
+    },
+    "games": [
+      "The Gallerist"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-03-27T14:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-03-27T16:50:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "6112A Tyne st Houston TX 77007, United States",
+      "lat": "29.775179",
+      "lng": "-95.424241"
+    },
+    "games": [
+      "Maglev Metro"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-04-08T18:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-04-08T19:17:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cosmic Encounter (2008)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "kendra",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-04-27T17:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-04-27T18:15:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Lost Cities: Rivals"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-04-27T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-04-27T20:15:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "The Blood of an Englishman"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-04-27T20:20:00",
+    "startoffset": "-05:00",
+    "stop": "2022-04-27T21:15:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Saint Malo"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-05-02T17:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-05-02T21:26:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Hidden Leaders"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-05-02T21:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-05-02T22:49:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Tournament at Avalon"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-05-21T12:00:00",
+    "startoffset": "-07:00",
+    "stop": "2022-05-21T14:40:00",
+    "stopoffset": "-07:00",
+    "venue": {
+      "_key": "key",
+      "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
+      "lat": "33.681502",
+      "lng": "-117.921892"
+    },
+    "games": [
+      "7 Wonders",
+      "7 Wonders: Armada"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "miguel",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-05-21T19:00:00",
+    "startoffset": "-07:00",
+    "stop": "2022-05-21T22:02:00",
+    "stopoffset": "-07:00",
+    "venue": {
+      "_key": "key",
+      "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
+      "lat": "33.681502",
+      "lng": "-117.921892"
+    },
+    "games": [
+      "Kemet"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "josephine",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-05-22T12:30:00",
+    "startoffset": "-07:00",
+    "stop": "2022-05-22T13:47:00",
+    "stopoffset": "-07:00",
+    "venue": {
+      "_key": "key",
+      "address": "3009 Royal Palm Dr, Costa Mesa, CA 92626, United States",
+      "lat": "33.681502",
+      "lng": "-117.921892"
+    },
+    "games": [
+      "Kingdom Builder"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "miguel",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-06-16T20:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-06-16T21:57:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Board Room, 1737 Connecticut Ave NW, Washington, DC 20009, United States",
+      "lat": "38.91378607711581",
+      "lng": "-77.04529806333527"
+    },
+    "games": [
+      "Carcassonne"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-06-16T22:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-06-16T23:04:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Board Room, 1737 Connecticut Ave NW, Washington, DC 20009, United States",
+      "lat": "38.91378607711581",
+      "lng": "-77.04529806333527"
+    },
+    "games": [
+      "Carcassonne"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-06-30T:20:30",
+    "startoffset": "-05:00",
+    "stop": "2022-06-30T21:56:31",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Cherrywood Coffeehouse, 1400 E 38th 1/2 St, Austin, TX 78722, United States",
+      "lat": "30.293766985913614",
+      "lng": "-97.71603193073516"
+    },
+    "games": [
+      "Kingdomino"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-07-04T16:50:00",
+    "startoffset": "-05:00",
+    "stop": "2017-02-24T17:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Bennu Coffee Highland, 109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32508155737077",
+      "lng": "-97.7147988888842"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-07-04T17:11:00",
+    "startoffset": "-05:00",
+    "stop": "2017-02-24T17:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Bennu Coffee Highland, 109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32508155737077",
+      "lng": "-97.7147988888842"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-07-04T17:31:00",
+    "startoffset": "-05:00",
+    "stop": "2017-02-24T17:50:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Bennu Coffee Highland, 109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32508155737077",
+      "lng": "-97.7147988888842"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-07-04T17:51:00",
+    "startoffset": "-05:00",
+    "stop": "2017-02-24T18:20:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Bennu Coffee Highland, 109 Jacob Fontaine Ln suite 600, Austin, TX 78752, United States",
+      "lat": "30.32508155737077",
+      "lng": "-97.7147988888842"
+    },
+    "games": [
+      "Hive"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-03T10:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-08-03T10:32:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Place Indianapolis / Downtown, 130 S Pennsylvania St, Indianapolis, IN 46204",
+      "lat": "39.764751058892756",
+      "lng": "-86.156511031633"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-04T18:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-08-04T19:10:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Place Indianapolis / Downtown, 130 S Pennsylvania St, Indianapolis, IN 46204",
+      "lat": "39.764751058892756",
+      "lng": "-86.156511031633"
+    },
+    "games": [
+      "Wormholes"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-05T10:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-08-05T11:16:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Regency Indianapolis, 1 S Capitol Ave, Indianapolis, IN 46204",
+      "lat": "39.76631950000001",
+      "lng": "-86.16074151349305"
+    },
+    "games": [
+      "Village Rails"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "paolo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-06T16:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-08-06T18:00:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Lucas Stadium, 500 S Capitol Ave, Indianapolis, IN 46225, United States",
+      "lat": "39.760211313324724",
+      "lng": "-86.16388836904291"
+    },
+    "games": [
+      "Tournament at Avalon"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-10T20:30:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-10T23:32:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cosmic Encounter (2008)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jack",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-21T11:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-21T12:04:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Pokémon Trading Card Game"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-21T20:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-21T21:32:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ticket to Ride: New York"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-21T21:35:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-21T22:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-21T22:05:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-21T22:31:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-08-21T22:35:00",
+    "startoffset": "-05:00",
+    "stop": "2022-08-21T23:03:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-09-20T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-09-20T21:40:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Railroad Ink: Deep Blue Edition"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-09-20T20:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-09-20T21:50:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Lords of Waterdeep"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-09-22T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-09-22T18:02:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ticket to Ride: New York"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-09-22T19:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-09-22T20:15:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "The Estates"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-09-25T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-09-25T22:50:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "135 Barton Hills Drive, #125 Austin, TX, United States",
+      "lat": "30.255496435217257",
+      "lng": "-97.78204158653577"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-10-08T15:40:00",
+    "startoffset": "-05:00",
+    "stop": "2022-10-08T16:35:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Welcome To..."
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "paul benson",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "angel baker",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "5",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "6",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-10-08T13:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-10-08T15:35:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Flamecraft"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "paul benson",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "angel baker",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-11-16T21:20:00",
+    "startoffset": "-04:00",
+    "stop": "2022-11-16T22:38:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Oh My Goods!",
+      "Oh My Goods!: Longsdale in Revolt"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-11-17T12:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-11-17T12:59:31",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Gunks Gaming Guild Cafe, 17 Church St, New Paltz, NY 12561, United States",
+      "lat": "41.795489116678134",
+      "lng": "-74.08363499074956"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-11-17T13:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-11-17T15:01:31",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Gunks Gaming Guild Cafe, 17 Church St, New Paltz, NY 12561, United States",
+      "lat": "41.795489116678134",
+      "lng": "-74.08363499074956"
+    },
+    "games": [
+      "Roll Player"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-11-17T21:10:00",
+    "startoffset": "-04:00",
+    "stop": "2022-11-17T22:52:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Oh My Goods!",
+      "Oh My Goods!: Longsdale in Revolt"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-08T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-12-08T21:43:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-08T22:00:00",
+    "startoffset": "-05:00",
+    "stop": "2022-12-08T23:03:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-08T23:15:00",
+    "startoffset": "-05:00",
+    "stop": "2022-12-09T00:25:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-15T20:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-12-15T20:57:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Board Room, 1737 Connecticut Ave NW, Washington, DC 20009, United States",
+      "lat": "38.91378607711581",
+      "lng": "-77.04529806333527"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-14T23:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-12-15T02:00:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Centric Arlington, Wilson Boulevard, Arlington, VA, United States",
+      "lat": "38.89527258109623",
+      "lng": "-77.07267831521543"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2022-12-15T23:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-12-16T00:30:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Centric Arlington, Wilson Boulevard, Arlington, VA, United States",
+      "lat": "38.89527258109623",
+      "lng": "-77.07267831521543"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-01-02T14:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-01-02T13:22:31",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Cherrywood Coffeehouse, 1400 E 38th 1/2 St, Austin, TX 78722, United States",
+      "lat": "30.293766985913614",
+      "lng": "-97.71603193073516"
+    },
+    "games": [
+      "Roll Player"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-01-06T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-01-07T00:16:31",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "In the Hall of the Mountain King"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-01-08T00:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-01-08T01:01:31",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-01-08T01:05:00",
+    "startoffset": "-05:00",
+    "stop": "2023-01-08T02:11:31",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-02-01T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-02-01T22:22:38",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Roll Player",
+      "Roll Player Adventures",
+      "Roll Player: Monsters & Minions"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "new o",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-02-24T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-02-24T00:22:25",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Mythic mischief"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "leo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-02-25T15:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-02-25T16:03:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Dragonwood"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-02-25T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-02-25T23:14:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Wonderland's War"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T18:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T19:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T19:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T19:19:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T19:20:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T20:16:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T20:17:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T20:34:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T20:35:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T21:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Onitama"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-06T21:11:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-06T22:14:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Air, Land, & Sea"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-07T18:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-07T19:14:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-03-07T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-03-07T19:38:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-01T18:50:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-07T19:19:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-01T19:20:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-07T20:24:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-02T20:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-02T21:08:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders Duel"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-02T21:10:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-02T21:53:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders Duel"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-07T14:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-07T15:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders Duel"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-18T20:11:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-18T21:58:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Courtyard by Marriott Austin Airport, 7809 E Ben White Blvd, Austin, TX 78741, United States",
+      "lat": "30.217617058854632",
+      "lng": "-97.68742586677496"
+    },
+    "games": [
+      "7 Wonders",
+      "7 Wonders: Armada (2018)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-18T22:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-18T22:46:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Courtyard by Marriott Austin Airport, 7809 E Ben White Blvd, Austin, TX 78741, United States",
+      "lat": "30.217617058854632",
+      "lng": "-97.68742586677496"
+    },
+    "games": [
+      "7 Wonders",
+      "7 Wonders: Armada (2018)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-20T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-20T19:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-20T19:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-20T20:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-20T20:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-20T21:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-20T21:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-20T22:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-04-29T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-04-29T20:54:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "7 Wonders Duel"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mutt",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-05-09T17:31:11:00",
+    "startoffset": "-05:00",
+    "stop": "2023-05-09T20:14:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Air, Land, & Sea: Spies, Lies, & Supplies"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-05-12T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-05-12T23:20:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Acquire"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-05-15T20:11:00",
+    "startoffset": "-05:00",
+    "stop": "2023-05-15T22:20:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Courtyard by Marriott Austin Airport, 7809 E Ben White Blvd, Austin, TX 78741, United States",
+      "lat": "30.217617058854632",
+      "lng": "-97.68742586677496"
+    },
+    "games": [
+      "7 Wonders",
+      "7 Wonders: Armada (2018)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-05-16T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-05-16T22:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Captain Quackenbush's Coffeehouse, 5326 Manchaca Road, Austin, TX, United States",
+      "lat": "30.217928",
+      "lng": "-97.796485"
+    },
+    "games": [
+      "Chicago Express"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-09T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-09T20:40:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-09T21:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-09T21:42:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-09T21:50:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-09T22:47:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-10T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-10T16:47:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-10T19:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-10T19:47:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "hojo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nic",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-19T15:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-19T16:11:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cosmic Encounter"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jack",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-06-19T16:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-06-19T17:05:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cosmic Encounter"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jack",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-07-17T20:30:00",
+    "startoffset": "-05:00",
+    "stop": "2023-07-17T21:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-07-17T21:10:00",
+    "startoffset": "-05:00",
+    "stop": "2023-07-17T21:55:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-03T18:30:00",
+    "startoffset": "-04:00",
+    "stop": "2023-08-03T19:12:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Lucas Stadium, 500 S Capitol Ave, Indianapolis, IN 46225, United States",
+      "lat": "39.760211313324724",
+      "lng": "-86.16388836904291"
+    },
+    "games": [
+      "Arboretum"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-03T21:45:00",
+    "startoffset": "-04:00",
+    "stop": "2023-08-03T22:25:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hall C, Indiana Convention Center, 100 S Capitol Ave, Indianapolis, IN 46225, United States",
+      "lat": "39.760211313324724",
+      "lng": "-86.16388836904291"
+    },
+    "games": [
+      "Arboretum"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "steve",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-04T11:00:00",
+    "startoffset": "-05:00",
+    "stop": "2019-08-02T13:25:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Hyatt Regency Indianapolis, 1 S Capitol Ave, Indianapolis, IN 46204",
+      "lat": "39.76631950000001",
+      "lng": "-86.16074151349305"
+    },
+    "games": [
+      "Wild Tiled West"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "paolo",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "paolo kid",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-04T22:00:00",
+    "startoffset": "-04:00",
+    "stop": "2022-08-05T00:12:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Lucas Stadium, 500 S Capitol Ave, Indianapolis, IN 46225, United States",
+      "lat": "39.760211313324724",
+      "lng": "-86.16388836904291"
+    },
+    "games": [
+      "Dawn of Ulos"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-06T22:20:45",
+    "startoffset": "-04:00",
+    "stop": "2022-08-06T21:26:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "TownePlace Suites, 629 Russell Ave, Indianapolis, IN 46225, United States",
+      "lat": "39.75804775218753",
+      "lng": "-86.15963817309377"
+    },
+    "games": [
+      "Arboretum"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "steve",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-07T14:20:45",
+    "startoffset": "-04:00",
+    "stop": "2022-08-07T15:05:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Indianapolis International Airport, 7800 Col. H. Weir Cook Memorial Dr, Indianapolis, IN 46241, United States",
+      "lat": "39.720465852313545",
+      "lng": "-86.29364705582178"
+    },
+    "games": [
+      "The king is dead"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-09T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-09T18:59:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-09T19:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-09T19:59:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-09T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-09T22:08:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Acquire"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-11T21:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-12T01:54:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Age of Innovation"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-18T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-18T21:33:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Dawn of Ulos"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "travis freeman",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-08-18T21:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-18T23:04:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Dawn of Ulos"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "travis freeman",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-09-09T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-18T20:43:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Citadels"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "leo",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "prof matt",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-09-09T20:55:00",
+    "startoffset": "-05:00",
+    "stop": "2023-08-18T22:29:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Citadels"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "prof matt",
+        "place": "5",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "leo",
+        "place": "6",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-09-09T22:32:00",
+    "startoffset": "-05:00",
+    "stop": "2023-09-09T23:23:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Citadels"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "leo",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-09-22T20:32:00",
+    "startoffset": "-05:00",
+    "stop": "2023-09-23T01:17:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Age of Innovation"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-09-23T20:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-09-24T00:41:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Distilled"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-13T17:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-10-13T17:51:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Dragonwood"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-13T17:55:00",
+    "startoffset": "-05:00",
+    "stop": "2023-10-13T18:32:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Dragonwood"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-20T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-10-20T22:41:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Cyclades"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "travis freeman",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-24T20:00:00",
+    "startoffset": "-04:00",
+    "stop": "2023-10-24T22:25:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Holiday Inn Arlington at Ballston, 4610 Fairfax Dr, Arlington, VA 22203 United States",
+      "lat": "38.89527258109623",
+      "lng": "-77.07267831521543"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-25T19:00:00",
+    "startoffset": "-04:00",
+    "stop": "2023-10-25T19:47:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Holiday Inn Arlington at Ballston, 4610 Fairfax Dr, Arlington, VA 22203 United States",
+      "lat": "38.88167286260742",
+      "lng": "-77.11732125582178"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-25T19:50:00",
+    "startoffset": "-04:00",
+    "stop": "2023-10-25T20:30:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Holiday Inn Arlington at Ballston, 4610 Fairfax Dr, Arlington, VA 22203 United States",
+      "lat": "38.88167286260742",
+      "lng": "-77.11732125582178"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-10-25T20:35:00",
+    "startoffset": "-04:00",
+    "stop": "2023-10-25T22:15:00",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "Holiday Inn Arlington at Ballston, 4610 Fairfax Dr, Arlington, VA 22203 United States",
+      "lat": "38.88167286260742",
+      "lng": "-77.11732125582178"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-10T19:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-11-10T23:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Lords of Vegas"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-15T19:00:00",
+    "startoffset": "-04:00",
+    "stop": "2023-11-15T20:00:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-15T20:01:00",
+    "startoffset": "-04:00",
+    "stop": "2023-11-15T21:00:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-15T21:01:00",
+    "startoffset": "-04:00",
+    "stop": "2023-11-15T22:14:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "15 Holland Ln 2222 New Paltz NY 12561, United States",
+      "lat": "41.74207741765583",
+      "lng": "-74.07442454422367"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-18T17:01:00",
+    "startoffset": "-04:00",
+    "stop": "2023-11-18T20:14:23",
+    "stopoffset": "-04:00",
+    "venue": {
+      "_key": "key",
+      "address": "50 Bowery, New York, NY 10013, United States",
+      "lat": "40.71583267215193",
+      "lng": "-73.99661864236352"
+    },
+    "games": [
+      "Innovation (2020)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "dave",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-22T21:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-11-22T23:12:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Paperback"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "spencer",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "liz",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-11-25T17:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-11-25T18:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Labyrinth"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-10T16:30:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-10T17:20:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Dragonrealm"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "3",
+        "result": "mitch"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-12T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-12T18:50:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "bandish",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "kenneth",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-12T19:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-12T20:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "7 Wonders (2010)"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "julie norris",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "bandish",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-12T20:02:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-12T21:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Welcome To..."
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-13T19:02:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-13T20:10:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "bandish",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-13T20:15:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-13T21:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Ra"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "bandish",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-13T21:10:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-13T22:42:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Marriott South, 4415 S I-35 Frontage Rd, Austin, TX 78744, United States",
+      "lat": "30.210892402882994",
+      "lng": "-97.75346711537279"
+    },
+    "games": [
+      "Acquire"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "4",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-15T20:45:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-16T01:14:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Mare Nostrum: Empires"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "blankenship",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jose",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-16T16:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-16T17:08:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Welcome to the Moon"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "5",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "6",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-16T14:30:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-16T15:24:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Welcome to the Moon"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "4",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "5",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-17T11:30:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-17T12:23:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Medici Roasting, 1101 W Lynn St, Austin, TX 78703, United States",
+      "lat": "30.27957112580372",
+      "lng": "-97.7594112423287"
+    },
+    "games": [
+      "Sea Salt & Paper"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "curley",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "jed",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-21T20:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-21T21:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "travis freeman",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "2",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-21T21:02:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-21T22:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "War Chest",
+      "War Chest: Nobility",
+      "war Chest: Siege"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "travis freeman",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "nick",
+        "place": "2",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "joanna",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-22T22:02:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-22T23:01:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "2613 W 10th St, Austin, TX, United States",
+      "lat": "30.284886",
+      "lng": "-97.774528"
+    },
+    "games": [
+      "Patchwork"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "olivia",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-24T14:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-24T15:30:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Dragonrealm"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "lily",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "raymond",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-25T18:00:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-25T19:47:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "8312 Stillwood Ln, Austin, TX 78757,  United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Scythe"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "josephine",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "gary",
+        "place": "2",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "fred",
+        "place": "3",
+        "result": "lost"
+      },
+      {
+        "_key": "key",
+        "playerid": "miguel",
+        "place": "3",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-27T19:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-27T20:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Sea Salt & Paper"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "charles",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-27T20:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-27T21:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Patchwork"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "charles",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
+        "result": "lost"
+      }
+    ]
+  },
+  {
+    "_key": "key",
+    "start": "2023-12-27T21:01:00",
+    "startoffset": "-05:00",
+    "stop": "2023-12-27T22:00:00",
+    "stopoffset": "-05:00",
+    "venue": {
+      "_key": "key",
+      "address": "Emerald Tavern Games and Cafe, Research Boulevard, Austin, TX, United States",
+      "lat": "30.371085",
+      "lng": "-97.724703"
+    },
+    "games": [
+      "Patchwork"
+    ],
+    "outcome": [
+      {
+        "_key": "key",
+        "playerid": "charles",
+        "place": "1",
+        "result": "won"
+      },
+      {
+        "_key": "key",
+        "playerid": "mitch",
+        "place": "2",
         "result": "lost"
       }
     ]
