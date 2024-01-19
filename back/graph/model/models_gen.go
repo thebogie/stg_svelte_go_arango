@@ -2,9 +2,10 @@
 
 package model
 
-type CompletedstatusInput struct {
-	ID        string `json:"id"`
-	Completed bool   `json:"completed"`
+type Record interface {
+	IsRecord()
+	GetWon() *int
+	GetLost() *int
 }
 
 type Contest struct {
@@ -37,11 +38,6 @@ type LoginData struct {
 	Userdata *UserData `json:"userdata"`
 }
 
-type NewTodo struct {
-	Title       string `json:"title"`
-	Description string `json:"description"`
-}
-
 type NewUser struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
@@ -58,6 +54,13 @@ type Outcome struct {
 
 type RefreshTokenInput struct {
 	Token string `json:"token"`
+}
+
+type Stats struct {
+	Nemesis      *string    `json:"nemesis,omitempty"`
+	WonLostRatio *int       `json:"won_lost_ratio,omitempty"`
+	Record       Record     `json:"record,omitempty"`
+	Contests     []*Contest `json:"contests,omitempty"`
 }
 
 type UserData struct {

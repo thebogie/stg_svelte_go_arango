@@ -8,5 +8,5 @@ type Game {
 
 
 extend type Query {
-    games: [Game!]!
+    Games: [Game!]!
 }

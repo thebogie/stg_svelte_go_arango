@@ -8,11 +8,7 @@ import (
 )
 
 type GameRepository interface {
-	//Get(ctx context.Context, id string) (*model.Todo, error)
 	List(ctx context.Context) ([]*model.Game, error)
-	//Create(ctx context.Context, input model.NewTodo) (*model.Todo, error)
-	//Update(ctx context.Context, input model.CompletedstatusInput) (*model.Todo, error)
-	//Delete(ctx context.Context, id string) (*model.Todo, error)
 }
 
 type gamerepository struct {
@@ -52,12 +48,3 @@ func (gr *gamerepository) List(ctx context.Context) ([]*model.Game, error) {
 
 	return results, nil
 }
-
-//func (tr *gamerepository) ListPlayedByPlayerid(ctx context.Context) ([]*model.Game, error) {
-//query := "For c in contest LET involvedfull = (    FOR v, e IN 1..3 INBOUND  @playerid resulted_in    RETURN DISTINCT v    )    for findgame in  involvedfull  FOR v, e IN 1..3 OUTBOUND findgame played_with  RETURN DISTINCT v"
-//bindVars := map[string]interface{}{
-//	"playerid": playerid,
-//}
-
-//return []*model.Game{}, nil
-//}

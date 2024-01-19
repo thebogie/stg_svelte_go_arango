@@ -1,44 +1,41 @@
 type User {
-  id: ID!
-  username: String!
-  password: String!
+    id: ID!
+    username: String!
+    password: String!
 }
 
 type UserData {
-  _key:String!
-  _id:String!
-  rev:String!
-  firstname:String!
-  email:String!
-  password:String!
+    _key:String!
+    _id:String!
+    rev:String!
+    firstname:String!
+    email:String!
+    password:String!
 }
 
 type LoginData {
-  token: String!
-  userdata: UserData!
+    token: String!
+    userdata: UserData!
 }
 
 input RefreshTokenInput {
-  token: String!
+    token: String!
 }
 
 input NewUser {
-  username: String!
-  password: String!
+    username: String!
+    password: String!
 }
 
 input Login {
-  username: String!
-  password: String!
+    username: String!
+    password: String!
 }
 
 type Mutation {
-  createUser(input: NewUser!): String!
-  login(input: Login!): String!
-  loginUser(input: Login!): LoginData!
-  refreshToken(input: RefreshTokenInput!): String!
+    CreateUser(input: NewUser!): String!
+    Login(input: Login!): String!
+    LoginUser(input: Login!): LoginData!
+    RefreshToken(input: RefreshTokenInput!): String!
 }
 
-extend type Query {
-  checklogin(player: String!) : String!
-}

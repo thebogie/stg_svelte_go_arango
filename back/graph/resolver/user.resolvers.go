@@ -30,11 +30,6 @@ func (r *mutationResolver) RefreshToken(ctx context.Context, input model.Refresh
 	return r.User.RefreshToken(ctx, input)
 }
 
-// Checklogin is the resolver for the checklogin field.
-func (r *queryResolver) Checklogin(ctx context.Context, player string) (string, error) {
-	return r.User.CheckLogin(ctx, player)
-}
-
 // Mutation returns generated.MutationResolver implementation.
 func (r *Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
 
@@ -46,3 +41,6 @@ type mutationResolver struct{ *Resolver }
 //   - When renaming or deleting a resolver the old code will be put in here. You can safely delete
 //     it when you're done.
 //   - You have helper methods in this file. Move them out to keep these resolver files clean.
+func (r *queryResolver) Checklogin(ctx context.Context, player string) (string, error) {
+	return r.User.CheckLogin(ctx, player)
+}

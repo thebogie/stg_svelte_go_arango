@@ -7,9 +7,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="first barchart">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="latest drop of all games played since 2014">
+      <change afterPath="$PROJECT_DIR$/automation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/custom-folder/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/fixtures.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/playwright.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/tests-examples/demo-todo-app.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/tests/login.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/automation/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/_queries/queries.aql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/graph/schema/stats.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stg_records.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_records.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/generated/generated.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/model/todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/todo.resolvers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/game.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/game.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/todo.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/user.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/user.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/registry/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/registry/registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/registry/todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/contest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +92,6 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="LLMProjectSettings">
-    <option name="turned_on" value="false" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,7 +99,7 @@
     <dismissed value="$PROJECT_DIR$/front/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -90,6 +127,10 @@
     "JavaScript Debug.attachdebug.executor": "Debug",
     "JavaScript Debug.litdebug.executor": "Debug",
     "JavaScript Debug.sveltekit.executor": "Debug",
+    "Playwright.All Tests in playwright.config.ts.executor": "Run",
+    "Playwright.All Tests.executor": "Run",
+    "Playwright.login mitch and see email address in header.executor": "Debug",
+    "Playwright.test stg.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -104,7 +145,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "LET",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/routes/logout",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/lib/interfaces",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,7 +159,7 @@
     "npm.Lit:TS.executor": "Run",
     "npm.dev.executor": "Debug",
     "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "",
+    "prettierjs.PrettierConfiguration.Package": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\prettier",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -138,21 +179,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\interfaces" />
+      <recent name="C:\work\stg_svelte_go_arango\back\graph\schema" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\logout" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src" />
-      <recent name="C:\work\stg_svelte_go_arango\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\automation\.auth" />
+      <recent name="C:\work\stg_svelte_go_arango\front\static" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
       <recent name="C:\work\stg_svelte_go_arango\front\src" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\login" />
-      <recent name="C:\work\stg_svelte_go_arango\requirements" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\+authenticated" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.BACK_">
+  <component name="RunManager" selected="npm.dev">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="stg_svelte_go_arango" />
       <working_directory value="$PROJECT_DIR$" />
@@ -181,9 +222,6 @@
     <configuration name="calls | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="calls | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="sveltekit" type="JavascriptDebugType" activateToolWindowBeforeRun="false" uri="http://localhost:50003" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
@@ -201,19 +239,18 @@
       <item itemvalue="Go Build.BACK_" />
       <item itemvalue="HTTP Request.calls | #1" />
       <item itemvalue="HTTP Request.calls | #2" />
-      <item itemvalue="HTTP Request.calls | #5" />
       <item itemvalue="HTTP Request.calls | #4" />
       <item itemvalue="JavaScript Debug.attachdebug" />
       <item itemvalue="JavaScript Debug.sveltekit" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="Playwright.All Tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.front/Dockerfile" />
-        <item itemvalue="HTTP Request.calls | #1" />
         <item itemvalue="HTTP Request.calls | #4" />
+        <item itemvalue="HTTP Request.calls | #1" />
+        <item itemvalue="Docker.front/Dockerfile" />
         <item itemvalue="HTTP Request.calls | #2" />
-        <item itemvalue="HTTP Request.calls | #5" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +317,9 @@
       <workItem from="1703543540993" duration="14456000" />
       <workItem from="1703647408426" duration="57000" />
       <workItem from="1703647497060" duration="6185000" />
-      <workItem from="1703653765938" duration="21521000" />
+      <workItem from="1703653765938" duration="38154000" />
+      <workItem from="1705638967855" duration="67000" />
+      <workItem from="1705639052069" duration="6205000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -554,7 +593,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703774793018</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="latest drop of all games played since 2014">
+      <option name="closed" value="true" />
+      <created>1703898441463</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1703898441463</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +620,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing vite" />
     <MESSAGE value="creating build for node vs vercial" />
     <MESSAGE value="fixing prod connections" />
     <MESSAGE value="store work" />
@@ -598,7 +644,8 @@
     <MESSAGE value="production ready testing part 3" />
     <MESSAGE value="login + logout work" />
     <MESSAGE value="first barchart" />
-    <option name="LAST_COMMIT_MESSAGE" value="first barchart" />
+    <MESSAGE value="latest drop of all games played since 2014" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest drop of all games played since 2014" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -633,7 +680,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/contest.go</url>
-          <line>41</line>
+          <line>37</line>
           <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -650,6 +697,41 @@
           <url>file://$PROJECT_DIR$/front/src/routes/+authenticated/ __layout.svelte</url>
           <line>6</line>
           <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/automation/tests/login.spec.ts</url>
+          <line>23</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>56</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/graphql.ts</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

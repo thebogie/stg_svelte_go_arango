@@ -1,14 +1,9 @@
-import { GraphQLClient } from 'graphql-request';
+import {GraphQLClient, type Variables} from 'graphql-request';
+import type { IPlayer } from '$lib/interfaces/player';
 
-import Cookies from 'js-cookie';
-import type { IPlayer } from '$lib/interfaces/player'
 
-export async function _graphql(playerdata: IPlayer, query: string, variables: any) {
-	interface keyable {
-		[key: string]: any;
-	}
-
-	let results: any = {};
+export async function _graphql(playerdata: IPlayer, query: string, variables:  Variables) {
+	let results: unknown;
 
 	let authCookie = playerdata.accessToken;
 	console.log('AUTH = ' + authCookie);
@@ -17,7 +12,7 @@ export async function _graphql(playerdata: IPlayer, query: string, variables: an
 		authCookie = '';
 	}
 	const apiUrl = import.meta.env.VITE_BASE_API_URI;
-	console.log("apiURL" + apiUrl);
+	console.log('apiURL' + apiUrl);
 	const graphQLClient = new GraphQLClient(apiUrl, {
 		credentials: 'include',
 		mode: 'cors',
@@ -26,22 +21,30 @@ export async function _graphql(playerdata: IPlayer, query: string, variables: an
 		}
 	});
 
+
+
 	try {
-		if (variables == '') {
+		if (Object.keys(variables).length === 0) {
 			results = (await graphQLClient.request(query)) as object;
 		} else {
-			results = (await graphQLClient.request(query, variables)) as object;
+			results = (await graphQLClient.request(
+				query,
+				variables
+			)) as object;
 		}
 
 		console.log('GRAPHQL:' + JSON.stringify(results));
-	} catch (err: any) {
+
+		// @ts-expect-error this is error object
+	} catch (err: Error) {
 		// Handle the error here
 
+
 		if (err.response.status == 403) {
-			let username = 'unknown';
-			if (variables?.input?.username) {
-				username = variables.input.username;
-			}
+			let username = (variables.input as { username: string }).username; // Correct assertion
+			if (username === undefined) {
+					username = "unknown";
+				}
 			throw new Error(
 				'ERR:' + username + ' was unable to login. Forbidden. Wrong password? Isnt registered?'
 			);

@@ -11,9 +11,13 @@ type Contest {
     venue: Venue
 }
 
-extend type Query {
-    contests: [Contest!]!
+type Query {
+    Contests: [Contest!]!
     GetContestsPlayerTotalResults(player: String!): [Contest!]!
 }
+
+#type Mutation {
+#    createContest( input: ): String!
+#}
 
 

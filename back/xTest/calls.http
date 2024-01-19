@@ -1,7 +1,7 @@
 GRAPHQL https://smacktalkgaming.com/graphql
 
 mutation LoginUser($input: Login!) {
-    loginUser(input: $input) {
+    LoginUser(input: $input) {
         token
         userdata {
             _key
@@ -48,9 +48,10 @@ query IntrospectionQuery {
 }
 ####
 GRAPHQL http://localhost:50002/graphql
+#Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMDI4MzQyNn0.yGJ12K17ZMLck_TmsMRlhXyTqgZRkBTkmUGKfi42JQA
 
 mutation LoginUser($input: Login!) {
-    loginUser(input: $input) {
+    LoginUser(input: $input) {
         token
         userdata {
             _key

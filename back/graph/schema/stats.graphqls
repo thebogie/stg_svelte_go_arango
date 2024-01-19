@@ -1,0 +1,19 @@
+interface Record {
+    won: Int
+    lost: Int
+}
+
+
+type Stats {
+    nemesis:String
+    won_lost_ratio: Int
+    record: Record
+    contests: [Contest]
+}
+
+
+ extend type Query {
+    GetStats: [Stats]
+}
+
+

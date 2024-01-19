@@ -2,3 +2,4 @@
 .env.prod
 todos.yml
 docker-compose.yml
+/graph/generated/generated.go

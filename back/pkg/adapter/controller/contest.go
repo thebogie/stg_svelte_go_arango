@@ -12,9 +12,7 @@ type ContestController interface {
 	//Get(ctx context.Context, id string) (*model.Todo, error)
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
-	//Create(ctx context.Context, input model.NewTodo) (*model.Todo, error)
-	//Update(ctx context.Context, input model.CompletedstatusInput) (*model.Todo, error)
-	//Delete(ctx context.Context, id string) (*model.Todo, error)
+	GetStats(ctx context.Context, player string) (*model.Stats, error)
 }
 
 type contestController struct {
@@ -31,6 +29,11 @@ func NewContestController(cu usecase.ContestUsecase) ContestController {
 func (tc contestController) List(ctx context.Context) ([]*model.Contest, error) {
 	fmt.Println("This is from contest controller")
 	return tc.contestUsecase.List(ctx)
+}
+
+func (tc contestController) GetStats(ctx context.Context, player string) (*model.Stats, error) {
+	fmt.Println("Contest Controller: GetStats")
+	return tc.contestUsecase.GetStats(ctx, player)
 }
 
 func (tc contestController) GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error) {

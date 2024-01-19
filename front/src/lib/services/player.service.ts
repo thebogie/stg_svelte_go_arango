@@ -3,26 +3,22 @@ import { gql } from 'graphql-request';
 import type { IPlayer } from '$lib/interfaces/player';
 import type { IContest } from '$lib/interfaces/contest';
 import Cookies from 'js-cookie';
+import type { Graphql_variables } from '$lib/interfaces/graphql';
 
 interface responseObject {
-	[key: string]: any;
+	[key: string]: never;
 }
 
 const loginPlayer = async (email: string, password: string) => {
 	// Check if user exists
 	console.log('LoginUser Service');
 
-	var token = '';
-	var error: string = '';
-	let results: any;
-	let playerfound: IPlayer = {};
+	let results: unknown;
+	const player_found: IPlayer = {};
 
-	const variables = {
-		input: { username: email, password: password }
-	};
 	const gql_loginuser = gql`
 		mutation LoginUser($input: Login!) {
-			loginUser(input: $input) {
+			LoginUser(input: $input) {
 				token
 				userdata {
 					_key
@@ -36,36 +32,35 @@ const loginPlayer = async (email: string, password: string) => {
 	`;
 
 	try {
-		results = await _graphql(playerfound, gql_loginuser, variables);
+		results = await _graphql(player_found, gql_loginuser, {
+			input: { username: email, password: password }
+		});
 
-		// @ts-ignore
-		playerfound.accessToken = results.loginUser.token;
-		// @ts-ignore
-		playerfound.email = results.loginUser.userdata.email;
-		// @ts-ignore
-		playerfound._key = results.loginUser.userdata._key;
+		player_found.accessToken = results.LoginUser.token;
+		player_found.email = results.LoginUser.userdata.email;
+		player_found._key = results.LoginUser.userdata._key;
 
-		if (playerfound.accessToken) {
-			Cookies.set('player', JSON.stringify(results.loginUser.userdata), {
+		if (player_found.accessToken) {
+			Cookies.set('player', JSON.stringify(results.LoginUser.userdata), {
 				expires: 1, // The cookie will expire in 7 days
 				path: '/', // The cookie is valid for all paths on your domain
 				secure: true, // This will make the cookie be sent only over HTTPS
-				sameSite: 'strict' // This will avoid cookie being sent in cross-site requests);
+				sameSite: 'strict' // This will avoid cookie being sent in cross-site requests;
 			});
 		}
-	} catch (err: any) {
+	} catch (err: Error) {
 		console.log('ERror: ' + JSON.stringify(err.message));
 		throw err;
 	}
-	console.log('LOGINPLAYERSERVICE: ' + JSON.stringify(playerfound));
+	console.log('LOGINPLAYERSERVICE: ' + JSON.stringify(player_found));
 
-	return playerfound;
+	return player_found;
 };
 
 const getPlayerTotalResults = async (playerdata: IPlayer): Promise<IContest[]> => {
 	// Check if user exists
 	console.log('getPlayerTotalResults Service');
-	var response: responseObject;
+	let response: responseObject;
 
 	const variables = {
 		player: 'player/' + playerdata._key

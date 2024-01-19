@@ -26,7 +26,6 @@ func New(db driver.Database) Registry {
 func (r *registry) NewController() controller.Controller {
 	return controller.Controller{
 		User:    r.NewUserController(),
-		Todo:    r.NewTodoController(),
 		Game:    r.NewGameController(),
 		Contest: r.NewContestController(),
 	}

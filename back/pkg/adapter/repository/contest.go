@@ -10,12 +10,8 @@ import (
 )
 
 type ContestRepository interface {
-	//Get(ctx context.Context, id string) (*model.Todo, error)
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
-	//Create(ctx context.Context, input model.NewTodo) (*model.Todo, error)
-	//Update(ctx context.Context, input model.CompletedstatusInput) (*model.Todo, error)
-	//Delete(ctx context.Context, id string) (*model.Todo, error)
 }
 
 type contestrepository struct {

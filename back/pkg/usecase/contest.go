@@ -12,12 +12,9 @@ type contestUsecase struct {
 }
 
 type ContestUsecase interface {
-	//Get(ctx context.Context, id string) (*model.Todo, error)
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
-	//Create(ctx context.Context, input model.NewTodo) (*model.Todo, error)
-	//Update(ctx context.Context, input model.CompletedstatusInput) (*model.Todo, error)
-	//Delete(ctx context.Context, id string) (*model.Todo, error)
+	GetStats(ctx context.Context, player string) (*model.Stats, error)
 }
 
 func NewContestUsecase(cr repository.ContestRepository) ContestUsecase {
@@ -36,4 +33,11 @@ func (cu contestUsecase) GetContestsPlayerTotalResults(ctx context.Context, play
 	fmt.Println("This is from contest usecase")
 
 	return cu.contestRepository.GetContestsPlayerTotalResults(ctx, player)
+}
+
+func (cu contestUsecase) GetStats(ctx context.Context, player string) (*model.Stats, error) {
+	fmt.Println("Contest Usecase: GetStats")
+	//response, error := cu.contestRepository.GetContestsPlayerTotalResults(ctx, player)
+
+	return nil, nil
 }

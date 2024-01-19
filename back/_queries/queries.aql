@@ -1,0 +1,39 @@
+
+
+//all the contests i have been involved in and my results:
+ FOR contest IN contest
+   LET player_resulted_in = (
+     FOR resulted_in IN resulted_in
+       FILTER resulted_in._from == contest._id AND resulted_in._to == "player/202312291853567769250600"
+       RETURN resulted_in
+   )
+
+
+   FILTER LENGTH(player_resulted_in) > 0
+   RETURN {
+      played_with: (
+       FOR played_with IN played_with
+         FILTER played_with._from == contest._id
+           FOR to_doc IN game
+   FILTER to_doc._id == played_with._to
+   RETURN to_doc.name
+     ),
+
+
+
+          played_at: (
+       FOR played_at IN played_at
+         FILTER played_at._from == contest._id
+                   FOR to_doc IN venue
+   FILTER to_doc._id == played_at._to
+   RETURN to_doc.address
+     ),
+     contest: contest,
+     resulted_in: (
+       FOR resulted_in IN resulted_in
+         FILTER resulted_in._from == contest._id
+         RETURN resulted_in
+     )
+   }
+
+
