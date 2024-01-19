@@ -7,49 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="latest drop of all games played since 2014">
-      <change afterPath="$PROJECT_DIR$/automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/custom-folder/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/fixtures.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/playwright.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/tests-examples/demo-todo-app.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/tests/login.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/automation/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/_queries/queries.aql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/graph/schema/stats.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/generated/generated.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/model/todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/todo.resolvers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/game.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/game.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/todo.graphqls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/schema/user.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/user.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/registry/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/registry/registry.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/registry/todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/contest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/usecase/game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/usecase/todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="clean up of go. renaming apis. trying to fix typescript issues">
+      <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +278,7 @@
       <workItem from="1703647497060" duration="6185000" />
       <workItem from="1703653765938" duration="38154000" />
       <workItem from="1705638967855" duration="67000" />
-      <workItem from="1705639052069" duration="6205000" />
+      <workItem from="1705639052069" duration="6546000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -601,7 +560,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703898441463</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="clean up of go. renaming apis. trying to fix typescript issues">
+      <option name="closed" value="true" />
+      <created>1705645470611</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1705645470611</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="creating build for node vs vercial" />
     <MESSAGE value="fixing prod connections" />
     <MESSAGE value="store work" />
     <MESSAGE value="frontpage update" />
@@ -645,7 +611,8 @@
     <MESSAGE value="login + logout work" />
     <MESSAGE value="first barchart" />
     <MESSAGE value="latest drop of all games played since 2014" />
-    <option name="LAST_COMMIT_MESSAGE" value="latest drop of all games played since 2014" />
+    <MESSAGE value="clean up of go. renaming apis. trying to fix typescript issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up of go. renaming apis. trying to fix typescript issues" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
