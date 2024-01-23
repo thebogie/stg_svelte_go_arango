@@ -6,7 +6,7 @@ export async function _graphql(playerdata: IPlayer, query: string, variables:  V
 	let results: unknown;
 
 	let authCookie = playerdata.accessToken;
-	console.log('AUTH = ' + authCookie);
+	//console.log('AUTH = ' + authCookie);
 
 	if (!authCookie) {
 		authCookie = '';
@@ -33,7 +33,7 @@ export async function _graphql(playerdata: IPlayer, query: string, variables:  V
 			)) as object;
 		}
 
-		console.log('GRAPHQL:' + JSON.stringify(results));
+		//console.log('GRAPHQL:' + JSON.stringify(results));
 
 		// @ts-expect-error this is error object
 	} catch (err: Error) {

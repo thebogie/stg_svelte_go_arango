@@ -1,8 +1,7 @@
-import { redirect } from '@sveltejs/kit';
-import {getPlayerTotalResults, loginPlayer} from '$lib/services/player.service';
+import { getPlayerTotalResults } from '$lib/services/player.service';
 
 export const load = async ({ locals }) => {
-	let total_results ;
+	let total_results;
 
 	console.log('profile page.server.ts');
 
@@ -11,8 +10,7 @@ export const load = async ({ locals }) => {
 
 		try {
 			total_results = await getPlayerTotalResults(locals.player);
-
-
+			console.log('contests: ' + JSON.stringify(total_results));
 		} catch (err) {
 			console.error(err); // Add your error handling here
 		}
@@ -30,6 +28,6 @@ export const load = async ({ locals }) => {
 			{ country: 'Mexico', population: 128933 }
 		];
 
-		return {  signed_in, countries, total_results  };
+		return { signed_in, countries, total_results };
 	}
 };

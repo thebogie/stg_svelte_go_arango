@@ -1,7 +1,7 @@
 type Contest {
     _key:String!
     _id:String!
-    rev:String!
+    _rev:String!
     start:String!
     startoffset:String!
     stop:String!
@@ -11,9 +11,10 @@ type Contest {
     venue: Venue
 }
 
+
 type Query {
     Contests: [Contest!]!
-    GetContestsPlayerTotalResults(player: String!): [Contest!]!
+    GetContestsPlayerTotalResults(player: String!): [Contest]
 }
 
 #type Mutation {

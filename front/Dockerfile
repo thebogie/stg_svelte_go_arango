@@ -21,6 +21,6 @@ EXPOSE 50003
 
 # Start the application
 ENV PORT 50003
-#CMD ["node", "build"]
+CMD ["node", "build"]
 
-CMD ["tail", "-f", "/dev/null"]
+#CMD ["tail", "-f", "/dev/null"]

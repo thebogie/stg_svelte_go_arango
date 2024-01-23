@@ -9,3 +9,8 @@ export interface IPlayer {
 	roles?: Array<string>;
 }
 
+export interface ILoginUser {
+	token: string;
+	userdata: IPlayer;
+}
+

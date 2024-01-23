@@ -9,7 +9,6 @@ import (
 )
 
 type ContestController interface {
-	//Get(ctx context.Context, id string) (*model.Todo, error)
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
 	GetStats(ctx context.Context, player string) (*model.Stats, error)

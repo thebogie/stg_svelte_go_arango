@@ -5,8 +5,8 @@
   import {countResults} from '$lib/utils/common';
 
 
-  console.log('BARCHART: ' + $page.data);
-  let data = $page.data.countries;
+  //console.log('BARCHART: ' + JSON.stringify($page.data));
+  //let data = $page.data.countries;
   let total_results: IContest[] = $page.data.total_results;
 
   let win_loss = countResults(total_results);

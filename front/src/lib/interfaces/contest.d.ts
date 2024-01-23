@@ -5,15 +5,16 @@ import type {IOutcome} from "@lib/interfaces/outcome.interface";
 export interface IContest {
 	_key?: string;
 	_id?: string;
-	rev?: string;
+	_rev?: string;
 	start?: string;
 	startoffset?: string;
 	stop?: string;
 	stopoffset?: string;
 	outcomes: IOutcome[];
-	games: IGame[];
-	venue: IVenue;
+	games?: IGame[];
+	venue?: IVenue;
 }
+
 
 
 

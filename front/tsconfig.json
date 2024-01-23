@@ -14,7 +14,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"isolatedModules": true,
-		"types": ["vite/client"]
+		"types": ["vite/client", "svelte"]
 
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

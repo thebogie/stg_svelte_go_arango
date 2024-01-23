@@ -6,6 +6,8 @@
     <package value="back" />
     <directory value="$PROJECT_DIR$" />
     <filePath value="$PROJECT_DIR$/back/app/server.go" />
-    <method v="2" />
+    <method v="2">
+      <option name="GoBeforeRunTask" command="run github.com/99designs/gqlgen generate ." />
+    </method>
   </configuration>
 </component>

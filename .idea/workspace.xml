@@ -7,8 +7,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="clean up of go. renaming apis. trying to fix typescript issues">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="go dockerfile update">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/BACK_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/BACK_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/db/migration.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/db/migration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/contest.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/game.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/game.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/outcome.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/outcome.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/user.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/user.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/schema/venue.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/schema/venue.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/controller/contest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/adapter/repository/contest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/xTest/calls.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/xTest/calls.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/hooks.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/game.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/game.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/outcome.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/outcome.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/player.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/player.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/venue.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/venue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/graphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/services/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/profile/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +101,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.back/Dockerfile.executor": "Run",
     "Docker.front/Dockerfile.executor": "Run",
     "Go Build.BACK_.executor": "Debug",
     "HTTP Request.calls | #1.executor": "Run",
     "HTTP Request.calls | #2.executor": "Run",
+    "HTTP Request.calls | #3.executor": "Run",
     "HTTP Request.calls | #4.executor": "Run",
     "HTTP Request.calls | #5.executor": "Run",
+    "HTTP Request.calls | #6.executor": "Run",
     "JavaScript Debug.Lit.executor": "Debug",
     "JavaScript Debug.Unnamed.executor": "Debug",
     "JavaScript Debug.attachdebug.executor": "Debug",
@@ -122,6 +151,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -178,24 +208,22 @@
     <configuration name="calls | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="calls | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="calls | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="calls | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/xTest/calls.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="sveltekit" type="JavascriptDebugType" activateToolWindowBeforeRun="false" uri="http://localhost:50003" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
-    <configuration name="front/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="front/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.front/Dockerfile" />
       <item itemvalue="Go Build.BACK_" />
+      <item itemvalue="HTTP Request.calls | #3" />
+      <item itemvalue="HTTP Request.calls | #6" />
       <item itemvalue="HTTP Request.calls | #1" />
       <item itemvalue="HTTP Request.calls | #2" />
       <item itemvalue="HTTP Request.calls | #4" />
@@ -206,9 +234,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.calls | #3" />
+        <item itemvalue="HTTP Request.calls | #6" />
         <item itemvalue="HTTP Request.calls | #4" />
         <item itemvalue="HTTP Request.calls | #1" />
-        <item itemvalue="Docker.front/Dockerfile" />
         <item itemvalue="HTTP Request.calls | #2" />
       </list>
     </recent_temporary>
@@ -278,7 +307,7 @@
       <workItem from="1703647497060" duration="6185000" />
       <workItem from="1703653765938" duration="38154000" />
       <workItem from="1705638967855" duration="67000" />
-      <workItem from="1705639052069" duration="6546000" />
+      <workItem from="1705639052069" duration="34348000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -568,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705645470611</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="go dockerfile update">
+      <option name="closed" value="true" />
+      <created>1705646204063</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1705646204063</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing prod connections" />
     <MESSAGE value="store work" />
     <MESSAGE value="frontpage update" />
     <MESSAGE value="server api call setup" />
@@ -612,7 +648,8 @@
     <MESSAGE value="first barchart" />
     <MESSAGE value="latest drop of all games played since 2014" />
     <MESSAGE value="clean up of go. renaming apis. trying to fix typescript issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up of go. renaming apis. trying to fix typescript issues" />
+    <MESSAGE value="go dockerfile update" />
+    <option name="LAST_COMMIT_MESSAGE" value="go dockerfile update" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -631,24 +668,9 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/usecase/user.go</url>
-          <line>54</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
           <line>35</line>
           <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/auth/middleware.go</url>
-          <line>29</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/contest.go</url>
-          <line>37</line>
-          <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/api/graphql.ts</url>
@@ -671,34 +693,40 @@
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
-          <line>56</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/services/graphql.ts</url>
           <line>42</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/routes/login/+page.server.ts</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/front/src/lib/d3/BarChart.svelte</url>
+          <line>1</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="167" />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
-          <line>38</line>
+          <line>108</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="168" />
+          <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/front/src/lib/services/player.service.ts</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/front/src/routes/profile/+page.server.ts</url>
+          <line>17</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="169" />
+          <option name="timeStamp" value="215" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -706,6 +734,7 @@
       <configuration name="GoApplicationRunConfiguration">
         <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
         <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
+        <watch expression="" />
       </configuration>
     </watches-manager>
   </component>

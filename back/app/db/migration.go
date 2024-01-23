@@ -5,6 +5,5 @@ import (
 )
 
 func Migrate(db *driver.Database) {
-	//err := db.AutoMigrate(model.User{}, model.Todo{})
 	//DbExceptionHandle(err)
 }
