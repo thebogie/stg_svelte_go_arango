@@ -1,7 +1,7 @@
 type Venue {
     _key:String!
     _id:String!
-    rev:String!
+    _rev:String!
     address: String!
     lat: String!
     lng: String!

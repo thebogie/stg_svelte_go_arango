@@ -1,33 +1,38 @@
-import { getPlayerTotalResults } from '$lib/services/player.service';
+import {createNemesisLeaderboard, getPlayerTotalResults} from '$lib/services/player.service';
+import type {INemesisLeaderboard, IPlayer} from '$lib/interfaces/player';
+import type {IContest} from '$lib/interfaces/contest';
+import {redirect} from '@sveltejs/kit';
 
 export const load = async ({ locals }) => {
-	let total_results;
-
+	let total_results : IContest[] = [];
+	let signed_in: IPlayer = {};
+	let personal_leader_board: INemesisLeaderboard = {
+		players: [],
+		nemesis: [],
+		punchingBag: [],
+		winnersTogether: [],
+		losersTogether: []
+	};
 	console.log('profile page.server.ts');
 
 	if (locals?.player !== undefined) {
-		const signed_in = locals.player;
+		signed_in = locals.player;
 
 		try {
-			total_results = await getPlayerTotalResults(locals.player);
-			console.log('contests: ' + JSON.stringify(total_results));
+			total_results = await getPlayerTotalResults(signed_in);
+
+			personal_leader_board = await createNemesisLeaderboard(signed_in, total_results);
+
+
 		} catch (err) {
 			console.error(err); // Add your error handling here
+			throw redirect(303, '/login');
 		}
-
-		let countries = [
-			{ country: 'China', population: 1439324 },
-			{ country: 'India', population: 1380004 },
-			{ country: 'United States of America', population: 331003 },
-			{ country: 'Indonesia', population: 273524 },
-			{ country: 'Pakistan', population: 220892 },
-			{ country: 'Brazil', population: 212559 },
-			{ country: 'Nigeria', population: 206140 },
-			{ country: 'Bangladesh', population: 164689 },
-			{ country: 'Russian Federation', population: 145934 },
-			{ country: 'Mexico', population: 128933 }
-		];
-
-		return { signed_in, countries, total_results };
 	}
+
+	return {
+		login: signed_in,
+		total_results: total_results,
+		personal_leader_board: personal_leader_board
+	};
 };

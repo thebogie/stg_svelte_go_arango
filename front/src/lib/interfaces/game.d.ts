@@ -1,7 +1,7 @@
 export interface IGame {
     _key?: string;
     _id?: string;
-    rev?: string;
+    _rev?: string;
     name?: string;
 }
 

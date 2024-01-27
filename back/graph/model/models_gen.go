@@ -11,7 +11,7 @@ type Record interface {
 type Contest struct {
 	Key         string     `json:"_key"`
 	ID          string     `json:"_id"`
-	Rev         string     `json:"rev"`
+	Rev         string     `json:"_rev"`
 	Start       string     `json:"start"`
 	Startoffset string     `json:"startoffset"`
 	Stop        string     `json:"stop"`
@@ -24,7 +24,7 @@ type Contest struct {
 type Game struct {
 	Key  string `json:"_key"`
 	ID   string `json:"_id"`
-	Rev  string `json:"rev"`
+	Rev  string `json:"_rev"`
 	Name string `json:"name"`
 }
 
@@ -44,12 +44,12 @@ type NewUser struct {
 }
 
 type Outcome struct {
-	Key    string `json:"_key"`
-	ID     string `json:"_id"`
-	Rev    string `json:"rev"`
-	Player string `json:"player"`
-	Place  int    `json:"place"`
-	Result string `json:"result"`
+	Key    string    `json:"_key"`
+	ID     string    `json:"_id"`
+	Rev    string    `json:"_rev"`
+	Player *UserData `json:"player"`
+	Place  string    `json:"place"`
+	Result string    `json:"result"`
 }
 
 type RefreshTokenInput struct {
@@ -66,7 +66,7 @@ type Stats struct {
 type UserData struct {
 	Key       string `json:"_key"`
 	ID        string `json:"_id"`
-	Rev       string `json:"rev"`
+	Rev       string `json:"_rev"`
 	Firstname string `json:"firstname"`
 	Email     string `json:"email"`
 	Password  string `json:"password"`
@@ -75,7 +75,7 @@ type UserData struct {
 type Venue struct {
 	Key     string `json:"_key"`
 	ID      string `json:"_id"`
-	Rev     string `json:"rev"`
+	Rev     string `json:"_rev"`
 	Address string `json:"address"`
 	Lat     string `json:"lat"`
 	Lng     string `json:"lng"`

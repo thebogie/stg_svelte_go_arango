@@ -1,7 +1,7 @@
 export interface IPlayer {
 	_key?: string;
 	_id?: string;
-	rev?: string;
+	_rev?: string;
 	firstname?: string;
 	email?: string;
 	password?: string;
@@ -14,3 +14,21 @@ export interface ILoginUser {
 	userdata: IPlayer;
 }
 
+//Player Nemesis
+export interface INemesisLeaderboard {
+	players: INemesisRecord[];
+	nemesis: INemesisRecord[];
+	punchingBag: INemesisRecord[];
+	winnersTogether: INemesisRecord[];
+	losersTogether: INemesisRecord[];
+
+
+}
+
+export interface INemesisRecord {
+	player: IPlayer;
+	winsAgainstYou: number;
+	lostAgainstYou: number;
+	winsTogether: number;
+	lostTogether: number;
+}

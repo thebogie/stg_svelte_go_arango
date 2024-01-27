@@ -33,6 +33,7 @@ query  Game {
 
 ##################
 GRAPHQL http://localhost:50002/query
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwNjA0OTcxN30.kFIxZdvwmLvqQnx62kxG4xBbiUxlG07ae_WmEKJvLFg
 
 query IntrospectionQuery {
     __schema {
@@ -56,7 +57,7 @@ mutation LoginUser($input: Login!) {
         userdata {
             _key
             _id
-            rev
+            _rev
             firstname
             email
         }
@@ -80,24 +81,29 @@ games { name }
 
 ####
 GRAPHQL http://localhost:50002/graphql
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMTg5NTgxMn0.ojBp26ZJ_kj2X4u2w59abqZGHZDpo462BIWdNQMgtRE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwNjIyMTY5MH0.i_kw5C1HmVm22nc9h3r37AXNNj7n6nG0avDUjMKxnGU
 
 query  GetContestsPlayerTotalResults($player: String! ) {
 GetContestsPlayerTotalResults(player : $player)
- { _key
+ {
 _id
-outcomes {
-player place result
+     outcomes {
+         _id
+     }
+     games {
+         _id
+     }
+     venue {
+         _id
+     }
+
 
 }
 
 
 }
 
-
-}
-
-{"player": "player/2023110913124828447180600"}
+{"player": "player/202312291853567769250600"}
 
 ####
 GRAPHQL http://localhost:50002/graphql

@@ -7,7 +7,7 @@ type User {
 type UserData {
     _key:String!
     _id:String!
-    rev:String!
+    _rev:String!
     firstname:String!
     email:String!
     password:String!

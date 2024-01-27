@@ -2,7 +2,7 @@ import { redirect } from '@sveltejs/kit';
 
 export async function handle({ event, resolve }) {
 	console.log('HANDLE: ' + event.route.id);
-	let playerCookie = event.cookies.get('player');
+	const playerCookie = event.cookies.get('player');
 
 	if (!playerCookie) {
 		if (event.route.id !== '/login' && event.route.id !== '/') {

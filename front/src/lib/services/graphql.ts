@@ -1,8 +1,7 @@
-import {GraphQLClient, type Variables} from 'graphql-request';
+import { GraphQLClient, type Variables } from 'graphql-request';
 import type { IPlayer } from '$lib/interfaces/player';
 
-
-export async function _graphql(playerdata: IPlayer, query: string, variables:  Variables) {
+export async function _graphql(playerdata: IPlayer, query: string, variables: Variables) {
 	let results: unknown;
 
 	let authCookie = playerdata.accessToken;
@@ -21,16 +20,11 @@ export async function _graphql(playerdata: IPlayer, query: string, variables:  V
 		}
 	});
 
-
-
 	try {
 		if (Object.keys(variables).length === 0) {
 			results = (await graphQLClient.request(query)) as object;
 		} else {
-			results = (await graphQLClient.request(
-				query,
-				variables
-			)) as object;
+			results = (await graphQLClient.request(query, variables)) as object;
 		}
 
 		//console.log('GRAPHQL:' + JSON.stringify(results));
@@ -39,18 +33,13 @@ export async function _graphql(playerdata: IPlayer, query: string, variables:  V
 	} catch (err: Error) {
 		// Handle the error here
 
-
-		if (err.response.status == 403) {
-			let username = (variables.input as { username: string }).username; // Correct assertion
-			if (username === undefined) {
-					username = "unknown";
-				}
-			throw new Error(
-				'ERR:' + username + ' was unable to login. Forbidden. Wrong password? Isnt registered?'
-			);
-		} else {
-			console.error('General GraphQL request error:', err);
+		let username = (variables.input as { username: string }).username; // Correct assertion
+		if (username === undefined) {
+			username = 'unknown';
 		}
+		throw new Error(
+			'ERR:' + username + ' was unable to login. Forbidden. Wrong password? Isnt registered?'
+		);
 	}
 	//Max-Age=86400; Path=/; HttpOnly=true; sameSite=lax
 	return results;

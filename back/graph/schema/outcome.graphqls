@@ -1,8 +1,10 @@
-type Outcome {
+type  Outcome {
     _key:String!
     _id:String!
-    rev:String!
-    player:String!
-    place: Int!
+    _rev:String!
+    player:UserData!
+    place: String!
     result: String!
 }
+
+

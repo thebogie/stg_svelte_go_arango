@@ -182,7 +182,12 @@ func (cr *contestrepository) GetContestsPlayerTotalResults(ctx context.Context, 
 					//convert _to to Player
 					if mapItem, ok := item.(map[string]interface{}); ok {
 						// It's a map, extract the key-value pair
-						outcome_element.Player = mapItem["_to"].(string)
+
+						repo, _ := NewUserRepository(cr.db).GetPlayer(ctx, mapItem["_to"].(string))
+
+						outcome_element.Player = &repo
+						// clear password...
+						outcome_element.Player.Password = ""
 
 					}
 
