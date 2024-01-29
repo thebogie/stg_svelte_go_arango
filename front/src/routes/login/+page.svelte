@@ -16,8 +16,8 @@
 
     <form action="?/login"  method="POST">
         <div role="group">
-            <input name="email" placeholder="email" type="text">
-            <input name="password" placeholder="Password" type="password">
+            <input class="text-purple-700 text-opacity-100" name="email" placeholder="email" type="text">
+            <input class="text-purple-700 text-opacity-100"  name="password" placeholder="Password" type="password">
             <button type="submit">Submit</button>
         </div>
     </form>
