@@ -11,6 +11,11 @@ import (
 	"fmt"
 )
 
+// CreateContest is the resolver for the CreateContest field.
+func (r *mutationResolver) CreateContest(ctx context.Context, contest *model.InputContest) (string, error) {
+	return r.Contest.CreateContest(ctx, *contest)
+}
+
 // Todos is the resolver for the todos field.
 func (r *queryResolver) Contests(ctx context.Context) ([]*model.Contest, error) {
 	return r.Contest.List(ctx)
@@ -25,7 +30,11 @@ func (r *queryResolver) GetContestsPlayerTotalResults(ctx context.Context, playe
 	return test, err
 }
 
+// Mutation returns generated.MutationResolver implementation.
+func (r *Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
+
 // Query returns generated.QueryResolver implementation.
 func (r *Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
 
+type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }

@@ -13,6 +13,15 @@ type UserData {
     password:String!
 }
 
+input InputUserData {
+    _key:String!
+    _id:String!
+    _rev:String!
+    firstname:String!
+    email:String!
+    password:String!
+}
+
 type LoginData {
     token: String!
     userdata: UserData!
@@ -32,7 +41,7 @@ input Login {
     password: String!
 }
 
-type Mutation {
+extend type Mutation {
     CreateUser(input: NewUser!): String!
     Login(input: Login!): String!
     LoginUser(input: Login!): LoginData!

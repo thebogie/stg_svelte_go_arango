@@ -28,6 +28,53 @@ type Game struct {
 	Name string `json:"name"`
 }
 
+type InputContest struct {
+	Key         string          `json:"_key"`
+	ID          string          `json:"_id"`
+	Rev         string          `json:"_rev"`
+	Start       string          `json:"start"`
+	Startoffset string          `json:"startoffset"`
+	Stop        string          `json:"stop"`
+	Stopoffset  string          `json:"stopoffset"`
+	Outcomes    []*InputOutcome `json:"outcomes"`
+	Games       []*InputGame    `json:"games"`
+	Venue       *InputVenue     `json:"venue,omitempty"`
+}
+
+type InputGame struct {
+	Key  string `json:"_key"`
+	ID   string `json:"_id"`
+	Rev  string `json:"_rev"`
+	Name string `json:"name"`
+}
+
+type InputOutcome struct {
+	Key    string         `json:"_key"`
+	ID     string         `json:"_id"`
+	Rev    string         `json:"_rev"`
+	Player *InputUserData `json:"player"`
+	Place  string         `json:"place"`
+	Result string         `json:"result"`
+}
+
+type InputUserData struct {
+	Key       string `json:"_key"`
+	ID        string `json:"_id"`
+	Rev       string `json:"_rev"`
+	Firstname string `json:"firstname"`
+	Email     string `json:"email"`
+	Password  string `json:"password"`
+}
+
+type InputVenue struct {
+	Key     string `json:"_key"`
+	ID      string `json:"_id"`
+	Rev     string `json:"_rev"`
+	Address string `json:"address"`
+	Lat     string `json:"lat"`
+	Lng     string `json:"lng"`
+}
+
 type Login struct {
 	Username string `json:"username"`
 	Password string `json:"password"`

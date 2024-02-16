@@ -11,14 +11,27 @@ type Contest {
     venue: Venue
 }
 
+input InputContest {
+    _key:String!
+    _id:String!
+    _rev:String!
+    start:String!
+    startoffset:String!
+    stop:String!
+    stopoffset: String!
+    outcomes: [InputOutcome]!
+    games: [InputGame]!
+    venue: InputVenue
+}
+
 
 type Query {
     Contests: [Contest!]!
     GetContestsPlayerTotalResults(player: String!): [Contest]
 }
 
-#type Mutation {
-#    createContest( input: ): String!
-#}
+type Mutation {
+    CreateContest(contest: InputContest ): String!
+}
 
 

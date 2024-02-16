@@ -105,17 +105,62 @@ _id
 
 {"player": "player/202312291853567769250600"}
 
+
+
 ####
 GRAPHQL http://localhost:50002/graphql
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwMzE5MTE4OX0.N6zl2skVrDYEM5vfNUBmKNqH_N8ExcEKo59AduXSwpk
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwODE5NzUxNH0.giN6iXHEHAnUMSus0xFRzOa-RpIPdz53CrPisQeMhtI
 
-query  CheckLogin ($player: String!){
-    checklogin(player : $player)
+mutation CreateContest($contest: InputContest!) {
+    CreateContest(contest: $contest)
+
+
 
 }
-{"player": "mitch@gmail.com"}
-
-
+{
+  "contest": {
+    "_key": "your_key_value",
+    "_id": "your_id_value",
+    "_rev": "your_rev_value",
+    "start": "2024-02-02T15:00:00",
+    "startoffset": "-05:00",
+    "stop": "2024-02-02T18:00:00",
+    "stopoffset": "-05:00",
+    "outcomes": [
+      {
+        "_key": "your_key_value",
+        "_id": "your_id_value",
+        "_rev": "your_rev_value",
+        "place": "Your place value",
+        "result": "Your result value",
+        "player": {
+          "_key": "your_key_value",
+          "_id": "your_id_value",
+          "_rev": "your_rev_value",
+          "firstname": "John Doe",
+          "email": "johndoe@example.com",
+          "password": "your_password"
+        }
+      }
+    ],
+    "games": [
+      {
+        "_key": "your_key_value",
+        "_id": "your_id_value",
+        "_rev": "your_rev_value",
+        "name": "fish"
+      }
+    ],
+    "venue": {
+      "_key": "",
+      "_id": "your_id_value",
+      "_rev": "your_rev_value",
+      "address": "123 Main St, Anytown, CA",
+      "lat": "37.7749",
+      "lng": "-122.4194"
+    }
+  }
+}
 
 
 

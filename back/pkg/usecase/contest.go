@@ -3,6 +3,7 @@ package usecase
 import (
 	"back/graph/model"
 	"back/pkg/adapter/repository"
+	"back/pkg/utils"
 	"context"
 	"fmt"
 )
@@ -15,12 +16,22 @@ type ContestUsecase interface {
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
 	GetStats(ctx context.Context, player string) (*model.Stats, error)
+	CreateContest(ctx context.Context, newContest model.InputContest) (string, error)
 }
 
 func NewContestUsecase(cr repository.ContestRepository) ContestUsecase {
 	return &contestUsecase{
 		contestRepository: cr,
 	}
+}
+
+func (cu contestUsecase) CreateContest(ctx context.Context, newContest model.InputContest) (string, error) {
+	utils.PrintFunctionName()
+
+	contestId, _ := cu.contestRepository.CreateContest(ctx, newContest)
+
+	return contestId, nil
+	//tu.todoRepository.List(ctx)
 }
 
 func (cu contestUsecase) List(ctx context.Context) ([]*model.Contest, error) {

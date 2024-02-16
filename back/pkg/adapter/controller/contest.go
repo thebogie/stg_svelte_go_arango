@@ -12,6 +12,7 @@ type ContestController interface {
 	List(ctx context.Context) ([]*model.Contest, error)
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
 	GetStats(ctx context.Context, player string) (*model.Stats, error)
+	CreateContest(ctx context.Context, newContest model.InputContest) (string, error)
 }
 
 type contestController struct {
@@ -23,6 +24,15 @@ func NewContestController(cu usecase.ContestUsecase) ContestController {
 	return &contestController{
 		contestUsecase: cu,
 	}
+}
+func (tc contestController) CreateContest(ctx context.Context, newContest model.InputContest) (string, error) {
+	fmt.Println("This is from CreateContest controller")
+	contestId, err := tc.contestUsecase.CreateContest(ctx, newContest)
+	if err != nil {
+		return "", err
+	}
+
+	return contestId, nil
 }
 
 func (tc contestController) List(ctx context.Context) ([]*model.Contest, error) {

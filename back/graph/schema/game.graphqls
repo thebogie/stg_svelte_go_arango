@@ -6,6 +6,14 @@ type Game {
 
 }
 
+input InputGame {
+    _key:String!
+    _id:String!
+    _rev:String!
+    name:String!
+
+}
+
 
 extend type Query {
     Games: [Game!]!
