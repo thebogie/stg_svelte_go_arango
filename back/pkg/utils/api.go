@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"os"
 )
 
 func apiWordAPI(partOfSpeech string) string {
@@ -18,7 +19,7 @@ func apiWordAPI(partOfSpeech string) string {
 	url := "https://wordsapiv1.p.rapidapi.com/words/?partOfSpeech=" + partOfSpeech + "&frequencyMin=2&random=true&limit=1"
 
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Add("X-RapidAPI-Key", "6575ae19d6msh5882cfb5b5a3713p1cf3c8jsn7c373cfe7517")
+	req.Header.Add("X-RapidAPI-Key", os.Getenv("API_RAPIDAPI"))
 	req.Header.Add("X-RapidAPI-Host", "wordsapiv1.p.rapidapi.com")
 
 	res, _ := http.DefaultClient.Do(req)

@@ -307,7 +307,7 @@ func (cr *contestrepository) List(ctx context.Context) ([]*model.Contest, error)
 }
 
 func (cr *contestrepository) GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error) {
-
+	utils.PrintFunctionName()
 	/* query := "" +
 	"FOR doc IN resulted_in " + " " +
 	"FILTER doc._to == '" + player + "'" + " " +
@@ -338,7 +338,7 @@ func (cr *contestrepository) GetContestsPlayerTotalResults(ctx context.Context, 
 	LENGTH(player_resulted_in) > 0
 	RETURN{
 		played_with: (
-			FOR, played_with IN played_with
+			FOR played_with IN played_with
 		FILTER played_with._from == contest._id
 		FOR to_doc IN game
 		FILTER to_doc._id == played_with._to

@@ -41,7 +41,7 @@ func (cu contestUsecase) List(ctx context.Context) ([]*model.Contest, error) {
 }
 
 func (cu contestUsecase) GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error) {
-	fmt.Println("This is from contest usecase")
+	utils.PrintFunctionName()
 
 	return cu.contestRepository.GetContestsPlayerTotalResults(ctx, player)
 }
