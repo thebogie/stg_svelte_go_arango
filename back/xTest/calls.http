@@ -1,23 +1,4 @@
-GRAPHQL https://smacktalkgaming.com/graphql
 
-mutation LoginUser($input: Login!) {
-    LoginUser(input: $input) {
-        token
-        userdata {
-            _key
-            _id
-            rev
-            firstname
-            email
-        }
-    }
-}
-{
-  "input": {
-    "username": "mitch@gmail.com",
-    "password": "letmein"
-  }
-}
 
 
 ####
@@ -109,7 +90,8 @@ _id
 
 ####
 GRAPHQL http://localhost:50002/graphql
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwODE5NzUxNH0.giN6iXHEHAnUMSus0xFRzOa-RpIPdz53CrPisQeMhtI
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pdGNoQGdtYWlsLmNvbSIsImV4cCI6MTcwODU0MDM1Nn0.KC3mQ9yOxfVbPUXeXE-Aqb8GeEmAglIAc6xkaJpGpGI
+
 
 mutation CreateContest($contest: InputContest!) {
     CreateContest(contest: $contest)
@@ -119,42 +101,78 @@ mutation CreateContest($contest: InputContest!) {
 }
 {
   "contest": {
-    "_key": "your_key_value",
-    "_id": "your_id_value",
-    "_rev": "your_rev_value",
+    "_key": "",
+    "_id": "",
+    "_rev": "",
     "start": "2024-02-02T15:00:00",
     "startoffset": "-05:00",
     "stop": "2024-02-02T18:00:00",
     "stopoffset": "-05:00",
     "outcomes": [
       {
-        "_key": "your_key_value",
-        "_id": "your_id_value",
-        "_rev": "your_rev_value",
-        "place": "Your place value",
-        "result": "Your result value",
+        "_key": "",
+        "_id": "",
+        "_rev": "",
+        "place": "1",
+        "result": "won",
         "player": {
-          "_key": "your_key_value",
-          "_id": "your_id_value",
-          "_rev": "your_rev_value",
+          "_key": "",
+          "_id": "",
+          "_rev": "",
           "firstname": "John Doe",
-          "email": "johndoe@example.com",
-          "password": "your_password"
+          "email": "mitch@gmail.com",
+          "password": ""
+        }
+      },
+      {
+        "_key": "",
+        "_id": "",
+        "_rev": "",
+        "place": "2",
+        "result": "lost",
+        "player": {
+          "_key": "",
+          "_id": "",
+          "_rev": "",
+          "firstname": "John Doe",
+          "email": "lily@gmail.com",
+          "password": ""
+        }
+      },
+      {
+        "_key": "",
+        "_id": "",
+        "_rev": "",
+        "place": "3",
+        "result": "lost",
+        "player": {
+          "_key": "",
+          "_id": "",
+          "_rev": "",
+          "firstname": "John Doe",
+          "email": "olivia@gmail.com",
+          "password": ""
         }
       }
     ],
     "games": [
       {
-        "_key": "your_key_value",
-        "_id": "your_id_value",
-        "_rev": "your_rev_value",
-        "name": "fish"
+        "_key": "",
+        "_id": "",
+        "_rev": "",
+        "name": "7 Wonders"
+      },
+      {
+        "_key": "",
+        "_id": "",
+        "_rev": "",
+        "name": "War Chest"
       }
     ],
     "venue": {
       "_key": "",
-      "_id": "your_id_value",
-      "_rev": "your_rev_value",
+      "_id": "",
+      "_rev": "",
       "address": "123 Main St, Anytown, CA",
       "lat": "37.7749",
       "lng": "-122.4194"

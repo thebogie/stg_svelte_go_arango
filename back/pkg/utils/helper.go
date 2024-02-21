@@ -15,3 +15,9 @@ func PrintFunctionName() {
 
 	log.Println("**FUNCTION**:", funcName)
 }
+
+func GetContestName() string {
+	// Make the HTTP request
+
+	return "The " + apiWordAPI("adjective") + " " + apiWordAPI("noun")
+}

@@ -15,7 +15,6 @@ type ContestRepository interface {
 	GetContestsPlayerTotalResults(ctx context.Context, player string) ([]*model.Contest, error)
 	CreateContest(ctx context.Context, newContest model.InputContest) (string, error)
 	AddVenue(ctx context.Context, newContest *model.InputVenue) (string, error)
-	AddPlayedAt(ctx context.Context, _to string, _from string) (string, error)
 	FindVenue(ctx context.Context, newContest *model.InputVenue) (string, error)
 }
 
@@ -52,12 +51,11 @@ func getNewArangoDocId(queryFunc func(context.Context, string, map[string]interf
 	return transfer["_id"].(string)
 }
 
-func (cr *contestrepository) AddPlayedAt(ctx context.Context, _from string, _to string) (string, error) {
+// ADD EDGE
+func (cr *contestrepository) AddPlayedAt(ctx context.Context, playedAt ArangoDBPlayedAt) (string, error) {
 	utils.PrintFunctionName()
 
-	var newPlayedAt = ArangoDBPlayedAt{Label: "PLAYED_AT", From: _from, To: _to}
-
-	transferJson, err := json.Marshal(newPlayedAt)
+	transferJson, err := json.Marshal(playedAt)
 	if err != nil {
 		fmt.Println("Error marshalling newPlayedAt:", err)
 		// Handle error appropriately
@@ -67,6 +65,63 @@ func (cr *contestrepository) AddPlayedAt(ctx context.Context, _from string, _to 
 	playedAtId := getNewArangoDocId(cr.db.Query, ctx, query)
 
 	return playedAtId, nil
+}
+
+func (cr *contestrepository) AddPlayedWith(ctx context.Context, playedWith ArangoDBPlayedWith) (string, error) {
+	utils.PrintFunctionName()
+
+	transferJson, err := json.Marshal(playedWith)
+	if err != nil {
+		fmt.Println("Error marshalling playedWith:", err)
+		// Handle error appropriately
+	}
+	query :=
+		`INSERT ` + string(transferJson) + ` INTO played_with RETURN NEW`
+	playedWithId := getNewArangoDocId(cr.db.Query, ctx, query)
+
+	return playedWithId, nil
+}
+
+func (cr *contestrepository) AddResultedIn(ctx context.Context, resultedIn ArangoDBResultedIn) (string, error) {
+	utils.PrintFunctionName()
+
+	transferJson, err := json.Marshal(resultedIn)
+	if err != nil {
+		fmt.Println("Error marshalling newPlayedAt:", err)
+		// Handle error appropriately
+	}
+	query :=
+		`INSERT ` + string(transferJson) + ` INTO resulted_in RETURN NEW`
+	resultedInID := getNewArangoDocId(cr.db.Query, ctx, query)
+
+	return resultedInID, nil
+}
+
+//END ADD EDGE
+
+func (cr *contestrepository) AddPlayer(ctx context.Context, newPlayer *model.InputUserData) (string, error) {
+	utils.PrintFunctionName()
+
+	//assume that the venue coming through exists and find the VenueId IF VenueId is not already there
+	playerId, err := cr.FindPlayer(ctx, newPlayer)
+	if err != nil {
+		//options?
+	}
+
+	//TODO: set basic password that has to be reset
+	if playerId == "" {
+		var arangoPlayer = ArangoDBPlayer{Email: newPlayer.Email, Firstname: newPlayer.Firstname, Password: ""}
+		transferJson, err := json.Marshal(arangoPlayer)
+		if err != nil {
+			fmt.Println("Error marshalling transferJson:", err)
+			// Handle error appropriately
+		}
+		query :=
+			`INSERT ` + string(transferJson) + ` INTO player RETURN NEW`
+		playerId = getNewArangoDocId(cr.db.Query, ctx, query)
+	}
+
+	return playerId, nil
 }
 
 func (cr *contestrepository) AddVenue(ctx context.Context, newVenue *model.InputVenue) (string, error) {
@@ -91,6 +146,46 @@ func (cr *contestrepository) AddVenue(ctx context.Context, newVenue *model.Input
 	}
 
 	return venueId, nil
+}
+
+func (cr *contestrepository) AddOutcomes(ctx context.Context, contestID string, newOutcomes []*model.InputOutcome) {
+	utils.PrintFunctionName()
+
+	for _, outcome := range newOutcomes {
+		playerId, err := cr.FindPlayer(ctx, outcome.Player)
+		if err != nil {
+			//options?
+		}
+
+		var resultedInObj = ArangoDBResultedIn{Label: "RESULTED_IN", Place: outcome.Place, From: contestID, To: playerId, Result: outcome.Result}
+		_, err = cr.AddResultedIn(ctx, resultedInObj)
+		if err != nil {
+			//options?
+		}
+
+	}
+
+	return
+}
+
+func (cr *contestrepository) AddGames(ctx context.Context, contestID string, newGames []*model.InputGame) {
+	utils.PrintFunctionName()
+
+	for _, game := range newGames {
+		gameID, err := cr.FindGame(ctx, game)
+		if err != nil {
+			//options?
+		}
+
+		var playedWithObj = ArangoDBPlayedWith{From: contestID, To: gameID, Label: "PLAYED_WITH"}
+		_, err = cr.AddPlayedWith(ctx, playedWithObj)
+		if err != nil {
+			//options?
+		}
+
+	}
+
+	return
 }
 
 func (cr *contestrepository) FindVenue(ctx context.Context, findvenue *model.InputVenue) (string, error) {
@@ -132,10 +227,50 @@ RETURN doc
 	return venueKey, nil
 }
 
+func (cr *contestrepository) FindPlayer(ctx context.Context, player *model.InputUserData) (string, error) {
+	utils.PrintFunctionName()
+	playerId := player.ID
+
+	query := `
+FOR doc IN player
+FILTER (UPPER(doc.email) == UPPER("` + player.Email +
+		`"))
+RETURN doc
+`
+
+	if playerId == "" {
+		playerId = getNewArangoDocId(cr.db.Query, ctx, query)
+	}
+
+	// upsert venue
+	return playerId, nil
+}
+
+func (cr *contestrepository) FindGame(ctx context.Context, game *model.InputGame) (string, error) {
+	utils.PrintFunctionName()
+	gameID := game.ID
+
+	query := `
+FOR doc IN game
+FILTER (UPPER(doc.name) == UPPER("` + game.Name +
+		`"))
+RETURN doc
+`
+
+	if gameID == "" {
+		gameID = getNewArangoDocId(cr.db.Query, ctx, query)
+	}
+
+	// upsert venue
+	return gameID, nil
+}
+
 func (cr *contestrepository) CreateContest(ctx context.Context, newContest model.InputContest) (string, error) {
 	utils.PrintFunctionName()
 
-	var transferContest = ArangoDBContest{Start: newContest.Start, Stop: newContest.Stop, Startoffset: newContest.Startoffset, Stopoffset: newContest.Stopoffset}
+	contestName := utils.GetContestName()
+
+	var transferContest = ArangoDBContest{Name: contestName, Start: newContest.Start, Stop: newContest.Stop, Startoffset: newContest.Startoffset, Stopoffset: newContest.Stopoffset}
 	var newContestID = ""
 
 	transferJson, err := json.Marshal(transferContest)
@@ -147,17 +282,21 @@ func (cr *contestrepository) CreateContest(ctx context.Context, newContest model
 		`INSERT ` + string(transferJson) + ` INTO contest RETURN NEW`
 	newContestID = getNewArangoDocId(cr.db.Query, ctx, query)
 
+	cr.AddOutcomes(ctx, newContestID, newContest.Outcomes)
+
 	venueId, err := cr.AddVenue(ctx, newContest.Venue)
 	if err != nil {
 		//options?
 	}
 
-	_, err = cr.AddPlayedAt(ctx, newContestID, venueId)
+	var playedAtObj = ArangoDBPlayedAt{Label: "PLAYED_AT", From: newContestID, To: venueId}
+	_, err = cr.AddPlayedAt(ctx, playedAtObj)
 	if err != nil {
 		//options?
 	}
 
-	// upsert venue
+	cr.AddGames(ctx, newContestID, newContest.Games)
+
 	return newContestID, nil
 }
 

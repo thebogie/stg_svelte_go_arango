@@ -2,6 +2,7 @@ type Contest {
     _key:String!
     _id:String!
     _rev:String!
+    name: String!
     start:String!
     startoffset:String!
     stop:String!

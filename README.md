@@ -31,10 +31,9 @@ docker-compose -f .\docker-compose.dev.yml up -d arangodb
   - add contest page
 
 - Backend
-  - fetch venue by address
-- push venue by address
-  - if already exists, update?
-  - push element into arango
+  - fetch array of games. add games if new
+  - add Played_With
+  - add new outcomes (no previous)
 
 
 

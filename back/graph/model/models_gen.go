@@ -12,6 +12,7 @@ type Contest struct {
 	Key         string     `json:"_key"`
 	ID          string     `json:"_id"`
 	Rev         string     `json:"_rev"`
+	Name        string     `json:"name"`
 	Start       string     `json:"start"`
 	Startoffset string     `json:"startoffset"`
 	Stop        string     `json:"stop"`

@@ -1,0 +1,4 @@
+### GET request with a header
+GET https://wordsapiv1.p.rapidapi.com/words/?partOfSpeech=noun&frequencyMin=2&random=true&limit=1
+X-RapidAPI-Key: 6575ae19d6msh5882cfb5b5a3713p1cf3c8jsn7c373cfe7517
+X-RapidAPI-Host: wordsapiv1.p.rapidapi.com
