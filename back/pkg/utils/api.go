@@ -29,7 +29,7 @@ func apiWordAPI(partOfSpeech string) string {
 	var data WordData
 	err := json.NewDecoder(res.Body).Decode(&data)
 	if err != nil {
-		log.Fatalf("Error decoding JSON: %w", err)
+		log.Fatalf("Error decoding JSON: %s", err)
 	}
 
 	return data.Word
