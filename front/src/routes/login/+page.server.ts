@@ -2,6 +2,8 @@ import { redirect } from '@sveltejs/kit';
 import { loginPlayer } from '$lib/services/player.service';
 import type { IPlayer } from '$lib/interfaces/player.d';
 
+
+
 export const actions = {
 	login: async ({ cookies, request }) => {
 		console.log('LOGIN ACTIONS');
@@ -35,7 +37,7 @@ export const actions = {
 				secure: true,
 				path: '/',
 				//secure: process.env.NODE_ENV === 'production',
-				maxAge: 60*60*24,
+				maxAge: 60 * 60 * 24
 			});
 		} catch (err) {
 			console.error(err); // Add your error handling here

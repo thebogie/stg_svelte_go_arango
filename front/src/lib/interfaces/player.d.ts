@@ -18,7 +18,7 @@ export interface ILoginUser {
 export interface INemesisLeaderboard {
 	players: INemesisRecord[];
 	nemesis: INemesisRecord[];
-	punchingBag: INemesisRecord[];
+	owned: INemesisRecord[];
 	winnersTogether: INemesisRecord[];
 	losersTogether: INemesisRecord[];
 

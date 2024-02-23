@@ -1,6 +1,6 @@
 import {createNemesisLeaderboard, getPlayerTotalResults} from '$lib/services/player.service';
 import type {INemesisLeaderboard, IPlayer} from '$lib/interfaces/player';
-import type {IContest} from '$lib/interfaces/contest';
+import type {IContest, IProfile} from '$lib/interfaces/contest';
 import {redirect} from '@sveltejs/kit';
 
 export const load = async ({ locals }) => {
@@ -9,7 +9,7 @@ export const load = async ({ locals }) => {
 	let personal_leader_board: INemesisLeaderboard = {
 		players: [],
 		nemesis: [],
-		punchingBag: [],
+		owned: [],
 		winnersTogether: [],
 		losersTogether: []
 	};
@@ -30,9 +30,9 @@ export const load = async ({ locals }) => {
 		}
 	}
 
+
+	const profile: IProfile = {signed_in: signed_in, total_results: total_results, personal_leader_board: personal_leader_board};
 	return {
-		login: signed_in,
-		total_results: total_results,
-		personal_leader_board: personal_leader_board
+		profile: profile
 	};
 };

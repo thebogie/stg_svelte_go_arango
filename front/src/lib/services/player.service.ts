@@ -144,7 +144,7 @@ export const createNemesisLeaderboard = async (
 	const leaderBoard: INemesisLeaderboard = {
 		players: [],
 		nemesis: [],
-		punchingBag: [],
+		owned: [],
 		winnersTogether: [],
 		losersTogether: []
 	};
@@ -208,7 +208,7 @@ export const createNemesisLeaderboard = async (
 			leaderBoard.nemesis.push(playerRecord);
 		}
 		if (playerRecord.lostAgainstYou !== 0) {
-			leaderBoard.punchingBag.push(playerRecord);
+			leaderBoard.owned.push(playerRecord);
 		}
 		if (playerRecord.winsTogether !== 0) {
 			leaderBoard.winnersTogether.push(playerRecord);
@@ -226,7 +226,7 @@ export const createNemesisLeaderboard = async (
 		}
 		return 0;
 	});
-	leaderBoard.punchingBag = leaderBoard.punchingBag.sort((n1, n2) => {
+	leaderBoard.owned = leaderBoard.owned.sort((n1, n2) => {
 		if (n1.lostAgainstYou <= n2.lostAgainstYou) {
 			return 1;
 		}

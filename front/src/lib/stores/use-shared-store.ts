@@ -16,9 +16,9 @@ export const getSharedStore = <T, A>(
 };
 
 // writable store context
-export const getWritable = <T>(name: string, value: T) =>
+export const useWritable = <T>(name: string, value: T) =>
     getSharedStore(name, writable, value);
 
 // readable store context
-export const getReadable = <T>(name: string, value: T) =>
+export const useReadable = <T>(name: string, value: T) =>
     getSharedStore(name, readable, value);
