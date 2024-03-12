@@ -17,7 +17,15 @@ export default {
 			themes: {
 				preset: [
 					{
+						name: 'vintage',
+						enhancements: true,
+					},
+					{
 						name: 'modern',
+						enhancements: true,
+					},
+					{
+						name: 'skeleton',
 						enhancements: true,
 					},
 				],

@@ -86,6 +86,9 @@ type LoginData struct {
 	Userdata *UserData `json:"userdata"`
 }
 
+type Mutation struct {
+}
+
 type NewUser struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
@@ -98,6 +101,9 @@ type Outcome struct {
 	Player *UserData `json:"player"`
 	Place  string    `json:"place"`
 	Result string    `json:"result"`
+}
+
+type Query struct {
 }
 
 type RefreshTokenInput struct {

@@ -1,6 +1,8 @@
 <script lang="ts">
   import { superForm } from 'sveltekit-superforms/client';
   import type { PageData } from './$types.js';
+  import SveltyPicker from 'svelty-picker';
+
 
   export let data: PageData;
 
@@ -17,6 +19,8 @@
     resetForm: true
   });
 </script>
+
+<SveltyPicker  />
 
 {#if $message}<h3>{$message}</h3>{/if}
 

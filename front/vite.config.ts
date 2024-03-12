@@ -3,7 +3,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	resolve: {
+resolve: {
 		alias: {
 			'@': '/src', // Alias for the root of the 'src' directory
 			'@components': '/src/components', // Alias for the 'components' directory
@@ -17,5 +17,11 @@ export default defineConfig({
 		host: '0.0.0.0',
 
 	},
-	plugins: [sveltekit(), purgeCss()]
+	plugins: [sveltekit(), purgeCss({
+			safelist: {
+				// any selectors that begin with "hljs-" will not be purged
+				greedy: [/^hljs-/],
+			},
+		}),
+	],
 });

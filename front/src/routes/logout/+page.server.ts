@@ -7,6 +7,7 @@ export const load: PageServerLoad = async () => {
 
 export const actions: Actions = {
 	default({ cookies }) {
+		console.log('logout');
 		cookies.set('player', '', {
 			path: '/',
 			expires: new Date(0)

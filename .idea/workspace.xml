@@ -7,17 +7,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="adding tabbed profile stats">
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/front/playwright.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/lib/components/DateRangePicker.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/routes/contest/nr.+page.svelte.nr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/static/fonts/AbrilFatface.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/tests/test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pkg/utils/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/pkg/utils/api.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/game.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/game.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_contests.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_contests.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_games.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_games.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_playedat.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_playedat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_playedwith.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_playedwith.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_players.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_players.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_resultedin.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_resultedin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stg_venues.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_venues.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app.postcss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/notready.+page.server.ts.notready" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/notready.+page.svelte.notready" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/logout/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/logout/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
+  <component name="ChangesViewManager" show_ignored="true">
     <option name="groupingKeys">
       <option value="directory" />
       <option value="module" />
@@ -33,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../tools/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,6 +92,10 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -118,26 +160,27 @@
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "LET",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/lib/components/datatable",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
+    "nodejs_interpreter_path": "C:/tools/nodejs/node",
     "nodejs_package_manager_path": "npm",
     "npm.FRONT.executor": "Debug",
     "npm.Lit:SERVE.executor": "Debug",
     "npm.Lit:TS.executor": "Run",
     "npm.dev.executor": "Debug",
+    "npm.prepare.executor": "Run",
     "npm.start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\prettier",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "ts.external.directory.path": "C:\\work\\stg_svelte_go_arango\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -153,11 +196,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src" />
+      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\contest" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\components\datatable" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\stores" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\routes\contest" />
-      <recent name="C:\work\stg_svelte_go_arango\back\xTest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\contest" />
@@ -300,7 +343,20 @@
       <workItem from="1707278509492" duration="15315000" />
       <workItem from="1708452546441" duration="202000" />
       <workItem from="1708453793596" duration="7368000" />
-      <workItem from="1708480643576" duration="43978000" />
+      <workItem from="1708480643576" duration="53370000" />
+      <workItem from="1709531578136" duration="183000" />
+      <workItem from="1709532089155" duration="30000" />
+      <workItem from="1709532124380" duration="263000" />
+      <workItem from="1709532393391" duration="417000" />
+      <workItem from="1709909917282" duration="243000" />
+      <workItem from="1709910242990" duration="958000" />
+      <workItem from="1709911212513" duration="2091000" />
+      <workItem from="1710096730644" duration="3852000" />
+      <workItem from="1710103068012" duration="193000" />
+      <workItem from="1710103273876" duration="1934000" />
+      <workItem from="1710214935184" duration="109000" />
+      <workItem from="1710215052732" duration="2657000" />
+      <workItem from="1710270638920" duration="2466000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -654,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708730545512</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="prod build fix">
+      <option name="closed" value="true" />
+      <created>1708731914313</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1708731914313</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +738,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add error through graphql -&gt; service call -&gt; front login page." />
     <MESSAGE value="back change: using header authentication vs cookie" />
     <MESSAGE value="e2e authentication via header update" />
     <MESSAGE value="e2e authentication via header through games backend" />
@@ -699,7 +762,8 @@
     <MESSAGE value="createContest to arangodb complete" />
     <MESSAGE value="clean up back api code" />
     <MESSAGE value="adding tabbed profile stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tabbed profile stats" />
+    <MESSAGE value="prod build fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="prod build fix" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -707,26 +771,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/user.go</url>
-          <line>52</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
-          <line>38</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/adapter/controller/user.go</url>
-          <line>35</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/back/pkg/adapter/repository/contest.go</url>
-          <line>299</line>
-          <option name="timeStamp" value="267" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front/src/routes/api/graphql.ts</url>
           <line>4</line>
@@ -751,8 +795,8 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
-        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
-        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" language="go" />
+        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" />
+        <watch expression="ctx.Value(&quot;authuser&quot;).(string)" />
       </configuration>
     </watches-manager>
   </component>
