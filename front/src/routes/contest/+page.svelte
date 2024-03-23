@@ -1,32 +1,34 @@
-<script lang="ts">
-  import SveltyPicker from 'svelty-picker';
+<script>
+	import SveltyPicker from 'svelty-picker';
 
-  let valueDefault: string | string[] | undefined =  new Date().toLocaleDateString();
-  let valueDifferent: string | string[] | undefined =  new Date().toLocaleDateString();
-  let valueTimeOnly: string | string[] | undefined =  new Date().toLocaleDateString();
+	import { superForm } from 'sveltekit-superforms';
+	import SuperDebug from 'sveltekit-superforms';
+
+	export let data;
+
+	// Client API:
+	const { form } = superForm(data.form);
+
+
 </script>
 
-<div class="flex items-start gap-8">
-  <div>
-    <h4>
-      Format === displayFormat<br>Internal value: <code>{valueDefault}</code>
-    </h4>
-    <SveltyPicker bind:value={valueDefault} />
-  </div>
-  <div>
-    <h4>
-      Format !== displayFormat<br>Internal value: <code>{valueDifferent}</code>
-    </h4>
-    <SveltyPicker
-      bind:value={valueDifferent}
-      displayFormat="j. n. Y"
-      displayFormatType="php"
-    />
-  </div>
-  <div>
-    <h4>
-      Time only format:<br>Internal value: <code>{valueTimeOnly}</code>
-    </h4>
-    <SveltyPicker bind:value={valueTimeOnly} format="hh:ii" displayFormat="HH:ii P" />
-  </div>
-</div>
+
+<SuperDebug data={$form} />
+<form method="POST">
+	<label for="name">Name</label>
+	<input class="text-purple-700 text-opacity-100" type="text" name="name" bind:value={$form.name} />
+
+	<label for="start_date_time">Start Date+Time</label>
+	<SveltyPicker formatType='standard' inputClasses="form-control text-purple-700 text-opacity-100"
+								format="yyyy-mm-ddThh:ii:00Z" displayFormat="yyyy-mm-dd hh:ii" name="start_date_time" bind:value={$form.start_date_time}
+	></SveltyPicker>
+
+	<label for="end_date_time">End Date+Time</label>
+	<SveltyPicker formatType='standard' inputClasses="form-control text-purple-700 text-opacity-100"
+								format="yyyy-mm-ddThh:ii:00Z" displayFormat="yyyy-mm-dd hh:ii" name="end_date_time"  bind:value={$form.end_date_time}
+	></SveltyPicker>
+
+	<div>
+		<button>Submit</button>
+	</div>
+</form>

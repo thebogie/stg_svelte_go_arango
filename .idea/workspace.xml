@@ -7,20 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/front/playwright.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/lib/components/DateRangePicker.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/routes/contest/nr.+page.svelte.nr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/static/fonts/AbrilFatface.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/tests/test.ts" afterDir="false" />
+    <list default="true" id="db9b3aba-6f5b-49a1-9692-61b2951ecfca" name="Changes" comment="updated to latest packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/back/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/model/models_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/model/models_gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/contest.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/game.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/game.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/stats.resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/back/graph/resolver/user.resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/stg_contests.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_contests.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/stg_games.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_games.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/stg_playedat.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_playedat.json" afterDir="false" />
@@ -28,27 +17,11 @@
       <change beforePath="$PROJECT_DIR$/config/stg_players.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_players.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/stg_resultedin.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_resultedin.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/stg_venues.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stg_venues.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app.postcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/lib/interfaces/contest.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/notready.+page.server.ts.notready" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/notready.+page.svelte.notready" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/routes/logout/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/logout/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/routes/contest/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/routes/contest/nr.+page.svelte.nr" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +133,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "js.last.introduce.type": "LET",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src",
+    "last_opened_file_path": "C:/work/stg_svelte_go_arango/front/src/lib/components/form-fields",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -196,18 +169,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\components\form-fields" />
       <recent name="C:\work\stg_svelte_go_arango\front\src" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\contest" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\lib\components\datatable" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\profile" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\stores" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\stg_svelte_go_arango\front\src\lib\components\ContestInput" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes\contest" />
       <recent name="C:\work\stg_svelte_go_arango\automation\.auth" />
       <recent name="C:\work\stg_svelte_go_arango\front\static" />
       <recent name="C:\work\stg_svelte_go_arango\front\src\routes" />
-      <recent name="C:\work\stg_svelte_go_arango\front\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -356,7 +329,8 @@
       <workItem from="1710103273876" duration="1934000" />
       <workItem from="1710214935184" duration="109000" />
       <workItem from="1710215052732" duration="2657000" />
-      <workItem from="1710270638920" duration="2466000" />
+      <workItem from="1710270638920" duration="3844000" />
+      <workItem from="1711221444092" duration="11349000" />
     </task>
     <task id="LOCAL-00001" summary="new intellj setup+typescript cleanup+login errors">
       <option name="closed" value="true" />
@@ -718,7 +692,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708731914313</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="updated to latest packages">
+      <option name="closed" value="true" />
+      <created>1710273401327</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1710273401327</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,7 +720,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="back change: using header authentication vs cookie" />
     <MESSAGE value="e2e authentication via header update" />
     <MESSAGE value="e2e authentication via header through games backend" />
     <MESSAGE value="api getallplayerresults" />
@@ -763,7 +744,8 @@
     <MESSAGE value="clean up back api code" />
     <MESSAGE value="adding tabbed profile stats" />
     <MESSAGE value="prod build fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="prod build fix" />
+    <MESSAGE value="updated to latest packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated to latest packages" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -790,6 +772,18 @@
           <url>file://$PROJECT_DIR$/automation/tests/login.spec.ts</url>
           <line>23</line>
           <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/contest/+page.server.ts</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/routes/contest/+page.server.ts</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

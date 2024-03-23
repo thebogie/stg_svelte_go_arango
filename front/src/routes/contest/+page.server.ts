@@ -1,44 +1,37 @@
-import { z } from 'zod';
-import { fail } from '@sveltejs/kit';
-import { message, superValidate } from 'sveltekit-superforms';
+import { superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
+import { z } from 'zod';
+import { message } from 'sveltekit-superforms';
+import { fail } from '@sveltejs/kit';
 
-const loginSchema = z.object({
-	email: z.string().email(),
-	password: z.string().min(8)
-});
-
-const registerSchema = z.object({
-	email: z.string().email(),
-	password: z.string(),
-	confirmPassword: z.string()
+// Define outside the load function so the adapter can be cached
+const schema = z.object({
+	name: z.string().default('Hello world!'),
+	start_date_time: z.string().datetime({ offset: true }),
+	end_date_time: z.string().datetime({ offset: true })
 });
 
 export const load = async () => {
-	// Different schemas, no id required.
-	const loginForm = await superValidate(zod(loginSchema));
-	const registerForm = await superValidate(zod(registerSchema));
-
-	// Return them both
-	return { loginForm, registerForm };
+	const form = await superValidate(zod(schema));
+	form.data.start_date_time = '2024-02-02T18:00:00+05:00';
+	form.data.end_date_time = '2024-02-02T20:00:00+05:00';
+	// Always return { form } in load functions
+	return { form };
 };
 
 export const actions = {
-	login: async ({ request }) => {
-		const loginForm = await superValidate(request, zod(loginSchema));
+	default: async ({ request }) => {
+		const form = await superValidate(request, zod(schema));
+		console.log(form);
 
-		if (!loginForm.valid) return fail(400, { loginForm });
+		if (!form.valid) {
+			// Again, return { form } and things will just work.
+			return fail(400, { form });
+		}
 
-		// TODO: Login user
-		return message(loginForm, 'Login form submitted');
-	},
+		// TODO: Do something with the validated form.data
 
-	register: async ({ request }) => {
-		const registerForm = await superValidate(request, zod(registerSchema));
-
-		if (!registerForm.valid) return fail(400, { registerForm });
-
-		// TODO: Register user
-		return message(registerForm, 'Register form submitted');
+		// Display a success status message
+		return message(form, 'Form posted successfully!');
 	}
 };

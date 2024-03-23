@@ -27,8 +27,10 @@ docker-compose -f .\docker-compose.dev.yml up -d arangodb
 
 ## Upcoming
 - FrontEnd:
-  - profile front page. what to hold in it? how to click through to show list of games and venue
   - add contest page
+    - figure out local zone in contest server side and update times. then send through to contest?
+  - profile front page. what to hold in it? how to click through to show list of games and venue
+
 
 - Backend
   - fetch array of games. add games if new
